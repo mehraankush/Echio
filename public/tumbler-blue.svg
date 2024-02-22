@@ -1,0 +1,11 @@
+<svg width="22" height="35" viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="tumbler" d="M9.047 0.933472C9.047 6.1619 2.15637 10.1717 0.187622 10.1717V15.7146H6.09387V26.8004C6.09387 30.8821 9.61963 34.191 13.9689 34.191H21.8439V26.7218C21.0663 26.7218 18.0048 26.7218 15.9361 26.7218C14.8488 26.7218 13.9689 25.8946 13.9689 24.8742V15.7146H21.8439V8.32404H13.9689V0.933472H9.047Z" fill="url(#paint0_linear_44_660)"/>
+<defs>
+<linearGradient id="paint0_linear_44_660" x1="11.0157" y1="0.933472" x2="11.0157" y2="34.191" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00D4F1"/>
+<stop offset="0.0001" stop-color="#00CFEB"/>
+<stop offset="0.51" stop-color="#5AEBFF"/>
+<stop offset="1" stop-color="#00B6CF"/>
+</linearGradient>
+</defs>
+</svg>

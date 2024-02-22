@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	color: #fff;
+	/* background: linear-gradient(180deg, #252525 0%, #000 100%); */
+	font-family: "Inter", sans-serif;
+	font-family: "Syne", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+	.font-inter {
+		font-size: 0.9rem;
+	}
+
+	.no-word-wrap {
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 1301px) {
+	.font-inter {
+		font-size: 1rem;
+	}
+}
