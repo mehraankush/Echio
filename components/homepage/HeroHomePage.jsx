@@ -43,7 +43,7 @@ export default function HeroHomePage() {
 				<div className="flex md:flex-row justify-center items-center">
 					<Image src={circle} alt="circle" className="" />
 				</div>
-				<div className="mx-4 lg:relative bottom-[423px] left-[130px] max-w-[21.375rem] gap-8 flex flex-col items-center justify-center text-center">
+				<div className="mx-4 lg:relative bottom-[423px] left-[130px] max-w-[21.75rem] gap-8 flex flex-col items-center justify-center text-center">
 					<p className="text-[#eee] font-syne text-lg leading-8 mt-6 lg:mt-0 text-center">
 						Dive into Echio’s AI-driven ecosystem and explore the intriguing
 						possibilities lying with redefined influencer experience for all.
@@ -58,13 +58,13 @@ export default function HeroHomePage() {
 					</div>
 				</div>
 				<div className="flex justify-center items-center overflow-hidden">
-					<Image src={redbull} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={booyah} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={wings} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={booyah} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={sadar} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={qlan} alt="logo" className="w-fit h-fit lg:w-full" />
-					<Image src={loco} alt="logo" className="w-fit h-fit lg:w-full" />
+					<Image src={redbull} alt="logo" className="w-fit h-fit" />
+					<Image src={booyah} alt="logo" className="w-fit h-fit" />
+					<Image src={wings} alt="logo" className="w-fit h-fit" />
+					<Image src={booyah} alt="logo" className="w-fit h-fit" />
+					<Image src={sadar} alt="logo" className="w-fit h-fit" />
+					<Image src={qlan} alt="logo" className="w-fit h-fit" />
+					<Image src={loco} alt="logo" className="w-fit h-fit" />
 				</div>
 			</div>
 		</div>

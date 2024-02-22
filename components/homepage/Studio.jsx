@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { studio } from "@/public/index";
+import { studio, studioHomeImageOne, studioHomeImageTwo } from "@/public/index";
 
 export default function Studio() {
 	return (
@@ -23,8 +23,18 @@ export default function Studio() {
 						special catering to brand’s advertising requirements
 					</p>
 				</div>
-				<div className="flex flex-col md:flex-row justify-center items-center gap-20">
-					<Image src={studio} alt="studio-image" />
+				<div className="flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-20">
+					<Image src={studio} alt="studio-image" className="hidden md:block" />
+					<Image
+						src={studioHomeImageOne}
+						alt="circle"
+						className="block md:hidden"
+					/>
+					<Image
+						src={studioHomeImageTwo}
+						alt="circle"
+						className="block md:hidden"
+					/>
 				</div>
 			</div>
 		</div>

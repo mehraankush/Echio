@@ -24,7 +24,11 @@ import influencerTwo from "./influencerTwo.svg";
 import studio from "./Studio.png";
 import studioone from "./studioone.png";
 import studiotwo from "./studiotwo.png";
+import studioHomeImageOne from "./studioHomeImage.png";
+import studioHomeImageTwo from "./studioHomeImageTwo.png";
 import brandImage from "./brand-image.png";
+import brandProductOne from "./brandProductOne.png";
+import brandProductTwo from "./brandProductTwo.png";
 import linkedinBlue from "./linkedin-blue.svg";
 import instagramBlue from "./instagram-blue.svg";
 import quoraBlue from "./quora-blue.svg";
@@ -108,6 +112,7 @@ import brandImageHome from "./brandImageHome.png";
 import monetizationWhiteMobile from "./monetizationWhiteMobile.png";
 import brandProductandShoot from "./brandProductandShoot.png";
 import mobileCards from "./multi-cards-mobile.png";
+import serviceMobile from "./servicesSecondNew.png";
 
 export {
 	echio,
@@ -220,4 +225,9 @@ export {
 	studioone,
 	studiotwo,
 	mobileCards,
+	studioHomeImageOne,
+	studioHomeImageTwo,
+	brandProductOne,
+	brandProductTwo,
+	serviceMobile,
 };

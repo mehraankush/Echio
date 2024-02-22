@@ -12,7 +12,7 @@ import {
 	serviceNewFirst,
 	serviceNewSecond,
 	studioForBrands,
-	studiotwo,
+	serviceMobile,
 } from "@/public/index";
 import Navbar from "../Navbar";
 
@@ -91,7 +91,7 @@ export default function HeroStudioPage() {
             border-image-slice: 1;
         }`}
 				</style>
-				<div className="m-8 lg:m-0 lg:mt-[6.15rem] lg:mx-20 lg:mb-10">
+				<div className="m-6 lg:m-0 lg:mt-[6.15rem] lg:mx-20 lg:mb-10">
 					<div className="lg:flex flex-col justify-center items-center gap-8 lg:mb-10">
 						<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#19C2D9] to-[#C8F8FF] bg-clip-text">
 							Services we offer
@@ -126,7 +126,12 @@ export default function HeroStudioPage() {
 					<Image
 						src={serviceNewSecond}
 						alt="studio-image-2"
-						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[40rem] lg:h-[41.75rem]"
+						className="hidden md:block px-8 my-6 lg:px-0 lg:my-0 lg:w-[40rem] lg:h-[41.75rem]"
+					/>
+					<Image
+						src={serviceMobile}
+						alt="studio-image-2"
+						className="block w-full h-full md:hidden"
 					/>
 					<div className="inline-block">
 						{cardComponents.slice(4, 7).map((index) => (

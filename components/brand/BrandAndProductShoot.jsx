@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import {
 	brandProductandShoot,
+	brandProductOne,
+	brandProductTwo,
 	influencerOne,
 	influencerTwo,
 	monetization,
@@ -73,8 +75,22 @@ export default function BrandAndProductShoot() {
 						needs.
 					</p>
 				</div>
-				<div className="lg:flex justify-center items-center gap-20">
-					<Image src={brandProductandShoot} alt="studio-image-1" />
+				<div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
+					<Image
+						src={brandProductandShoot}
+						alt="studio-image-1"
+						className="hidden md:block"
+					/>
+					<Image
+						src={brandProductOne}
+						alt="studio-image-1"
+						className="block md:hidden"
+					/>
+					<Image
+						src={brandProductTwo}
+						alt="studio-image-1"
+						className="block md:hidden"
+					/>
 				</div>
 			</div>
 		</div>
