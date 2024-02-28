@@ -6,7 +6,7 @@ const CardsSmall = () => {
 		const script = document.createElement("script");
 		script.innerHTML = `
       (function(){
-				var due_date = new Date('2024-02-23 ');
+				var due_date = new Date('2024-03-05');
 				var days_deadline = 2;
 				
 				var current_date = new Date();
