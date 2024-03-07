@@ -1,4 +1,9 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import {
 	brandProductandShoot,
@@ -11,11 +16,34 @@ import {
 import { Button } from "../others/Button";
 
 export default function BrandAndProductShoot() {
+	const controlsOne = useAnimation();
+
+	const [refOne, inViewOne] = useInView({
+		triggerOnce: true,
+		rootMargin: "0px", // Adjust the rootMargin as needed
+	});
+
+	useEffect(() => {
+		if (inViewOne) {
+			controlsOne.start({
+				scale: [1.25, 0.7, 0.9], // Scale down, then back to original
+				transition: { duration: 1.5, ease: "easeInOut" },
+			});
+		}
+	}, [controlsOne, inViewOne]);
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<div className="bg-white text-black">
 			<div className="mt-20">
 				<div className="lg:flex justify-center items-center gap-10 lg:my-10 lg:ml-20 lg:mr-[6.5rem]">
-					<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
+					<div
+						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+						data-aos="fade-up-right"
+					>
 						<Image src={influencerOne} alt="mobile-image" />
 						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
 							<Image src={monetization} alt="mobile-image" />
@@ -33,7 +61,10 @@ export default function BrandAndProductShoot() {
 					</div>
 				</div>
 				<div className="lg:flex flex-row-reverse justify-center items-center gap-10 lg:my-10 lg:ml-20 lg:mr-[6.5rem]">
-					<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
+					<div
+						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+						data-aos="fade-up-left"
+					>
 						<Image src={influencerTwo} alt="mobile-image" />
 						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
 							<Image src={monetization} alt="mobile-image" />
@@ -76,11 +107,15 @@ export default function BrandAndProductShoot() {
 					</p>
 				</div>
 				<div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
-					<Image
-						src={brandProductandShoot}
-						alt="studio-image-1"
+					<motion.div
+						data-aos="zoom-in-up"
+						ref={refOne}
+						animate={controlsOne}
+						initial={{ scale: 1 }}
 						className="hidden md:block"
-					/>
+					>
+						<Image src={brandProductandShoot} alt="studio-image-1" />
+					</motion.div>
 					<Image
 						src={brandProductOne}
 						alt="studio-image-1"

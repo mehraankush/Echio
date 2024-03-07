@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "../Navbar";
 import Image from "next/image";
 import {
@@ -12,6 +15,10 @@ import {
 } from "@/public/index";
 
 export default function HeroBrandPage() {
+	useEffect(() => {
+		AOS.init();
+	});
+
 	return (
 		<div
 			style={{
@@ -50,7 +57,7 @@ export default function HeroBrandPage() {
 				</div>
 				<div className="lg:mb-20">
 					<div className="flex justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]">
-						<div className="hidden lg:block">
+						<div className="hidden lg:block" data-aos="fade-up-right">
 							<Image src={influencerOne} alt="brand-image" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
@@ -68,7 +75,10 @@ export default function HeroBrandPage() {
 						</div>
 					</div>
 					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]">
-						<div className="lg:w-[34.25rem] lg:h-[36.1875rem]">
+						<div
+							className="lg:w-[34.25rem] lg:h-[36.1875rem]"
+							data-aos="fade-up-left"
+						>
 							<Image src={influencerTwo} alt="mobile-image" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
