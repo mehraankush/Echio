@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { agencyPage } from "@/public/index";
 import { Button } from "../others/Button";
@@ -14,7 +14,10 @@ export default function Agency() {
 			}}
 		>
 			<div className="flex flex-col md:flex-row justify-center items-center gap-24 mx-4 my-8 md:my-[16rem]">
-				<div className="hidden lg:flex justify-center items-center overflow-hidden px-4 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[22rem]">
+				<div
+					className="hidden lg:flex justify-center items-center overflow-hidden px-4 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[22rem]"
+					data-aos="fade-up-right"
+				>
 					<Image src={agencyPage} alt="graph" className="" />
 				</div>
 				<div className="flex flex-start flex-col">

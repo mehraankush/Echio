@@ -1,10 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { mobileCards } from "@/public/index";
 import { MultiCards } from "../others/MultiCards";
 import { Button } from "../others/Button";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function BrandComponent() {
+	useEffect(() => {
+		AOS.init();
+	});
+
 	return (
 		<div
 			className=""
@@ -27,7 +34,11 @@ export default function BrandComponent() {
 					<div className="md:hidden">
 						{" "}
 						{/* Hide on md and larger screens */}
-						<Image src={mobileCards} alt="mobile-image" />
+						<Image
+							src={mobileCards}
+							alt="mobile-image"
+							data-aos="fade-up-right"
+						/>
 					</div>
 					<div className="flex flex-col md:flex-row gap-6">
 						<Button
@@ -43,15 +54,9 @@ export default function BrandComponent() {
 						</button>
 					</div>
 				</div>
-				<div className="hidden md:block">
+				<div className="hidden md:block" data-aos="fade-right">
 					{" "}
-					<MultiCards
-						collage="default"
-						divClassName="!border-[unset] !rounded-[unset] ![border-image:unset] !border-[unset] !bg-[unset]"
-						divClassNameOverride="!border-[unset] !rounded-[unset] ![border-image:unset] !border-[unset] !bg-[unset]"
-						rectangleClassName="!h-[333px] !rounded-[unset] !object-cover !left-[124px] !bg-[unset] !w-[410px] !top-[36px]"
-						rectangleClassNameOverride="!border-[unset] !rounded-[unset] !object-cover ![border-image:unset] !border-[unset] !bg-[unset]"
-					/>
+					<MultiCards />
 				</div>
 			</div>
 		</div>
