@@ -2,14 +2,15 @@ import React from "react";
 import Image from "next/image";
 import { arrowRight, brandImage } from "@/public/index";
 
+
 export default function TopFeatures() {
 	return (
 		<div className="">
 			<h1 className="text-center text-transparent font-syne text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-10">
 				Our Top Features
 			</h1>
-			<div className="mb-20">
-				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
+			<div className="mb-20" ref={container}>
+				<div className="feature flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
 					<div className="flex">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
@@ -24,7 +25,7 @@ export default function TopFeatures() {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-row-reverse justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
+				<div className="flex flex-row-reverse justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
 					<div className="flex">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
@@ -40,7 +41,7 @@ export default function TopFeatures() {
 						</p>
 					</div>
 				</div>
-				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
+				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
 					<div className="flex">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
@@ -55,7 +56,7 @@ export default function TopFeatures() {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-row-reverse justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
+				<div className="flex flex-row-reverse justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
 					<div className="flex">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
@@ -71,7 +72,7 @@ export default function TopFeatures() {
 						</p>
 					</div>
 				</div>
-				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]">
+				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
 					<div className="flex">
 						<Image src={brandImage} alt="brand-image" />
 					</div>

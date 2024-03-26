@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../Navbar";
@@ -14,10 +14,50 @@ import {
 	brandHero,
 } from "@/public/index";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function HeroBrandPage() {
+	const container = useRef();
+
 	useEffect(() => {
 		AOS.init();
 	});
+
+
+
+	useGSAP(() => {
+		gsap.to(".feature1",
+			{
+				scrollTrigger: {
+					trigger: '.feature1',
+					start: 'top 10%',
+					end: '340% 10%',
+					scrub: true,
+					markers: true,
+					pin: true,
+					pinSpacing: false
+				}
+
+			});
+
+		gsap.to(".feature2",
+			{
+				scrollTrigger: {
+					trigger: '.feature2',
+					start: 'top 10%',
+					end: '230% 10%',
+					scrub: true,
+					markers: true,
+					pin: true,
+					pinSpacing: false
+				}
+
+			});
+	}, { scope: container })
 
 	return (
 		<div
@@ -27,6 +67,7 @@ export default function HeroBrandPage() {
 				backgroundPosition: "top",
 			}}
 		>
+
 			<Navbar />
 			<div className="m-4 block md:hidden">
 				Home /{" "}
@@ -48,20 +89,24 @@ export default function HeroBrandPage() {
 					</div>
 				</div>
 			</div>
+
 			<div className="">
 				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-10">
 					Our Top Features
 				</h1>
-				<div className="px-8 my-6 md:hidden">
+
+				<div className="lg:mb-20 bg-black" ref={container}>
+				{/* <div className="px-8 my-6 md:hidden">
 					<Image src={influencerOne} alt="brand-image" />
-				</div>
-				<div className="lg:mb-20">
-					<div className="flex justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]">
-						<div className="hidden lg:block" data-aos="fade-up-right">
+				</div> */}
+
+					<div className="flex flex-col md:flex-row justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem] feature1 z-[0]">
+						<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up-right">
 							<Image src={influencerOne} alt="brand-image" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
 							</div>
+
 						</div>
 						<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
 							<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
@@ -74,7 +119,8 @@ export default function HeroBrandPage() {
 							</p>
 						</div>
 					</div>
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]">
+
+					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]  feature2 z-[20] bg-black ">
 						<div
 							className="lg:w-[34.25rem] lg:h-[36.1875rem]"
 							data-aos="fade-up-left"
@@ -84,7 +130,7 @@ export default function HeroBrandPage() {
 								<Image src={monetizationWhite} alt="mobile-image" />
 							</div>
 						</div>
-						<div className="lg:flex flex-col mx-4 my-8 lg:px-10 lg:py-20">
+						<div className="lg:flex flex-col mx-4 my-8 lg:px-10 lg:py-20 z-[100]">
 							<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
 								Campaign Management
 							</h1>
