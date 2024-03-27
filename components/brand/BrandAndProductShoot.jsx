@@ -21,6 +21,7 @@ gsap.registerPlugin(useGSAP);
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function BrandAndProductShoot() {
 	const controlsOne = useAnimation();
 	const container = useRef();
@@ -44,82 +45,125 @@ export default function BrandAndProductShoot() {
 	}, []);
 
 	useGSAP(() => {
-		gsap.to(".feature3",
+		gsap.to(container.current, {
+			scrollTrigger: {
+				trigger: container.current,
+				start: 'top 20%',
+				end: 'top 10%',
+				scrub: true,
+				// markers: true,
+				pinSpacing: false,
+
+			},
+			opacity: 1,
+			backgroundColor: 'white'
+		})
+	})
+
+
+
+
+
+	useGSAP(() => {
+		gsap.to('.feature3', {
+			scrollTrigger: {
+				trigger: '.feature3',
+				start: 'top 20%',
+				end: 'top 10%',
+				scrub: true,
+				// markers: true,
+				pinSpacing: false,
+
+			},
+			opacity: 1,
+		})
+
+		let tl1 = gsap.timeline(
 			{
 				scrollTrigger: {
 					trigger: '.feature3',
 					start: 'top 10%',
-					end: '115% 10%',
+					end: 'bottom 10%',
 					scrub: true,
-					markers: true,
+					// markers: true,
 					pin: true,
 					pinSpacing: false
 				}
 
 			});
+
+		tl1.to('.feature3', {
+			opacity: 0
+		})
+
 		gsap.to(".feature4",
 			{
 				scrollTrigger: {
 					trigger: '.feature4',
-					start: 'top 10%',
+					start: 'top 20%',
 					end: 'top 10%',
 					scrub: true,
-					markers: true,
-					pin: true,
-					pinSpacing: false
-				}
+					// markers: true,
+					// pin: true,
+					// pinSpacing: false
+				},
+				opacity: 1
 
 			});
+
 	}, { scope: container })
 
 	return (
-		<div className="bg-white text-black z-[20]">
-			<div className="mt-20" ref={container}>
-				<div className="lg:flex justify-center items-center gap-10 lg:my-20 lg:ml-20 lg:mr-[6.5rem] feature3 ">
-					<div
-						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
-						data-aos="fade-up-right"
-					>
-						<Image src={influencerOne} alt="mobile-image" />
-						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
-							<Image src={monetization} alt="mobile-image" />
-						</div>
-					</div>
-					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
-						<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-							Intelligent Campaign Planning and recommender systems
-						</h1>
-						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
-							legitimate and active creators to reach out with amazing audience
-							targeting, with help of precise detailing and filtering with our
-							tech.
-						</p>
-					</div>
-				</div>
-				<div className="lg:flex justify-center items-center gap-10 py-10 lg:my-10 lg:ml-10 lg:mr-[6.5rem] feature4 bg-white">
-					<div
-						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
-						data-aos="fade-up-right"
-					>
-						<Image src={influencerTwo} alt="mobile-image" />
-						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
-							<Image src={monetization} alt="mobile-image" />
-						</div>
-					</div>
-					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
-						<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-							Intelligent Campaign Planning and recommender systems
-						</h1>
-						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
-							legitimate and active creators to reach out with amazing audience
-							targeting, with help of precise detailing and filtering with our
-							tech.
-						</p>
-					</div>
-				</div>
+		<div 
+		>
 
+			<div className=" text-black  bg-white">
+				<div className="pt-20 bg-black " ref={container}>
+					<div className="lg:flex justify-center items-center gap-10 lg:my-20 lg:ml-20 lg:mr-[6.5rem] feature3 opacity-0">
+						<div
+							className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+						>
+							<Image src={influencerOne} alt="mobile-image" />
+							<div className="hidden lg:block relative left-[176px] bottom-[87px]" data-aos="fade-up">
+								<Image src={monetization} alt="mobile-image" />
+							</div>
+						</div>
+						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
+							<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+								Intelligent Campaign Planning and recommender systems
+							</h1>
+							<p className="text-xl font-syne font-medium max-w-[34.25rem]">
+								legitimate and active creators to reach out with amazing audience
+								targeting, with help of precise detailing and filtering with our
+								tech.
+							</p>
+						</div>
+					</div>
+					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 py-20 lg:py-28 lg:ml-10 lg:mr-[6.5rem] feature4 bg-white opacity-0">
+						<div
+							className="px-8 py-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
+							data-aos="fade-up"
+						>
+							<Image src={influencerTwo} alt="mobile-image" />
+							<div className="hidden lg:block relative left-[176px] bottom-[87px]">
+								<Image src={monetization} alt="mobile-image" />
+							</div>
+						</div>
+						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
+							<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+								Intelligent Campaign Planning and recommender systems
+							</h1>
+							<p className="text-xl font-syne font-medium max-w-[34.25rem]">
+								legitimate and active creators to reach out with amazing audience
+								targeting, with help of precise detailing and filtering with our
+								tech.
+							</p>
+						</div>
+					</div>
+
+				</div>
 			</div>
-			<div className="lg:flex justify-center items-center gap-10 lg:mb-[5.25rem] lg:mt-[4.75rem] lg:bg-[#090B0B] text-white p-8">
+			<div className="lg:flex justify-center items-center bg-white lg:bg-[#090B0B] text-white p-8">
 				<Button
 					button="default"
 					className="w-full ![border-image:unset] !bg-white !text-black lg:w-[12.25rem] h-[3.75rem]"
@@ -132,7 +176,7 @@ export default function BrandAndProductShoot() {
 					Login
 				</button>
 			</div>
-			<div className="mx-4 my-8 lg:mt-[5.25rem] lg:mx-20 lg:mb-[10rem]">
+			<div className="px-4 py-8 lg:pt-[5.25rem] lg:px-20 lg:pb-[10rem] bg-white">
 				<div className="lg:flex flex-col justify-center items-center gap-8 lg:mb-10">
 					<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 						Brand & Product Shoot
@@ -166,5 +210,7 @@ export default function BrandAndProductShoot() {
 				</div>
 			</div>
 		</div>
+
+
 	);
 }

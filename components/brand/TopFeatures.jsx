@@ -42,7 +42,7 @@ export default function TopFeatures() {
 					</div>
 				</div>
 				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
-					<div className="flex">
+					<div className="flex" data-aos="fade-up">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
 					<div className="flex flex-col px-10 py-20">
@@ -57,7 +57,7 @@ export default function TopFeatures() {
 					</div>
 				</div>
 				<div className="flex flex-row-reverse justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
-					<div className="flex">
+					<div className="flex" data-aos="fade-up">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
 					<div className="flex flex-col px-10 py-20">
@@ -73,7 +73,7 @@ export default function TopFeatures() {
 					</div>
 				</div>
 				<div className="flex justify-center items-center gap-10 my-10 ml-20 mr-[6.5rem]  feature">
-					<div className="flex">
+					<div className="flex" data-aos="fade-up">
 						<Image src={brandImage} alt="brand-image" />
 					</div>
 					<div className="flex flex-col px-10 py-20">

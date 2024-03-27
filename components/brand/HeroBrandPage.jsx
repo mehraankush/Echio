@@ -20,6 +20,7 @@ gsap.registerPlugin(useGSAP);
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function HeroBrandPage() {
 	const container = useRef();
 
@@ -28,35 +29,73 @@ export default function HeroBrandPage() {
 	});
 
 
+	useGSAP(()=>{
+		let tlhero = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.hero-container',
+				start: 'top 70%',
+				end: 'bottom 100%',
+				scrub: true,
+				// markers: true,
+			
+			}
+				
+		})
+		tlhero.to('.hero-image-brand',{
+			transform: 'rotateX(0deg)',
+			transformOrigin: 'bottom',
+			
+
+		})
+
+	},[])
+
 
 	useGSAP(() => {
-		gsap.to(".feature1",
-			{
+		let tl1 = gsap.timeline({
 				scrollTrigger: {
 					trigger: '.feature1',
 					start: 'top 10%',
-					end: '340% 10%',
+					end: 'bottom 10%',
 					scrub: true,
-					markers: true,
+					// markers: true,
 					pin: true,
 					pinSpacing: false
 				}
-
 			});
+		tl1.to('.feature1',{
+			opacity: 0
+		});
 
-		gsap.to(".feature2",
+		gsap.to('.feature2',{
+			scrollTrigger: {
+				trigger: '.feature2',
+				start: 'top 20%',
+				end: 'top 10%',
+				scrub: true,
+				// markers: true,
+				pinSpacing: false,
+				
+			},
+			opacity: 1,
+		})
+
+		let tl2 = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.feature2',
+				start: 'top 10%',
+				end: '140% 0%',
+				scrub: true,
+				// markers: true,
+				pin: true,
+				pinSpacing: false
+			} 
+		})
+		tl2.to(".feature2",
 			{
-				scrollTrigger: {
-					trigger: '.feature2',
-					start: 'top 10%',
-					end: '230% 10%',
-					scrub: true,
-					markers: true,
-					pin: true,
-					pinSpacing: false
-				}
-
+				opacity: 0,
 			});
+
 	}, { scope: container })
 
 	return (
@@ -73,7 +112,12 @@ export default function HeroBrandPage() {
 				Home /{" "}
 				<span className="text-center text-[#43DEF3] font-syne mb-6">Brand</span>{" "}
 			</div>
-			<div className="">
+			<div className=""
+				      style={{
+						transformStyle: "preserve-3d",
+						perspective: '5000px'
+					  }}
+			>
 				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 					AI Driven
 				</h1>
@@ -83,9 +127,12 @@ export default function HeroBrandPage() {
 				<p className="text-[#eee] text-center font-medium font-inter text-xl m-4">
 					Taking care of your requirements by driving it with AI
 				</p>
-				<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center">
-					<div className="lg:w-[80rem] lg:h-[51.25rem] rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25">
-						<Image src={brandHero} alt="hero-image-brand" />
+
+
+				<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{transformStyle: "preserve-3d",
+						perspective: '5000px'}}>
+					<div className="lg:w-[80rem] lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{transform: 'rotateX(45deg) scale(0.9)'}}>
+						<Image src={brandHero} alt="hero-image-brand" className="h-full w-full" />
 					</div>
 				</div>
 			</div>
@@ -95,13 +142,13 @@ export default function HeroBrandPage() {
 					Our Top Features
 				</h1>
 
-				<div className="lg:mb-20 bg-black" ref={container}>
+				<div className="lg:mb-20 " ref={container}>
 				{/* <div className="px-8 my-6 md:hidden">
 					<Image src={influencerOne} alt="brand-image" />
 				</div> */}
 
 					<div className="flex flex-col md:flex-row justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem] feature1 z-[0]">
-						<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up-right">
+						<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up">
 							<Image src={influencerOne} alt="brand-image" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
@@ -120,7 +167,7 @@ export default function HeroBrandPage() {
 						</div>
 					</div>
 
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]  feature2 z-[20] bg-black ">
+					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 py-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem]  feature2 z-[20] opacity-0">
 						<div
 							className="lg:w-[34.25rem] lg:h-[36.1875rem]"
 							data-aos="fade-up-left"
