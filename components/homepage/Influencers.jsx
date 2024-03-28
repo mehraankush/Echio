@@ -47,7 +47,7 @@ export default function Influencers() {
 		<div className="bg-white text-black">
 			<div className="mx-6 my-10 md:mx-[5rem] md:mt-[9.75rem] md:mb-24 flex flex-col justify-center items-center">
 				<div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
-					<div className="flex flex-col">
+					<div className="flex flex-col" data-aos="fade-left">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
 							Influencers
 						</h1>
@@ -115,7 +115,7 @@ export default function Influencers() {
 
 			<div className="mx-6 my-10 md:mx-[5rem] md:mt-[9.75rem] md:mb-24 flex flex-col justify-center items-center">
 				<div className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-20">
-					<div className="flex flex-col">
+					<div className="flex flex-col" data-aos="fade-right">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
 							Our Brand
 						</h1>
