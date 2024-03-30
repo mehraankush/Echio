@@ -28,7 +28,7 @@ export default function HeroHomePage() {
 		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.container',
-				start: '-35px 0%',
+				start: 'top 0%',
 				end: 'bottom 0%',
 				pin: true,
 				// markers: true, 
@@ -95,9 +95,10 @@ export default function HeroHomePage() {
 					<Image src={loco} alt="logo" />
 				</div>
 			</marquee>
+			
 			</motion.div>
 
-			<div className="min-h-screen  container absolute top-9 ">
+			<div className="min-h-screen  container absolute top-0 left-0 ">
 				<Navbar />
 				<div className="ml-6 mb-3.5 block md:hidden">
 					Home /{" "}
@@ -115,11 +116,6 @@ export default function HeroHomePage() {
 					<h1 className="hidden md:block text-center text-transparent font-syne text-[2rem] md:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text ">
 						Viral.
 					</h1>
-
-
-
-
-
 				</div>
 
 

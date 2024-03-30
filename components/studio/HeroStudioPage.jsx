@@ -105,7 +105,7 @@ export default function HeroStudioPage() {
 						transformStyle: "preserve-3d",
 						perspective: '5000px'
 					}}>
-						<div className="lg:w-[80rem] lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{ transform: 'rotateX(90deg) ' }}>
+						<div className=" lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{ transform: 'rotateX(90deg) ' }}>
 						<Image src={studioHeroImage} alt="hero-image" className="h-full w-full"/>
 						</div>
 					</div>

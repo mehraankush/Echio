@@ -34,11 +34,10 @@ export default function AppFeaturesWhite() {
 
 
 	return (
-		<SmoothScroll>
+		
 
-		<div className="bg-white"
-		>
-			<div className=" bg-black bg-transparent text-[#090B0B]" ref={container}>
+
+			<div className="  text-[#090B0B] -z-[10]  " ref={container}>
 				<Parallax>
 					<div className="flex flex-col lg:flex-row justify-center items-center  h-screen lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
@@ -74,8 +73,8 @@ export default function AppFeaturesWhite() {
 				</Parallax>
 
 			</div>
-		</div>
-		</SmoothScroll>
+		
+		
 
 	);
 }
