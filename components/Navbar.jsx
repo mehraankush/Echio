@@ -39,7 +39,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="flex justify-between items-center h-8 mx-4 my-6 md:mx-[5rem] p-2 md:mt-[2rem] md:mb-14 ">
+		<div className="flex justify-between items-center h-16 mx-4 py-6 md:mx-[5rem] p-2 md:pt-[2rem] md:mb-14">
 			<span className="lg:px-2 md:px-2 py-3 mx-3">
 				<Image src={echioNav} alt="logo" className="" />
 			</span>

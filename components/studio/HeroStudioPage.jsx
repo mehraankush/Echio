@@ -15,8 +15,31 @@ import {
 	serviceMobile,
 } from "@/public/index";
 import Navbar from "../Navbar";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 export default function HeroStudioPage() {
+
+	useGSAP(() => {
+		let tlhero = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.hero-container',
+				start: 'top 55%',
+				end: 'bottom 100%',
+				scrub: true,
+				// markers: true,
+
+			}
+
+		})
+		tlhero.to('.hero-image-brand', {
+			transform: 'rotateX(0deg)',
+			transformOrigin: 'bottom',
+		})
+
+	}, [])
 	const cardComponents = [
 		{
 			id: 0,
@@ -78,9 +101,12 @@ export default function HeroStudioPage() {
 					<p className="text-left mb-5 text-[#eee] lg:text-center font-medium font-inter text-xl">
 						At Mayur Vihar Phase-1, Delhi-NCR
 					</p>
-					<div className="lg:flex justify-center items-center lg:mt-10 lg:mx-20 lg:mb-[12.5rem]">
-						<div className="rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25">
-							<Image src={studioHeroImage} alt="hero-image" />
+					<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{
+						transformStyle: "preserve-3d",
+						perspective: '5000px'
+					}}>
+						<div className="lg:w-[80rem] lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{ transform: 'rotateX(90deg) ' }}>
+						<Image src={studioHeroImage} alt="hero-image" className="h-full w-full"/>
 						</div>
 					</div>
 				</div>

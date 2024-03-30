@@ -54,7 +54,7 @@ export default function BrandComponent() {
 						</button>
 					</div>
 				</div>
-				<div className="hidden md:block" data-aos="fade-right">
+				<div className="hidden md:block">
 					{" "}
 					<MultiCards />
 				</div>

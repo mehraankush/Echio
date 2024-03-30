@@ -24,7 +24,7 @@ export default function HeroAgencyPage() {
 				start: 'top 70%',
 				end: 'bottom 100%',
 				scrub: true,
-				markers: true,
+				// markers: true,
 
 			}
 
@@ -40,8 +40,8 @@ export default function HeroAgencyPage() {
 		gsap.to('.feature1',{
 			scrollTrigger:{
 				trigger: '.feature1',
-				start: 'top 50px',
-				end: 'bottom 50px',
+				start: 'top 0%',
+				end: 'bottom 0%',
 				scrub: true,
                 // markers: true,
                 pin: true,
@@ -96,10 +96,10 @@ export default function HeroAgencyPage() {
 				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-10">
 					App Features
 				</h1>
-				<div className="lg:mb-24 lg:pb-28" ref={container}>
-					<div className="lg:flex justify-center items-center gap-14 lg:my-10 lg:ml-20 lg:mr-[6.5rem] feature1">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={agencyMonetization} alt="mobile-image" />
+				<div className="" ref={container}>
+					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1">
+						<div className="px-8 lg:w-[36.25rem] lg:h-[70vh]">
+							<Image src={agencyMonetization} alt="mobile-image" className="h-full w-auto"/>
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
 							</div>
@@ -111,17 +111,18 @@ export default function HeroAgencyPage() {
 							</p>
 						</div>
 					</div>
+
 					<Parallax>
 
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-32 lg:py-10 lg:ml-20 lg:mr-[6.5rem]">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={agencyLower} alt="mobile-image" />
+					<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen">
+						<div className="px-8 lg:w-[36.25rem] lg:h-[70vh]">
+							<Image src={agencyLower} alt="mobile-image" className="h-full w-auto"/>
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={monetizationWhite} alt="mobile-image" />
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
+							<p className="text-2xl lg:text-right font-syne font-medium max-w-[39.25rem]">
 								Earn commissions when you influencers deliver work for brands
 								not associated with you
 							</p>

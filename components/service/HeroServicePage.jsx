@@ -1,5 +1,6 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	serviceHeroMockup,
 	serviceChat,
@@ -7,8 +8,13 @@ import {
 	monetizationWhiteMobile,
 } from "@/public/index";
 import Navbar from "../Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function HeroServicePage() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div
 			style={{
@@ -45,8 +51,8 @@ export default function HeroServicePage() {
 					provider on our platform, unlocking new opportunities for growth and
 					recognition.
 				</p>
-				<div className="lg:mt-[10rem] lg:mx-20 lg:mb-[12.5rem] hidden md:flex justify-center items-center overflow-hidden">
-					<div className="">
+				<div className="lg:mt-[10rem] lg:mx-20 lg:mb-[12.5rem] hidden md:flex justify-center items-center overflow-hidden " data-aos='fade-right' data-aos-duration='1000'>
+					<div className="" >
 						<Image src={serviceHeroMockup} alt="app-image" />
 					</div>
 				</div>

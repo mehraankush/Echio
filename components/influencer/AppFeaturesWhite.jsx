@@ -38,11 +38,11 @@ export default function AppFeaturesWhite() {
 
 		<div className="bg-white"
 		>
-			<div className="lg:mt-24 lg:pb-28 bg-black bg-transparent text-[#090B0B]" ref={container}>
+			<div className=" bg-black bg-transparent text-[#090B0B]" ref={container}>
 				<Parallax>
-					<div className="lg:flex justify-center items-center gap-14 lg:py-10 lg:ml-20 lg:mr-[6.5rem]">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={chat} alt="mobile-image" />
+					<div className="flex flex-col lg:flex-row justify-center items-center  h-screen lg:mx-[9.5rem]">
+						<div className="px-8 lg:px-0  lg:h-[70vh]">
+							<Image src={chat} alt="mobile-image" className="h-full w-auto"/>
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={chatPointer} alt="mobile-image" />
 							</div>
@@ -57,15 +57,15 @@ export default function AppFeaturesWhite() {
 				</Parallax>
 
 				<Parallax>
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-24 lg:py-10 lg:ml-20 lg:mr-[6.5rem] ">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={chat} alt="mobile-image" />
+					<div className="flex flex-col  lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mr-[9.5rem] ">
+						<div className="px-8 lg:px-0  lg:h-[70vh]">
+							<Image src={chat} alt="mobile-image" className="h-full w-auto"/>
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={connectWithOthers} alt="mobile-image" />
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-5 lg:py-20">
-							<p className="text-2xl font-syne font-medium max-w-[42.25rem]">
+							<p className="text-2xl text-right font-syne font-medium max-w-[42.25rem]">
 								Content Solutions to have creative content ideas and hacks to
 								optimize the quality of the content
 							</p>

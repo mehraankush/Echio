@@ -11,6 +11,14 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 const imageVariants = {
 	hover: {
 		rotate: 360,
@@ -43,11 +51,28 @@ export default function Influencers() {
 		AOS.init();
 	});
 
+	useGSAP(()=>{
+		gsap.to('.feature', {
+			scrollTrigger: {
+				trigger: '.feature',
+				start: 'top 0%',
+				end: 'bottom 0%',
+				pin: true,
+				pinSpacing: false,
+				scrub: true,
+				// markers: true
+			}
+		})
+
+	},[])
+
+
+
 	return (
-		<div className="bg-white text-black">
-			<div className="mx-6 my-10 md:mx-[5rem] md:mt-[9.75rem] md:mb-24 flex flex-col justify-center items-center">
+		<div className="bg-white text-black flex flex-col ">
+			<div className="relative mx-6  md:mx-[5rem] h-screen flex flex-col justify-center items-center feature z-[1]">
 				<div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
-					<div className="flex flex-col" data-aos="fade-left">
+					<div className="flex flex-col">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
 							Influencers
 						</h1>
@@ -56,7 +81,7 @@ export default function Influencers() {
 							data-aos="flip-up"
 						>
 							<motion.div
-								variants={imageVariants}
+								// variants={imageVariants}
 								whileHover="hover"
 								whileTap="hover"
 								whileNotHover="whileNotHover"
@@ -95,10 +120,10 @@ export default function Influencers() {
 					</div>
 					<div
 						className="hidden md:flex md:w-[34.25rem] md:h-fit"
-						data-aos="fade-left"
+						data-aos="fade-up"
 					>
 						<motion.div
-							variants={imageVariants}
+							// variants={imageVariants}
 							whileHover="hover"
 							whileTap="hover"
 							whileNotHover="whileNotHover"
@@ -113,15 +138,15 @@ export default function Influencers() {
 				</div>
 			</div>
 
-			<div className="mx-6 my-10 md:mx-[5rem] md:mt-[9.75rem] md:mb-24 flex flex-col justify-center items-center">
+			<div className= " relative mx-6 my-10 md:mx-[5rem] h-screen  flex flex-col justify-center items-center z-[2] bg-white">
 				<div className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-20">
-					<div className="flex flex-col" data-aos="fade-right">
+					<div className="flex flex-col">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
 							Our Brand
 						</h1>
 						<div className="md:hidden mx-auto m-4">
 							<motion.div
-								variants={imageVariants}
+								// variants={imageVariants}
 								whileHover="hover"
 								whileTap="hover"
 								whileNotHover="whileNotHover"
@@ -159,10 +184,10 @@ export default function Influencers() {
 					</div>
 					<div
 						className="hidden md:block md:w-[34.25rem] md:h-[36.1875rem]"
-						data-aos="fade-right"
+						data-aos="fade-up"
 					>
 						<motion.div
-							variants={imageVariants}
+							// variants={imageVariants}
 							whileHover="hover"
 							whileTap="hover"
 							whileNotHover="whileNotHover"

@@ -54,8 +54,8 @@ export default function HeroBrandPage() {
 		gsap.to('.feature1',{
 			scrollTrigger:{
 				trigger: '.feature1',
-				start: 'top 50px',
-				end: 'bottom 50px',
+				start: 'top 0%',
+				end: 'bottom 0%',
 				scrub: true,
                 // markers: true,
                 pin: true,
@@ -122,7 +122,7 @@ export default function HeroBrandPage() {
 						<Image src={influencerOne} alt="brand-image" />
 					</div> */}
 
-						<div className="flex flex-col md:flex-row justify-center items-center gap-10 mx-4 my-10 lg:mx-0 lg:ml-20 lg:mr-[6.5rem] feature1 ">
+						<div className="flex flex-col md:flex-row justify-center items-center gap-10 h-screen feature1 ">
 							<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up">
 								<Image src={influencerOne} alt="brand-image" />
 								<div className="hidden md:block relative left-[176px] bottom-[87px]">
@@ -143,7 +143,7 @@ export default function HeroBrandPage() {
 						</div>
 
 						<Parallax>
-							<div className="lg:flex flex-row-reverse justify-center items-center gap-10 pb-10 mx-4  lg:mx-0 lg:ml-20 lg:mr-[6.5rem]">
+							<div className="flex flex-col lg:flex-row-reverse  justify-center items-center gap-10 h-screen">
 								<div
 									className="lg:w-[34.25rem] lg:h-[36.1875rem]"
 									data-aos="fade-up-left"
@@ -157,7 +157,7 @@ export default function HeroBrandPage() {
 									<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
 										Campaign Management
 									</h1>
-									<p className="text-xl font-syne font-medium max-w-[39.25rem]">
+									<p className="text-xl font-syne font-medium lg:max-w-[39.25rem]">
 										legitimate and active creators to reach out with amazing
 										audience targeting, with help of precise detailing and filtering
 										with our tech

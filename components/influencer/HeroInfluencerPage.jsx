@@ -1,9 +1,15 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { influencerHeroImage } from "@/public/index";
 import Navbar from "../Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function HeroInfluencerPage() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<div
 			style={{
@@ -31,8 +37,9 @@ export default function HeroInfluencerPage() {
 						Influencers
 					</h1>
 				</div>
-				<div className="">
+				<div className="" data-aos='fade-right' data-aos-duration='1000'>
 					<Image src={influencerHeroImage} alt="mobile-view-asset" />
+					
 				</div>
 			</div>
 		</div>

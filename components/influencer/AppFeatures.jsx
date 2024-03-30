@@ -24,8 +24,8 @@ export default function AppFeatures() {
 		let tl1 = gsap.timeline({
 				scrollTrigger: {
 					trigger: '.feature1',
-					start: 'top 10%',
-					end: 'bottom 10%',
+					start: 'top 0%',
+					end: 'bottom 0%',
 					scrub: true,
 					// markers: true,
 					pin: true,
@@ -54,9 +54,9 @@ export default function AppFeatures() {
 					App Features
 				</h1>
 				<div className="lg:mb-24 lg:pb-28" ref={container}>
-					<div className="lg:flex justify-center items-center gap-14 lg:my-10 lg:ml-20 lg:mr-[6.5rem] feature1">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={search} alt="mobile-image" />
+					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1 lg:mx-[9.5rem]">
+						<div className="px-8 lg:px-0  lg:h-[70vh]">
+							<Image src={search} alt="mobile-image"  className="h-full w-auto" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={searchPointer} alt="mobile-image" />
 							</div>
@@ -71,15 +71,15 @@ export default function AppFeatures() {
 
 					<Parallax>
 
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-14 lg:py-10 lg:ml-20 lg:mr-[6.5rem] ">
-						<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-							<Image src={networkWithOthers} alt="mobile-image" />
+					<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
+						<div className="px-8  lg:px-0   lg:h-[70vh]">
+							<Image src={networkWithOthers} alt="mobile-image" className="h-full w-auto" />
 							<div className="hidden md:block relative left-[126px] bottom-[87px]">
 								<Image src={networkWithOthersPointer} alt="mobile-image" />
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl font-syne font-medium">
+							<p className="text-2xl text-right font-syne font-medium">
 								Help the community to grow in their journey as a content creators
 							</p>
 						</div>

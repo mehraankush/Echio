@@ -14,8 +14,8 @@ const Parallax = ({ children }) => {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: container.current,
-                start: 'top 160px',
-                end: 'top 50px',
+                start: 'top 20%',
+                end: 'top 0%',
                 scrub: true,
                 // markers: true,
                 
@@ -31,8 +31,8 @@ const Parallax = ({ children }) => {
         let tl2 = gsap.timeline({
             scrollTrigger: {
                 trigger: container.current,
-                start: 'top 50px',
-                end: 'bottom 50px',
+                start: 'top 0%',
+                end: 'bottom 0%',
                 scrub: true,
                 // markers: true,
                 pin: true,

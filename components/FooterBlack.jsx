@@ -37,7 +37,7 @@ export default function FooterBlack() {
 					boxShadow: "inset 0 0 10px 10px rgba(0, 0, 0, 0.5)",
 				}}
 			>
-				<div className="lg:mx-20 lg:mt-[8.75rem] lg:mb-20 lg:px-20 lg:py-12">
+				<div className="lg:mx-20 lg:mt-[8.75rem] lg:pb-20 lg:px-20 lg:py-12">
 					<div className="flex flex-row justify-between items-center mb-16 mx-4">
 						<Image src={footerBlackLogo} alt="footer-logo" />
 						<button
