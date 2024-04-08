@@ -27,7 +27,7 @@ export default function HeroHomePage() {
 	useGSAP(() => {
 		const tl = gsap.timeline({
 			scrollTrigger: {
-				trigger: '.container',
+				trigger: '.container-',
 				start: 'top 0%',
 				end: 'bottom 0%',
 				pin: true,
@@ -43,7 +43,7 @@ export default function HeroHomePage() {
 			scrollTrigger: {
 				trigger: '.ring-light',
 				start: 'top 0%',
-				end: 'bottom 50%',
+				end: 'bottom 0%',
 				pin: true,
 				// markers: true,
 
@@ -54,7 +54,7 @@ export default function HeroHomePage() {
 
 		tl.to('.ring-image', {
 			scale: 2,
-			opacity:0
+			opacity: 0,
 		})
 
 
@@ -74,31 +74,20 @@ export default function HeroHomePage() {
 			}}
 		>
 
-			<motion.div
-				className="flex min-h-screen flex-col justify-end py-10 items-center ring-light gap-28"
+			<div
+				className="flex h-screen overflow-hidden absolute top-0 left-0  w-screen justify-center py-10 items-center ring-light gap-28"
 			>
-				
 
-				<Image src={circle} alt="circle" className="lg:h-screen w-auto scale-0 ring-image" />
-				
 
-	
-			<marquee behavior="alternate" direction="" className='' scrollamount='10'>
+				<Image src={circle} alt="circle" className="lg:h-screen w-auto scale-0 ring-image " />
 
-				<div className="hidden md:flex  justify-evenly items-center overflow-clip">
-					<Image src={booyah} alt="logo" />
-					<Image src={redbull} alt="logo" />
-					<Image src={wings} alt="logo" />
-					<Image src={booyah} alt="logo" />
-					<Image src={sadar} alt="logo" />
-					<Image src={qlan} alt="logo" />
-					<Image src={loco} alt="logo" />
-				</div>
-			</marquee>
-			
-			</motion.div>
 
-			<div className="min-h-screen  container absolute top-0 left-0 ">
+
+
+
+			</div>
+
+			<div className="min-h-screen  container- ">
 				<Navbar />
 				<div className="ml-6 mb-3.5 block md:hidden">
 					Home /{" "}
@@ -136,7 +125,29 @@ export default function HeroHomePage() {
 
 
 
+
+
 			</div>
+
+
+			<div className="w-auto">
+
+			<marquee  behavior="alternate" direction="" className='w-auto' scrollamount='10'>
+
+				<div className="hidden md:flex  justify-evenly items-center ">
+					<Image src={booyah} alt="logo" />
+					<Image src={redbull} alt="logo" />
+					<Image src={wings} alt="logo" />
+					<Image src={booyah} alt="logo" />
+					<Image src={sadar} alt="logo" />
+					<Image src={qlan} alt="logo" />
+					<Image src={loco} alt="logo" />
+				</div>
+			</marquee>
+			</div>
+			
+			
+
 		</div>
 	);
 }

@@ -90,7 +90,7 @@ export default function Influencers() {
 								animate="whileNotHover"
 								className="group"
 							>
-								<Image src={influencerone} alt="mobile-image" />
+								<Image src={influencerone}  alt="mobile-image" />
 							</motion.div>
 						</div>
 						<p className="text-lg font-syne text-left max-w-[30rem] mb-10">
@@ -138,7 +138,7 @@ export default function Influencers() {
 				</div>
 			</div>
 
-			<div className= " relative mx-6 my-10 md:mx-[5rem] h-screen  flex flex-col justify-center items-center z-[2] bg-white">
+			<div className= "relative  mx-6 md:mx-[5rem] h-screen flex flex-col justify-center items-center z-[2] bg-white">
 				<div className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-20">
 					<div className="flex flex-col">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">

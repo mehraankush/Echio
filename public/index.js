@@ -83,8 +83,9 @@ import founder from "./founder.svg";
 import agencyPage from "./agencyPage.png";
 import brandHero from "./brandHero.png";
 import echioLogoFooter from "./EchioLogoFooter.png";
-import influencerHeroImage from "./influencerHeroImage.png";
 import search from "./search.png";
+import influencerHeroImage from "./influencerHeroImage.png";
+import influencerHeroImage2 from "./influencerHeroImage2.png";
 import searchPointer from "./searchPointer.png";
 import networkWithOthers from "./networkWithOthers.png";
 import networkWithOthersPointer from "./networkWithOthersPointer.png";
@@ -193,6 +194,7 @@ export {
 	brandHero,
 	echioLogoFooter,
 	influencerHeroImage,
+	influencerHeroImage2,
 	search,
 	searchPointer,
 	networkWithOthers,

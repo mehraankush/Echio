@@ -1,15 +1,43 @@
 "use client"
 import Image from "next/image";
 import React, { useEffect } from "react";
-import { influencerHeroImage } from "@/public/index";
+import { influencerHeroImage2 } from "@/public/index";
 import Navbar from "../Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroInfluencerPage() {
 	useEffect(() => {
 		AOS.init();
 	}, []);
+
+	useGSAP(()=>{
+		gsap.to('.img-rotate',{
+			scrollTrigger: {
+				trigger: '.img-rotate',
+				start: '-70% 0%',
+				end: '120% 0%',
+				// markers: true,
+				scrub: true
+				
+			},
+			transform: 'rotateY(160deg)',
+		})
+
+	},[]);
+
+
+
+
+
 	return (
 		<div
 			style={{
@@ -37,8 +65,28 @@ export default function HeroInfluencerPage() {
 						Influencers
 					</h1>
 				</div>
-				<div className="" data-aos='fade-right' data-aos-duration='1000'>
-					<Image src={influencerHeroImage} alt="mobile-view-asset" />
+				<div className="p-10 w-full flex justify-center  " 
+					style={{
+						transformStyle: 'preserve-3d',
+						perspective: '1000px',
+						
+					
+					}}
+				 data-aos='fade-right' data-aos-duration='1000'>
+					<span className="w-[90%] flex h-[55vh] my-10 origin-center items-center img-rotate"
+					style={{
+						transform: 'rotateY(30deg)',
+						transformStyle: 'preserve-3d',
+						
+						}}>
+
+						<img src='/influencerHeroImage2.png' alt="mobile-view-asset" quality={100} height={1000} width={1000} className="h-[80%] w-auto  origin-center" 
+						style={{
+							transform: 'rotateY(-90deg)'
+						}}
+						
+						/>
+					</span>
 					
 				</div>
 			</div>
