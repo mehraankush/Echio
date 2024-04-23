@@ -69,51 +69,29 @@ export default function BrandAndProductShoot() {
 	return (
 		<SmoothScroll>
 
-			
-
-
-				<div className="text-black bg-black " ref={container}>
-					<Parallax>
-
-						<div className="lg:flex justify-center items-center gap-10 h-screen ">
-							<div
-								className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
-								data-aos="fade-up-right"
-							>
-								<Image src={influencerOne} alt="mobile-image" />
-								<div className="hidden lg:block relative left-[176px] bottom-[87px]">
-									<Image src={monetization} alt="mobile-image" />
-								</div>
-							</div>
-							<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
-								<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-									Intelligent Campaign Planning and recommender systems
-								</h1>
-								<p className="text-xl font-syne font-medium max-w-[34.25rem]">
-									legitimate and active creators to reach out with amazing audience
-									targeting, with help of precise detailing and filtering with our
-									tech.
-								</p>
-							</div>
-						</div>
-					</Parallax>
 
 
 
-					<div className="lg:flex flex-row-reverse justify-center items-center gap-10 h-screen bg-white ">
+			<div className="text-black bg-black " ref={container}>
+				<Parallax>
+
+					<div className="lg:flex justify-center items-center gap-10 h-screen ">
 						<div
-							className="px-8 py-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
-							data-aos="fade-up-left"
+							className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+							data-aos="fade-up-right"
 						>
-							<Image src={influencerTwo} alt="mobile-image" />
+							<Image src={influencerOne} alt="mobile-image" />
 							<div className="hidden lg:block relative left-[176px] bottom-[87px]">
 								<Image src={monetization} alt="mobile-image" />
 							</div>
 						</div>
-						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
-							<h1 className="font-syne text-[2rem] lg:text-[2.5rem] font-bold mb-8 max-w-xs md:max-w-[34.25rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-								Intelligent Campaign Planning and recommender systems
-							</h1>
+						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20 ">
+
+							<div className="font-syne flex flex-col text-[2rem] font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+								<span>Intelligent Campaign</span>
+								<span>Planning and recommender</span>
+								<span>systems</span>
+							</div>
 							<p className="text-xl font-syne font-medium max-w-[34.25rem]">
 								legitimate and active creators to reach out with amazing audience
 								targeting, with help of precise detailing and filtering with our
@@ -121,13 +99,40 @@ export default function BrandAndProductShoot() {
 							</p>
 						</div>
 					</div>
+				</Parallax>
 
 
 
-
+				<div className="lg:flex flex-row-reverse justify-center items-center gap-10 h-screen bg-white ">
+					<div
+						className="px-8 py-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
+						data-aos="fade-up-left"
+					>
+						<Image src={influencerTwo} alt="mobile-image" />
+						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
+							<Image src={monetization} alt="mobile-image" />
+						</div>
+					</div>
+					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
+						<div className="font-syne flex flex-col text-[2rem]  font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+							<span>Intelligent Campaign</span>
+							<span>Planning and recommender</span>
+							<span>systems</span>
+						</div>
+						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
+							legitimate and active creators to reach out with amazing audience
+							targeting, with help of precise detailing and filtering with our
+							tech.
+						</p>
+					</div>
 				</div>
-			
-			<div className="lg:flex justify-center items-center bg-white lg:bg-[#090B0B] text-white p-8">
+
+
+
+
+			</div>
+
+			<div className="lg:flex  gap-7 justify-center items-center bg-white lg:bg-[#090B0B] text-white p-8">
 				<Button
 					button="default"
 					className="w-full ![border-image:unset] !bg-white !text-black lg:w-[12.25rem] h-[3.75rem]"
@@ -141,11 +146,11 @@ export default function BrandAndProductShoot() {
 				</button>
 			</div>
 			<div className="px-4 py-8 lg:pt-[5.25rem] lg:px-20 lg:pb-[10rem] bg-white">
-				<div className="lg:flex flex-col justify-center items-center gap-8 lg:mb-10">
+				<div className="lg:flex flex-col justify-center items-center lg:mb-10 ">
 					<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 						Brand & Product Shoot
 					</h1>
-					<p className="text-[1.25rem] text-[#090B0B] max-w-[50rem] mb-6">
+					<p className="text-[1.25rem] text-center text-[#090B0B] max-w-[50rem] mb-6">
 						Explore our influencer marketing studio for unmatched creative
 						excellence for your product shoots, branding and content creation
 						needs.

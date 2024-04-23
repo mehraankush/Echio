@@ -50,21 +50,21 @@ export default function HeroBrandPage() {
 
 	}, [])
 
-	useGSAP(()=>{
-		gsap.to('.feature1',{
-			scrollTrigger:{
+	useGSAP(() => {
+		gsap.to('.feature1', {
+			scrollTrigger: {
 				trigger: '.feature1',
 				start: 'top 0%',
 				end: 'bottom 0%',
 				scrub: true,
-                // markers: true,
-                pin: true,
-                pinSpacing: false
+				// markers: true,
+				pin: true,
+				pinSpacing: false
 
 			},
 			opacity: 0
 		})
-	},{scope: container})
+	}, { scope: container })
 
 
 
@@ -91,13 +91,15 @@ export default function HeroBrandPage() {
 						perspective: '5000px'
 					}}
 				>
-					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
-						AI Driven
-					</h1>
-					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
-						Market Place
-					</h1>
-					<p className="text-[#eee] text-center font-medium font-inter text-xl m-4">
+					<div className="space-y-[-3rem]">
+						<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+							AI Driven
+						</h1>
+						<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+							Market Place
+						</h1>
+					</div>
+					<p className="text-[#eee] capitalize text-center font-medium font-inter text-xl m-4">
 						Taking care of your requirements by driving it with AI
 					</p>
 
@@ -113,7 +115,7 @@ export default function HeroBrandPage() {
 				</div>
 
 				<div className="">
-					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-10">
+					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text ">
 						Our Top Features
 					</h1>
 
@@ -134,11 +136,14 @@ export default function HeroBrandPage() {
 								<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
 									Consultation
 								</h1>
-								<p className="text-xl font-syne font-medium lg:max-w-[39.25rem]">
-									legitimate and active creators to reach out with amazing
-									audience targeting, with help of precise detailing and filtering
-									with our tech
-								</p>
+
+								<div className="text-xl font-syne font-medium lg:max-w-[35rem]">
+									<p>
+										legitimate and active creators to reach out with amazing
+										audience targeting, with help of precise detailing and filtering
+										with our tech
+									</p>
+								</div>
 							</div>
 						</div>
 
@@ -157,11 +162,15 @@ export default function HeroBrandPage() {
 									<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
 										Campaign Management
 									</h1>
-									<p className="text-xl font-syne font-medium lg:max-w-[39.25rem]">
-										legitimate and active creators to reach out with amazing
+
+									<div className="text-xl font-syne font-medium lg:max-w-[35rem]">
+									<p>
+									legitimate and active creators to reach out with amazing
 										audience targeting, with help of precise detailing and filtering
 										with our tech
 									</p>
+								</div>
+
 								</div>
 							</div>
 						</Parallax>

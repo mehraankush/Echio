@@ -81,10 +81,6 @@ export default function HeroHomePage() {
 
 				<Image src={circle} alt="circle" className="lg:h-screen w-auto scale-0 ring-image " />
 
-
-
-
-
 			</div>
 
 			<div className="min-h-screen  container- ">
@@ -95,9 +91,9 @@ export default function HeroHomePage() {
 						Homepage
 					</span>{" "}
 				</div>
-				<div>
+				<div className="md:space-y-[-3rem]">
 					<h1 className="text-center text-transparent font-syne text-[2rem] md:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
-						Makes You{" "}
+						Makes You
 						<span className="inline md:hidden text-center text-transparent font-syne text-[2rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 							Viral.
 						</span>
@@ -122,10 +118,6 @@ export default function HeroHomePage() {
 						/>
 					</div>
 				</div>
-
-
-
-
 
 			</div>
 

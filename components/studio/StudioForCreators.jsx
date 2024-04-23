@@ -14,9 +14,13 @@ export default function StudioForCreators() {
 					<Image src={studioForInfluencer} alt="content-image" />
 				</div>
 				<div className="m-8 lg:flex flex-start flex-col">
-					<h1 className="lg:max-w-xl text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00c5d4] to-[#000] bg-clip-text">
-						Studio for Influencers
-					</h1>
+
+					<div className="lg:max-w-xl text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00c5d4] to-[#000] bg-clip-text flex flex-col space-y-[-2rem]">
+
+						<span>Studio for</span>
+						<span>Influencers</span>
+
+					</div>
 					<div className="block md:hidden px-6 my-6 lg:px-0 lg:my-0 lg:w-[39.25rem] lg:h-[39.25rem]">
 						<Image src={studioForInfluencer} alt="content-image" />
 					</div>
@@ -42,9 +46,13 @@ export default function StudioForCreators() {
 					<Image src={studioForBrands} alt="content-image" />
 				</div>
 				<div className="m-8 lg:flex flex-start flex-col">
-					<h1 className="max-w-xl text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00c5d4] to-[#000] bg-clip-text">
-						Studio for Brands
-					</h1>
+					<div className="lg:max-w-xl text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00c5d4] to-[#000] bg-clip-text flex flex-col space-y-[-2rem]">
+
+						<span>Studio for</span>
+						<span>Brands</span>
+
+					</div>
+			
 					<div className="block md:hidden px-6 my-6 lg:px-0 lg:my-0 lg:w-[39.25rem] lg:h-[39.25rem]">
 						<Image src={studioForBrands} alt="content-image" />
 					</div>

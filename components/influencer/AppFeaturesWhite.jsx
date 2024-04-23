@@ -64,7 +64,7 @@ export default function AppFeaturesWhite() {
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-5 lg:py-20">
-							<p className="text-2xl text-right font-syne font-medium max-w-[42.25rem]">
+							<p className="text-2xl text-left font-syne font-medium max-w-[42.25rem]">
 								Content Solutions to have creative content ideas and hacks to
 								optimize the quality of the content
 							</p>

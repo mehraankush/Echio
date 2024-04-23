@@ -106,7 +106,7 @@ export default function HeroStudioPage() {
 						perspective: '5000px'
 					}}>
 						<div className=" lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{ transform: 'rotateX(90deg) ' }}>
-						<Image src={studioHeroImage} alt="hero-image" className="h-full w-full"/>
+							<Image src={studioHeroImage} alt="hero-image" className="h-full w-full" />
 						</div>
 					</div>
 				</div>
@@ -136,13 +136,16 @@ export default function HeroStudioPage() {
 									className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 								>
 									<Image src={index.image} alt="image" className="mb-3" />
-									<h1 className="font-syne text-2xl font-medium">
-										{index.heading}
-									</h1>
-									<p className="text-base font-syne text-[#090B0Bd]">
-										Unleash your creativity and turn concepts into captivating
-										content effortlessly
-									</p>
+
+									<div className="hover:scale-110 transition-all">
+										<h1 className="font-syne text-2xl font-medium">
+											{index.heading}
+										</h1>
+										<p className="text-base font-syne text-[#090B0Bd]">
+											Unleash your creativity and turn concepts into captivating
+											content effortlessly
+										</p>
+									</div>
 								</div>
 							))}
 						</div>
@@ -166,13 +169,16 @@ export default function HeroStudioPage() {
 								className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 							>
 								<Image src={index.image} alt="image" className="mb-3" />
-								<h1 className="font-syne text-2xl font-medium">
-									{index.heading}
-								</h1>
-								<p className="text-base font-syne text-[#090B0Bd]">
-									Unleash your creativity and turn concepts into captivating
-									content effortlessly
-								</p>
+
+								<div className="hover:scale-110 transition-all">
+									<h1 className="font-syne text-2xl font-medium">
+										{index.heading}
+									</h1>
+									<p className="text-base font-syne text-[#090B0Bd]">
+										Unleash your creativity and turn concepts into captivating
+										content effortlessly
+									</p>
+								</div>
 							</div>
 						))}
 					</div>

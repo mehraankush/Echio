@@ -32,9 +32,9 @@ export default function ServiceApp() {
 				</div>
 			</div>
 			<div className="lg:mx-[5rem] lg:my-[18.5rem] lg:flex flex-col justify-center items-center">
-				<div className="m-8 lg:m-0 lg:flex justify-center items-center gap-[8rem]">
+				<div className=" lg:m-0 lg:flex justify-around items-center w-full">
 					<div className="lg:flex flex-col">
-						<h1 className="text-transparent text-[2rem] my-5 lg:my-0 lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
+						<h1 className="text-transparent text-[2rem] my-5 lg:my-0 lg:text-[4rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 							Download App
 						</h1>
 						<p className="text-lg font-syne lg:max-w-[30rem] mb-10">

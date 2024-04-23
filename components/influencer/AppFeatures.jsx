@@ -50,7 +50,7 @@ export default function AppFeatures() {
 					backgroundPosition: "top",
 				}}
 			>
-				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text lg:mb-10">
+				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 					App Features
 				</h1>
 				<div className="lg:mb-24 lg:pb-28" ref={container}>
@@ -79,7 +79,7 @@ export default function AppFeatures() {
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl text-right font-syne font-medium">
+							<p className="text-2xl text-left font-syne font-medium">
 								Help the community to grow in their journey as a content creators
 							</p>
 						</div>

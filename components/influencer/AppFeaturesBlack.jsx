@@ -84,7 +84,7 @@ export default function AppFeatures() {
 						</div>
 					</div>
 					<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-						<p className="text-2xl text-right font-syne font-medium">
+						<p className="text-2xl text-left font-syne font-medium">
 							Access to everyday services to enable smooth content creation
 						</p>
 					</div>

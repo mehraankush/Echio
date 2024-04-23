@@ -142,7 +142,7 @@ export default function Influencers() {
 				<div className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-20">
 					<div className="flex flex-col">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
-							Our Brand
+							 Brand
 						</h1>
 						<div className="md:hidden mx-auto m-4">
 							<motion.div

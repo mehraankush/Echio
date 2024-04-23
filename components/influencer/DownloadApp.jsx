@@ -9,11 +9,12 @@ import {
 
 export default function DownloadApp() {
 	return (
-		<div className="bg-white text-black">
+		<div className="bg-white text-black ">
 			<div className="lg:mx-[5rem] lg:my-[12.5rem] lg:flex flex-col justify-center items-center">
-				<div className="m-8 lg:m-0 lg:flex justify-center items-center gap-[8rem]">
+				<div className=" lg:m-0 lg:flex justify-around items-center gap-[8rem] w-full">
+					
 					<div className="lg:flex flex-col">
-						<h1 className="text-transparent text-[2rem] lg:text-[5rem] mb-6 lg:mb-0 font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
+						<h1 className="text-transparent text-[2rem] lg:text-[4rem] mb-6 lg:mb-0 font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 							Download App
 						</h1>
 						<p className="text-lg font-syne text-let max-w-[30rem] mb-10">
@@ -30,9 +31,11 @@ export default function DownloadApp() {
 							<Image src={appStore} alt="download-from-app-store" />
 						</div>
 					</div>
+
 					<div className="hidden md:block h-[52rem]">
 						<Image src={downloadApp} alt="mobile-image" />
 					</div>
+
 				</div>
 			</div>
 		</div>

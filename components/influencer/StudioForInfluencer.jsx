@@ -63,13 +63,15 @@ export default function StudioForInfluencer() {
 									className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 								>
 									<Image src={index.image} alt="image" className="mb-3" />
-									<h1 className="font-syne text-2xl font-medium">
-										{index.heading}
-									</h1>
-									<p className="text-base font-syne text-[#090B0Bd]">
-										Unleash your creativity and turn concepts into captivating
-										content effortlessly
-									</p>
+									<div className="hover:scale-110">
+										<h1 className="font-syne text-2xl font-medium">
+											{index.heading}
+										</h1>
+										<p className="text-base font-syne text-[#090B0Bd]">
+											Unleash your creativity and turn concepts into captivating
+											content effortlessly
+										</p>
+									</div>
 								</div>
 							))}
 						</div>
@@ -88,13 +90,15 @@ export default function StudioForInfluencer() {
 								className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 							>
 								<Image src={index.image} alt="image" className="mb-3" />
-								<h1 className="font-syne text-2xl font-medium">
-									{index.heading}
-								</h1>
-								<p className="text-base font-syne text-[#090B0Bd]">
-									Unleash your creativity and turn concepts into captivating
-									content effortlessly
-								</p>
+								<div className="hover:scale-110">
+									<h1 className="font-syne text-2xl font-medium">
+										{index.heading}
+									</h1>
+									<p className="text-base font-syne text-[#090B0Bd]">
+										Unleash your creativity and turn concepts into captivating
+										content effortlessly
+									</p>
+								</div>
 							</div>
 						))}
 					</div>
