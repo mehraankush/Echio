@@ -4,12 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import {
 	circle,
-	redbull,
-	booyah,
-	wings,
-	sadar,
-	qlan,
-	loco,
 } from "@/public/index";
 import Navbar from "../Navbar";
 import { Button } from "../others/Button";
@@ -122,21 +116,7 @@ export default function HeroHomePage() {
 			</div>
 
 
-			<div className="w-auto">
 
-			<marquee  behavior="alternate" direction="" className='w-auto' scrollamount='10'>
-
-				<div className="hidden md:flex  justify-evenly items-center ">
-					<Image src={booyah} alt="logo" />
-					<Image src={redbull} alt="logo" />
-					<Image src={wings} alt="logo" />
-					<Image src={booyah} alt="logo" />
-					<Image src={sadar} alt="logo" />
-					<Image src={qlan} alt="logo" />
-					<Image src={loco} alt="logo" />
-				</div>
-			</marquee>
-			</div>
 			
 			
 

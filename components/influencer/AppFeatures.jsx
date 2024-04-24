@@ -43,7 +43,7 @@ export default function AppFeatures() {
 		<SmoothScroll>
 
 			<div
-				className=""
+				className="pt-20"
 				style={{
 					backgroundImage: `linear-gradient(360deg, #252525 0%, #000 100%)`,
 					backgroundSize: "cover",

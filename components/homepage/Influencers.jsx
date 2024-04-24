@@ -11,33 +11,26 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-gsap.registerPlugin(useGSAP);
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
-gsap.registerPlugin(ScrollTrigger);
-
-const imageVariants = {
-	hover: {
-		rotate: 360,
-		transition: { duration: 1.5, ease: "easeInOut" },
-	},
-	whileNotHover: {
-		scale: 1, // Reset the scale when not hovering
-		rotate: 0, // Reset the rotate when not hovering
-		transition: { duration: 1.5, ease: "easeInOut" },
-	},
-	exit: {
-		opacity: 0,
-		transition: { duration: 0.5 },
-	},
-	scrollRotate: {
-		rotate: [0, 0, 360], // Rotate 360 degrees on scroll
-		transition: { duration: 2, ease: "easeInOut" },
-	},
-};
+// const imageVariants = {
+// 	hover: {
+// 		rotate: 360,
+// 		transition: { duration: 1.5, ease: "easeInOut" },
+// 	},
+// 	whileNotHover: {
+// 		scale: 1, // Reset the scale when not hovering
+// 		rotate: 0, // Reset the rotate when not hovering
+// 		transition: { duration: 1.5, ease: "easeInOut" },
+// 	},
+// 	exit: {
+// 		opacity: 0,
+// 		transition: { duration: 0.5 },
+// 	},
+// 	scrollRotate: {
+// 		rotate: [0, 0, 360], // Rotate 360 degrees on scroll
+// 		transition: { duration: 2, ease: "easeInOut" },
+// 	},
+// };
 
 const buttonVariants = {
 	hover: {
@@ -50,23 +43,6 @@ export default function Influencers() {
 	useEffect(() => {
 		AOS.init();
 	});
-
-	useGSAP(()=>{
-		gsap.to('.feature', {
-			scrollTrigger: {
-				trigger: '.feature',
-				start: 'top 0%',
-				end: 'bottom 0%',
-				pin: true,
-				pinSpacing: false,
-				scrub: true,
-				// markers: true
-			}
-		})
-
-	},[])
-
-
 
 	return (
 		<div className="bg-white text-black flex flex-col ">

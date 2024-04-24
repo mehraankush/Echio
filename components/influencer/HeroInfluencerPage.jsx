@@ -24,12 +24,13 @@ export default function HeroInfluencerPage() {
 			scrollTrigger: {
 				trigger: '.img-rotate',
 				start: '-70% 0%',
-				end: '120% 0%',
+				end: '-10% 0%',
 				// markers: true,
 				scrub: true
 				
 			},
-			transform: 'rotateY(160deg)',
+			transform: 'rotateY(90deg)',
+		
 		})
 
 	},[]);
@@ -73,7 +74,7 @@ export default function HeroInfluencerPage() {
 					
 					}}
 				 data-aos='fade-right' data-aos-duration='1000'>
-					<span className="w-[90%] flex h-[55vh] my-10 origin-center items-center img-rotate"
+					<span className="w-[90%] flex h-[55vh] my-10 origin-center items-center img-rotate "
 					style={{
 						transform: 'rotateY(30deg)',
 						transformStyle: 'preserve-3d',

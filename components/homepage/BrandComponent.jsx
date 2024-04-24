@@ -1,11 +1,20 @@
 "use client";
 import React, { useEffect } from "react";
-import { mobileCards } from "@/public/index";
+import {
+	mobileCards,
+	redbull,
+	booyah,
+	wings,
+	sadar,
+	qlan,
+	loco,
+} from "@/public/index";
 import { MultiCards } from "../others/MultiCards";
 import { Button } from "../others/Button";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 export default function BrandComponent() {
 	useEffect(() => {
@@ -14,14 +23,29 @@ export default function BrandComponent() {
 
 	return (
 		<div
-			className=""
+			className="h-[100vh]"
 			style={{
 				backgroundImage: `linear-gradient(180deg, #000 0%, #252525 100%)`,
 				backgroundSize: "cover",
 				backgroundPosition: "top",
 			}}
 		>
-			<div className="block md:flex flex-row-reverse justify-center items-center gap-14 my-10 lg:my-[9.75rem] lg:mx-[3.5rem] mx-[2.5rem]">
+			<div className="w-auto">
+
+				<marquee behavior="alternate" direction="" className='w-auto' scrollamount='10'>
+
+					<div className="hidden md:flex  justify-evenly items-center ">
+						<Image src={booyah} alt="logo" />
+						<Image src={redbull} alt="logo" />
+						<Image src={wings} alt="logo" />
+						<Image src={booyah} alt="logo" />
+						<Image src={sadar} alt="logo" />
+						<Image src={qlan} alt="logo" />
+						<Image src={loco} alt="logo" />
+					</div>
+				</marquee>
+			</div>
+			<div className="block md:flex flex-row-reverse justify-center items-center gap-14 my-[5rem] lg:my-[5rem] lg:mx-[3.5rem] mx-[2.5rem]">
 				<div className="flex flex-start flex-col">
 					<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 						Brand
@@ -59,6 +83,8 @@ export default function BrandComponent() {
 					<MultiCards />
 				</div>
 			</div>
+
+
 		</div>
 	);
 }
