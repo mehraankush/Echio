@@ -27,8 +27,8 @@ export default function DownloadApp() {
 							<Image src={downloadApp} alt="mobile-image" />
 						</div>
 						<div className="flex gap-10">
-							<Image src={googlePlayImage} alt="download-from-google-play" />
-							<Image src={appStore} alt="download-from-app-store" />
+							<Image src={googlePlayImage} alt="download-from-google-play " className="hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"/>
+							<Image src={appStore} alt="download-from-app-store" className="hover:cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out"/>
 						</div>
 					</div>
 

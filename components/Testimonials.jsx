@@ -64,7 +64,7 @@ const AngelInvestor = () => {
 
 const Founder = () => {
 	return (
-		<div className="bg-white text-black pt-24 mb-[7.5rem]">
+		<div className="bg-white text-black pt-24 mb-[7.5rem]" >
 			<h1 className="hidden md:block text-center font-medium font-syne text-[2rem]  mb-8">
 				Proudly Used by
 			</h1>
@@ -111,19 +111,38 @@ const Founder = () => {
 };
 
 export default function Testimonials() {
-	const [showAngelInvestor, setShowAngelInvestor] = useState(true);
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	const scrollableContainer = useRef();
+	const components = [<AngelInvestor key={1}/>, <Founder key={2}/>]
+
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
-			setShowAngelInvestor((prev) => !prev);
-		}, 3000);
-
+		  setCurrentImageIndex(prevIndex => (prevIndex + 1) % 2); // Cycle through 3 images
+		}, 5000); // 2 seconds interval
+	
 		return () => clearInterval(intervalId);
-	}, []);
+	  }, []);
 
 	return (
 		<div className="transition-opacity duration-500 ease-in-out">
-			{showAngelInvestor ? <AngelInvestor /> : <Founder />}
+			<div className="w-full overflow-x-auto example" ref={scrollableContainer}>
+			<div className="flex flex-nowrap transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+
+				{
+					components.map((component, index) => (
+						<div id={`target-${index}`} key={index}>
+							<div className="w-[100vw]">
+								{component}
+							</div>
+						</div>
+					))
+				}
+
+				
+				</div>
+
+			</div>
 		</div>
 	);
 }

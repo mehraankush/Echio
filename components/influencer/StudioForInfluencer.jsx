@@ -63,7 +63,7 @@ export default function StudioForInfluencer() {
 									className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 								>
 									<Image src={index.image} alt="image" className="mb-3" />
-									<div className="hover:scale-110">
+									<div className="hover:scale-110 transition-all duration-500 ease-in-out">
 										<h1 className="font-syne text-2xl font-medium">
 											{index.heading}
 										</h1>
@@ -90,7 +90,7 @@ export default function StudioForInfluencer() {
 								className="mx-6 lg:mx-0 px-4 py-6 border-b-2 border-gradient lg:max-w-[18.875rem]"
 							>
 								<Image src={index.image} alt="image" className="mb-3" />
-								<div className="hover:scale-110">
+								<div className="hover:scale-110 transition-all duration-500 ease-in-out">
 									<h1 className="font-syne text-2xl font-medium">
 										{index.heading}
 									</h1>

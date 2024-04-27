@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import {
 	linkedinBlue,
@@ -16,7 +16,7 @@ import {
 
 const AngelInvestor = () => {
 	return (
-		<div
+		<div 
 			className="pt-24 pb-[7.5rem]"
 			style={{
 				backgroundImage: `linear-gradient(360deg, #252525 0%, #000 100%)`,
@@ -29,11 +29,11 @@ const AngelInvestor = () => {
 				Proudly Used by
 			</h1>
 			<div className="flex justify-around items-center mb-[2rem] mx-[28rem]">
-				<Image src={linkedinBlue} alt="logo" />
-				<Image src={instagramBlue} alt="logo" />
-				<Image src={quoraBlue} alt="logo" />
-				<Image src={redditBlue} alt="logo" />
-				<Image src={tumblerBlue} alt="logo" />
+				<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={redditBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={tumblerBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
 			</div>
 			<div className="flex justify-between items-center mx-[28rem]">
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
@@ -74,7 +74,7 @@ const AngelInvestor = () => {
 
 const Founder = () => {
 	return (
-		<div
+		<div 
 			className="pt-24 pb-[7.5rem]"
 			style={{
 				backgroundImage: `linear-gradient(360deg, #252525 0%, #000 100%)`,
@@ -87,11 +87,11 @@ const Founder = () => {
 				Proudly Used by
 			</h1>
 			<div className="flex justify-around items-center mb-[2rem] mx-[28rem]">
-				<Image src={linkedinBlue} alt="logo" />
-				<Image src={instagramBlue} alt="logo" />
-				<Image src={quoraBlue} alt="logo" />
-				<Image src={redditBlue} alt="logo" />
-				<Image src={tumblerBlue} alt="logo" />
+				<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={redditBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={tumblerBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
 			</div>
 			<div className="flex justify-between items-center mx-[28rem]">
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
@@ -105,7 +105,7 @@ const Founder = () => {
 					</span>
 					Echio&apos;s dedication to finding influencers who align with our
 					brand message has resulted in a more engaged audience and increased
-					brand loyalty.
+					brand loyalty. {""}
 					<span className="align-text-bottom text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
@@ -129,19 +129,40 @@ const Founder = () => {
 };
 
 export default function TestimonialsBottomToTop() {
-	const [showAngelInvestor, setShowAngelInvestor] = useState(true);
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	const scrollableContainer = useRef();
+	const components = [<AngelInvestor key={1}/>, <Founder key={2}/>]
+
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
-			setShowAngelInvestor((prev) => !prev);
-		}, 3000);
+			setCurrentImageIndex(prevIndex => (prevIndex + 1) % 2); // Cycle through 3 images
+		}, 5000); // 2 seconds interval
 
 		return () => clearInterval(intervalId);
 	}, []);
 
 	return (
 		<div className="transition-opacity duration-500 ease-in-out">
-			{showAngelInvestor ? <AngelInvestor /> : <Founder />}
+			<div className="w-full overflow-x-auto example" ref={scrollableContainer}>
+				<div className="flex flex-nowrap transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+
+					{
+						components.map((component, index) => (
+							<div id={`target-${index}`} key={index}>
+								<div className="w-[100vw]">
+									{component}
+								</div>
+							</div>
+						))
+					}
+
+
+				</div>
+
+			</div>
 		</div>
 	);
 }
+
+

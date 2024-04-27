@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import {
 	linkedinBlue,
@@ -22,16 +22,16 @@ import {
 
 const AngelInvestor = () => {
 	return (
-		<div className="pt-24 mb-[7.5rem]">
+		<div className="pt-24 mb-[7.5rem] w-full" >
 			<h1 className="hidden md:block text-center font-medium font-syne text-[2rem] text-white mb-8">
 				Proudly Used by
 			</h1>
 			<div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
-				<Image src={linkedinBlue} alt="logo" />
-				<Image src={instagramBlue} alt="logo" />
-				<Image src={quoraBlue} alt="logo" />
-				<Image src={redditBlue} alt="logo" />
-				<Image src={tumblerBlue} alt="logo" />
+				<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={redditBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={tumblerBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
 			</div>
 			<div className="flex justify-between items-center mx-[28rem]">
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
@@ -39,7 +39,7 @@ const AngelInvestor = () => {
 			</div>
 			<div className="flex justify-around items-center mb-[10rem]">
 				<div className="flex-grow border-t border-[#FFF]" />
-				<div className="p-16 max-w-[52rem] text-center font-syne text-2xl">
+				<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl">
 					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
 						&ldquo;
 					</span>
@@ -49,12 +49,13 @@ const AngelInvestor = () => {
 					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
+					<div className="absolute top-[100%] left-[90%] overflow-x-hidden">
+						<Image src={semiCircleTestimonials} alt="random" />
+					</div>
 				</div>
 				<div className="flex-grow border-t border-[#FFF]" />
 			</div>
-			<div className="relative bottom-[153px] left-[1172px] overflow-x-hidden">
-				<Image src={semiCircleTestimonials} alt="random" />
-			</div>
+
 			<div className="flex justify-center items-center gap-8">
 				<div className="">
 					<Image src={angelInvestor} alt="investor-image" />
@@ -70,16 +71,16 @@ const AngelInvestor = () => {
 
 const Founder = () => {
 	return (
-		<div className="pt-24 mb-[7.5rem]">
+		<div className="pt-24 mb-[7.5rem] w-full">
 			<h1 className="hidden md:block text-center font-medium font-syne text-[2rem] text-white mb-8">
 				Proudly Used by
 			</h1>
 			<div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
-				<Image src={linkedinBlue} alt="logo" />
-				<Image src={instagramBlue} alt="logo" />
-				<Image src={quoraBlue} alt="logo" />
-				<Image src={redditBlue} alt="logo" />
-				<Image src={tumblerBlue} alt="logo" />
+				<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={redditBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
+				<Image src={tumblerBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300'/>
 			</div>
 			<div className="flex justify-between items-center mx-[28rem]">
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
@@ -87,7 +88,7 @@ const Founder = () => {
 			</div>
 			<div className="flex justify-around items-center mb-[10rem]">
 				<div className="flex-grow border-t border-[#FFF]" />
-				<div className="p-16 max-w-[52rem] text-center font-syne text-2xl">
+				<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl">
 					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
 						&ldquo;
 					</span>
@@ -97,12 +98,13 @@ const Founder = () => {
 					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
+					<div className="absolute top-[100%] left-[90%] overflow-x-hidden">
+						<Image src={semiCircleTestimonials} alt="random" />
+					</div>
 				</div>
 				<div className="flex-grow border-t border-[#FFF]" />
 			</div>
-			<div className="relative bottom-[153px] left-[1172px] overflow-x-hidden">
-				<Image src={semiCircleTestimonials} alt="random" />
-			</div>
+
 			<div className="flex justify-center items-center gap-8">
 				<div className="">
 					<Image src={founder} alt="investor-image" />
@@ -262,19 +264,25 @@ const Footer = () => {
 };
 
 export default function TestimonailsFooterBlack() {
-	const [showAngelInvestor, setShowAngelInvestor] = useState(true);
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	const scrollableContainer = useRef();
+	const components = [<AngelInvestor key={1}/>, <Founder key={2}/>]
+
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
-			setShowAngelInvestor((prev) => !prev);
-		}, 3000);
-
+		  setCurrentImageIndex(prevIndex => (prevIndex + 1) % 2); // Cycle through 3 images
+		}, 5000); // 2 seconds interval
+	
 		return () => clearInterval(intervalId);
-	}, []);
+	  }, []);
+
+
+
 
 	return (
 		<div
-			className="transition-opacity duration-500 ease-in-out"
+			className="transition-opacity duration-500 ease-in-out relative"
 			style={{
 				backgroundImage: `linear-gradient(180deg, #252525 0%, #000 100%)`,
 				backgroundSize: "cover",
@@ -282,8 +290,24 @@ export default function TestimonailsFooterBlack() {
 				boxShadow: "inset 0 0 10px 10px rgba(0, 0, 0, 0.5)",
 			}}
 		>
-			{showAngelInvestor ? <AngelInvestor /> : <Founder />}
-			{<Footer />}
+			<div className="w-full overflow-x-auto example" ref={scrollableContainer}>
+			<div className="flex flex-nowrap transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+
+				{
+					components.map((component, index) => (
+						<div id={`target-${index}`} key={index}>
+							<div className="w-[100vw]">
+								{component}
+							</div>
+						</div>
+					))
+				}
+
+				
+				</div>
+
+			</div>
+			<Footer />
 		</div>
 	);
 }
