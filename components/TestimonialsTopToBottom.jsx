@@ -37,16 +37,16 @@ const AngelInvestor = () => {
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 				<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
 			</div>
-			<div className="flex justify-around items-center mb-[10rem]">
+			<div className="flex justify-around items-center">
 				<div className="flex-grow border-t border-[#FFF]" />
 				<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl">
-					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
+					<span className="text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
 						&ldquo;
 					</span>
 					Echio has been instrumental in helping us find influencers who
 					authentically connect with our brand, resulting in a significant boost
 					in product visibility and sales.{""}
-					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
+					<span className="relative top-[10px] left-[10px] text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
 					<div className="absolute top-[100%] left-[90%] overflow-x-hidden">
@@ -86,16 +86,16 @@ const Founder = () => {
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 				<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
 			</div>
-			<div className="flex justify-around items-center mb-[10rem]">
+			<div className="flex justify-around items-center ">
 				<div className="flex-grow border-t border-[#FFF]" />
 				<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl">
-					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
+					<span className="text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
 						&ldquo;
 					</span>
 					Echio has been instrumental in helping us find influencers who
 					authentically connect with our brand, resulting in a significant boost
 					in product visibility and sales.{""}
-					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
+					<span className="relative top-[10px] left-[10px] text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
 					<div className="absolute top-[100%] left-[90%] overflow-x-hidden">

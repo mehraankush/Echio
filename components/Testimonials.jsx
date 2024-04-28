@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import {
 	linkedinBlue,
@@ -31,23 +31,23 @@ const AngelInvestor = () => {
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 				<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
 			</div>
-			<div className="flex justify-around items-center mb-[10rem]">
+			<div className=" relative flex justify-around items-center mb-10 ">
 				<div className="flex-grow border-t border-[#000]" />
-				<div className="p-16 max-w-[52rem] text-center font-syne text-2xl">
-					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
+				<div className="p-16  max-w-[52rem] text-center font-syne text-2xl">
+					<span className="text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8 ">
 						&ldquo;
 					</span>
 					Echio has been instrumental in helping us find influencers who
 					authentically connect with our brand, resulting in a significant boost
-					in product visibility and sales.{""}
-					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
+					in product visibility and sales.
+					<span className="relative top-[10px] left-[10px]  text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
 				</div>
 				<div className="flex-grow border-t border-[#000]" />
-			</div>
-			<div className="relative bottom-[153px] left-[1172px] overflow-x-hidden">
-				<Image src={semiCircleTestimonials} alt="random" />
+				<div className="absolute top-[100%] left-[90%] overflow-x-hidden">
+					<Image src={semiCircleTestimonials} alt="random" />
+				</div>
 			</div>
 			<div className="flex justify-center items-center gap-8">
 				<div className="">
@@ -79,24 +79,25 @@ const Founder = () => {
 				<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 				<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
 			</div>
-			<div className="flex justify-around items-center mb-[10rem]">
+			<div className=" relative flex justify-around items-center mb-10 ">
 				<div className="flex-grow border-t border-[#000]" />
-				<div className="p-16 max-w-[52rem] text-center font-syne text-2xl">
-					<span className="text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
+				<div className="p-16  max-w-[52rem] text-center font-syne text-2xl">
+					<span className="text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8 ">
 						&ldquo;
 					</span>
 					Echio has been instrumental in helping us find influencers who
 					authentically connect with our brand, resulting in a significant boost
-					in product visibility and sales.{""}
-					<span className="relative top-[33px] left-[10px] text-[5.75rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
+					in product visibility and sales.
+					<span className="relative top-[10px] left-[10px]  text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent">
 						&rdquo;
 					</span>
 				</div>
 				<div className="flex-grow border-t border-[#000]" />
+				<div className="absolute top-[100%] left-[90%] overflow-x-hidden">
+					<Image src={semiCircleTestimonials} alt="random" />
+				</div>
 			</div>
-			<div className="relative bottom-[153px] left-[1172px] overflow-x-hidden">
-				<Image src={semiCircleTestimonials} alt="random" />
-			</div>
+
 			<div className="flex justify-center items-center gap-8">
 				<div className="">
 					<Image src={founder} alt="investor-image" />
@@ -113,33 +114,33 @@ const Founder = () => {
 export default function Testimonials() {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 	const scrollableContainer = useRef();
-	const components = [<AngelInvestor key={1}/>, <Founder key={2}/>]
+	const components = [<AngelInvestor key={1} />, <Founder key={2} />]
 
 
 	useEffect(() => {
 		const intervalId = setInterval(() => {
-		  setCurrentImageIndex(prevIndex => (prevIndex + 1) % 2); // Cycle through 3 images
+			setCurrentImageIndex(prevIndex => (prevIndex + 1) % 2); // Cycle through 3 images
 		}, 5000); // 2 seconds interval
-	
+
 		return () => clearInterval(intervalId);
-	  }, []);
+	}, []);
 
 	return (
 		<div className="transition-opacity duration-500 ease-in-out">
 			<div className="w-full overflow-x-auto example" ref={scrollableContainer}>
-			<div className="flex flex-nowrap transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+				<div className="flex flex-nowrap transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
 
-				{
-					components.map((component, index) => (
-						<div id={`target-${index}`} key={index}>
-							<div className="w-[100vw]">
-								{component}
+					{
+						components.map((component, index) => (
+							<div id={`target-${index}`} key={index}>
+								<div className="w-[100vw]">
+									{component}
+								</div>
 							</div>
-						</div>
-					))
-				}
+						))
+					}
 
-				
+
 				</div>
 
 			</div>

@@ -1,5 +1,4 @@
-import FooterBlackInverted from "@/components/FooterBlackInverted";
-import TestimonialsBottomToTop from "@/components/TestimonialsBottomToTop";
+import TestimonailsFooterBlack from "@/components/others/TestimonailsFooterBlack";
 import HeroServicePage from "@/components/service/HeroServicePage";
 import ServiceApp from "@/components/service/ServiceApp";
 import React from "react";
@@ -9,8 +8,7 @@ export default function service() {
 		<main className={`flex min-h-screen flex-col overflow-hidden`}>
 			<HeroServicePage />
 			<ServiceApp />
-			<TestimonialsBottomToTop />
-			<FooterBlackInverted />
+			<TestimonailsFooterBlack/>
 		</main>
 	);
 }

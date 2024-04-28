@@ -7,6 +7,7 @@ import UsedByInfluencer from "@/components/TestimonialsTopToBottom";
 import React from "react";
 import AppFeaturesWhite from "@/components/influencer/AppFeaturesWhite";
 import AppFeaturesBlack from "@/components/influencer/AppFeaturesBlack";
+import TestimonailsFooterBlack from "@/components/others/TestimonailsFooterBlack";
 
 export default function influencer() {
 	return (
