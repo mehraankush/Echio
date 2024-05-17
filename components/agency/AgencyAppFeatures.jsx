@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import { agencyMonetization, agencyLower, monetization } from "@/public/index";
+import { agencyMonetizationBlack, agencyLowerBlack, monetization } from "@/public/index";
 import Parallax from "../Animation/Parallax";
 import SmoothScroll from "../Animation/SmoothScroll";
 
@@ -14,7 +14,7 @@ export default function AgencyAppFeatures() {
 
 			<div className="flex flex-col lg:flex-row  justify-center items-center gap-10 h-screen">
 				<div className="px-8 lg:w-[36.25rem] lg:h-[70vh]">
-					<Image src={agencyMonetization} alt="mobile-image" className="h-full w-auto"/>
+					<Image src={agencyMonetizationBlack} alt="mobile-image" className="h-[89%] w-auto object-contain"/>
 					<div className="hidden md:block relative left-[176px] bottom-[87px]">
 						<Image src={monetization} alt="mobile-image" />
 					</div>
@@ -28,7 +28,7 @@ export default function AgencyAppFeatures() {
 			</Parallax>
 			<div className="lg:flex flex-row-reverse justify-center items-center gap-10 h-screen">
 				<div className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]">
-					<Image src={agencyLower} alt="mobile-image" />
+					<Image src={agencyLowerBlack} alt="mobile-image" className="h-[89%] w-auto object-contain"/>
 					<div className="hidden md:block relative left-[176px] bottom-[87px]">
 						<Image src={monetization} alt="mobile-image" />
 					</div>

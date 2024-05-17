@@ -10,7 +10,7 @@ import {
 	brandProductOne,
 	brandProductTwo,
 	influencerOne,
-	influencerTwo,
+	influencertwo,
 	monetization,
 } from "@/public/index";
 import { Button } from "../others/Button";
@@ -108,7 +108,7 @@ export default function BrandAndProductShoot() {
 						className="px-8 py-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
 						data-aos="fade-up-left"
 					>
-						<Image src={influencerTwo} alt="mobile-image" />
+						<Image src={influencertwo} alt="mobile-image" />
 						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
 							<Image src={monetization} alt="mobile-image" />
 						</div>

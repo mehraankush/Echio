@@ -18,9 +18,9 @@ import sadar from "./sadar.png";
 import qlan from "./qlan.png";
 import loco from "./loco.png";
 import influencerone from "./influencerone.png";
-import influencerOne from "./influencerOne.svg";
-import influencertwo from "./influencer2.png";
-import influencerTwo from "./influencerTwo.svg";
+import influencerOne from "./influencerOne1.png";
+import influencertwo from "./influencerTwo2.png";
+import influencerTwo from "./influencertwo.png";
 import studio from "./Studio.png";
 import studioone from "./studioone.png";
 import studiotwo from "./studiotwo.png";
@@ -99,7 +99,9 @@ import servicesPointer from "./servicesPointer.png";
 import campaigns from "./campaigns.png";
 import brandDeals from "./brandDeals.png";
 import agencyMonetization from "./agencyMonetization.png";
+import agencyMonetizationBlack from "./agencyMonetizationBlack.png";
 import agencyLower from "./agencyLower.png";
+import agencyLowerBlack from "./agencyLowerBlack.png";
 import serviceHeroMockup from "./serviceHeroMockup.png";
 import serviceChat from "./serviceChat.png";
 import downloadAppNew from "./downloadAppNew.png";
@@ -209,7 +211,9 @@ export {
 	campaigns,
 	brandDeals,
 	agencyMonetization,
+	agencyMonetizationBlack,
 	agencyLower,
+	agencyLowerBlack,
 	serviceHeroMockup,
 	serviceChat,
 	downloadAppNew,
