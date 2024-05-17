@@ -55,7 +55,7 @@ export default function HeroInfluencerPage() {
 				</span>{" "}
 			</div>
 			<div className="m-4 lg:flex flex-col justify-center items-center lg:mx-20 lg:my-[3rem] lg:gap-16">
-				<div className="lg:pt-11">
+				<div className="lg:pt-11 -space-y-4">
 					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 						Exclusive Community
 					</h1>

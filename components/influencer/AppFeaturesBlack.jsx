@@ -60,7 +60,7 @@ export default function AppFeatures() {
 						</p>
 					</div>
 					<div className="px-8 lg:px-0 lg:h-[70vh]">
-						<Image src={profile} alt="mobile-image"  className="h-full w-auto"/>
+						<Image src={profile} alt="mobile-image"  className="h-[89%] w-auto object-contain"/>
 						<div className="hidden md:block relative left-[176px] bottom-[87px]">
 							<Image src={profilePointer} alt="mobile-image" />
 						</div>
@@ -78,7 +78,7 @@ export default function AppFeatures() {
 
 				<div className="flex flex-col lg:flex-row-reverse  justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
 					<div className="px-8 lg:px-0 lg:h-[70vh]">
-						<Image src={services} alt="mobile-image" className="h-full w-auto" />
+						<Image src={services} alt="mobile-image" className="h-[89%] w-auto object-contain" />
 						<div className="hidden md:block relative left-[176px] bottom-[87px]">
 							<Image src={servicesPointer} alt="mobile-image" />
 						</div>
@@ -99,13 +99,13 @@ export default function AppFeatures() {
 						</p>
 					</div>
 					<div className="px-8  lg:w-[36.25rem] lg:h-[36.1875rem]">
-						<Image src={campaigns} alt="mobile-image" className="h-full w-auto"/>
+						<Image src={campaigns} alt="mobile-image" className="h-[89%] w-auto object-contain"/>
 						<div className="hidden md:block relative left-[176px] bottom-[87px]">
 							<Image src={brandDeals} alt="mobile-image" />
 						</div>
 					</div>
 					<div className="hidden md:flex flex-col m-8 lg:px-10 lg:py-20">
-						<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
+						<p className="text-2xl font-syne font-medium w-[30.25rem]">
 							Monetization
 						</p>
 					</div>

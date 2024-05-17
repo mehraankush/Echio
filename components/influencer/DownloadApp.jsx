@@ -10,7 +10,7 @@ import {
 export default function DownloadApp() {
 	return (
 		<div className="bg-white text-black ">
-			<div className="lg:mx-[5rem] lg:my-[12.5rem] lg:flex flex-col justify-center items-center">
+			<div className="lg:mx-[5rem] lg:mt-[12.5rem] lg:flex flex-col justify-center items-center">
 				<div className=" lg:m-0 lg:flex justify-around items-center gap-[8rem] w-full">
 					
 					<div className="lg:flex flex-col">

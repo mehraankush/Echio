@@ -41,7 +41,7 @@ export default function AppFeaturesWhite() {
 				<Parallax>
 					<div className="flex flex-col lg:flex-row justify-center items-center  h-screen lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={chat} alt="mobile-image" className="h-full w-auto"/>
+							<Image src={chat} alt="mobile-image" className="h-[89%] w-auto object-contain" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={chatPointer} alt="mobile-image" />
 							</div>
@@ -58,7 +58,7 @@ export default function AppFeaturesWhite() {
 				<Parallax>
 					<div className="flex flex-col  lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mr-[9.5rem] ">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={chat} alt="mobile-image" className="h-full w-auto"/>
+							<Image src={chat} alt="mobile-image" className="h-[80%] w-auto object-contain" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={connectWithOthers} alt="mobile-image" />
 							</div>

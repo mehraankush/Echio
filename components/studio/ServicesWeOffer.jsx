@@ -59,10 +59,10 @@ export default function ServicesWeOffer() {
             border-image-slice: 1;
         }`}
 			</style>
-			<div className="mt-[6.15rem] mx-20 mb-10">
+			<div className="mt-[0rem] mx-20 mb-10">
 				<div className="flex flex-col justify-center items-center gap-8 mb-10">
-					<h1 className="text-transparent text-[5rem] font-syne font-bold bg-gradient-to-b from-[#19C2D9] to-[#C8F8FF] bg-clip-text">
-						Services we offer
+					<h1 className="text-transparent capitalize text-[5rem] font-syne font-bold bg-gradient-to-b from-[#19C2D9] to-[#C8F8FF] bg-clip-text">
+						Services We Offer
 					</h1>
 				</div>
 				<div className="flex justify-center items-center gap-20">

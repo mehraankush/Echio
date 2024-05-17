@@ -44,7 +44,7 @@ export default function StudioForInfluencer() {
 			</style>
 			<div className="bg-white text-black">
 				{/* download app */}
-				<div className="m-6 lg:mt-[6.15rem] lg:mx-20 lg:mb-10">
+				<div className="m-6 lg:mt-5 lg:mx-20 lg:mb-10">
 					<div className="lg:flex flex-col justify-center items-center gap-8 mb-10">
 						<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 							Studio for Influencers

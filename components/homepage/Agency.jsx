@@ -13,12 +13,12 @@ export default function Agency() {
 				boxShadow: "inset 0 0 10px 10px rgba(0, 0, 0, 0.5)",
 			}}
 		>
-			<div className="flex flex-col md:flex-row justify-center items-center gap-24 mx-4 my-8 md:my-[16rem] ">
+			<div className="flex flex-col md:flex-row justify-center items-center gap-24  my-8 md:my-[10rem] ">
 				<div
 					className="hidden lg:flex justify-center items-center overflow-hidden px-4 my-6 lg:px-0 lg:my-0 "
 					data-aos="fade-up-right"
 				>
-					<Image src={agencyPage} alt="graph" width={1000} height={1000} className="lg:w-[36.25rem] lg:h-[22rem]" />
+					<Image src={agencyPage} alt="graph" width={1000} height={1000} className="h-[22rem] w-auto" />
 				</div>
 
 				<div className="flex flex-start justify-around flex-col  lg:h-[22rem] space-y-[2rem]">

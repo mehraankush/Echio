@@ -159,7 +159,7 @@ export default function Influencers() {
 						</div>
 					</div>
 					<div
-						className="hidden md:block md:w-[34.25rem] md:h-[36.1875rem]"
+						className="hidden h-full md:block md:w-[34.25rem] md:h-[37.1875rem]"
 						data-aos="fade-up"
 					>
 						<motion.div
@@ -172,7 +172,7 @@ export default function Influencers() {
 							animate="whileNotHover"
 							className="group"
 						>
-							<Image src={brandImageHome} alt="mobile-image" />
+							<Image src={brandImageHome} alt="mobile-image" className="h-full shadow-gray-200 shadow-[8px_9px_5px_0px]"/>
 						</motion.div>
 					</div>
 				</div>

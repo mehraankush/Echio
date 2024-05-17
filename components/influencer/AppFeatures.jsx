@@ -56,7 +56,7 @@ export default function AppFeatures() {
 				<div className="lg:mb-24 lg:pb-28" ref={container}>
 					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1 lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={search} alt="mobile-image"  className="h-full w-auto" />
+							<Image src={search} alt="mobile-image"  className="h-[89%] w-auto object-contain" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={searchPointer} alt="mobile-image" />
 							</div>
@@ -73,7 +73,7 @@ export default function AppFeatures() {
 
 					<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
 						<div className="px-8  lg:px-0   lg:h-[70vh]">
-							<Image src={networkWithOthers} alt="mobile-image" className="h-full w-auto" />
+							<Image src={networkWithOthers} alt="mobile-image" className="h-[89%] w-auto object-contain"  />
 							<div className="hidden md:block relative left-[126px] bottom-[87px]">
 								<Image src={networkWithOthersPointer} alt="mobile-image" />
 							</div>

@@ -126,7 +126,7 @@ export default function HeroBrandPage() {
 
 						<div className="flex flex-col md:flex-row justify-center items-center gap-10 h-screen feature1 ">
 							<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up">
-								<Image src={influencerOne} alt="brand-image" />
+								<Image src={influencerOne} alt="brand-image" className="h-[89%] w-auto object-contain"/>
 								<div className="hidden md:block relative left-[176px] bottom-[87px]">
 									<Image src={monetizationWhite} alt="mobile-image" />
 								</div>

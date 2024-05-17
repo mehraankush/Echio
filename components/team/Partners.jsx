@@ -5,7 +5,7 @@ import { GrooveNexus, Affinzy, DexoMedia } from "@/public/index";
 export default function Partners() {
 	return (
 		<div className="bg-white text-black">
-			<div className="lg:flex flex-col justify-center items-center m-8 lg:m-0 lg:h-screen">
+			<div className="lg:flex flex-col justify-center items-center m-8 lg:m-0 py-5">
 				<h1 className="text-left lg:text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-r from-[#00C5D4] to-[#000000] bg-clip-text mb-6">
 					Our Partners
 				</h1>
