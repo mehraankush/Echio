@@ -24,7 +24,7 @@ import sadar from "./sadar.png";
 import qlan from "./qlan.png";
 import loco from "./loco.png";
 import influencertwo from "./influencerTwo2.png";
-import influencerTwo from "./influencertwo.png";
+import influencerTwo from "./influencerTwo.png";
 import studio from "./Studio.png";
 import studioone from "./studioone.png";
 import studiotwo from "./studiotwo.png";
