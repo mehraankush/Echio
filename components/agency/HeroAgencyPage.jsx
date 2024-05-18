@@ -112,7 +112,7 @@ export default function HeroAgencyPage() {
 					<div className="" ref={container}>
 						<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1">
 							<div className="px-8 lg:w-[36.25rem] lg:h-[70vh]">
-								<Image src={agencyMonetization} alt="mobile-image" className="h-full w-auto" />
+								<Image src={agencyMonetization} alt="mobile-image" className="h-[89%] object-contain w-auto" />
 								<div className="hidden md:block relative left-[176px] bottom-[87px]">
 									<Image src={monetizationWhite} alt="mobile-image" />
 								</div>

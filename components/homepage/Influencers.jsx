@@ -5,32 +5,12 @@ import { motion } from "framer-motion";
 import {
 	arrowRightWhite,
 	influencerone,
+	influencerOne,
 	influencerTwoNew,
 	brandImageHome,
 } from "@/public/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
-// const imageVariants = {
-// 	hover: {
-// 		rotate: 360,
-// 		transition: { duration: 1.5, ease: "easeInOut" },
-// 	},
-// 	whileNotHover: {
-// 		scale: 1, // Reset the scale when not hovering
-// 		rotate: 0, // Reset the rotate when not hovering
-// 		transition: { duration: 1.5, ease: "easeInOut" },
-// 	},
-// 	exit: {
-// 		opacity: 0,
-// 		transition: { duration: 0.5 },
-// 	},
-// 	scrollRotate: {
-// 		rotate: [0, 0, 360], // Rotate 360 degrees on scroll
-// 		transition: { duration: 2, ease: "easeInOut" },
-// 	},
-// };
 
 const buttonVariants = {
 	hover: {
@@ -108,7 +88,7 @@ export default function Influencers() {
 							animate="whileNotHover"
 							className="group"
 						>
-							<Image src={influencerone} alt="mobile-image" />
+							<Image src={influencerOne} alt="mobile-image" />
 						</motion.div>
 					</div>
 				</div>

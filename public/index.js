@@ -1,3 +1,9 @@
+// home section
+import influencerone from "./influencerone.png";
+import influencerOne from "./influencerOne1.png";
+
+
+
 import echio from "./echio-logo.svg";
 import echioNav from "./echioNavbar.png";
 import arrowRight from "./arrow-right.svg";
@@ -17,8 +23,6 @@ import wings from "./wings.png";
 import sadar from "./sadar.png";
 import qlan from "./qlan.png";
 import loco from "./loco.png";
-import influencerone from "./influencerone.png";
-import influencerOne from "./influencerOne1.png";
 import influencertwo from "./influencerTwo2.png";
 import influencerTwo from "./influencertwo.png";
 import studio from "./Studio.png";
@@ -103,7 +107,6 @@ import agencyMonetizationBlack from "./agencyMonetizationBlack.png";
 import agencyLower from "./agencyLower.png";
 import agencyLowerBlack from "./agencyLowerBlack.png";
 import serviceHeroMockup from "./serviceHeroMockup.png";
-import serviceChat from "./serviceChat.png";
 import downloadAppNew from "./downloadAppNew.png";
 import serviceNewFirst from "./serviceNewFirst.png";
 import serviceNewSecond from "./serviceNewSecond.png";
@@ -116,6 +119,8 @@ import monetizationWhiteMobile from "./monetizationWhiteMobile.png";
 import brandProductandShoot from "./brandProductandShoot.png";
 import mobileCards from "./multi-cards-mobile.png";
 import serviceMobile from "./servicesSecondNew.png";
+// service section
+import serviceChat from "./service/serviceChat.png";
 
 export {
 	echio,

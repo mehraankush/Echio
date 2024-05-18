@@ -24,7 +24,7 @@ export default function ServiceApp() {
 						</p>
 					</div>
 					<div className="w-[34.25rem] h-[36.1875rem]">
-						<Image src={serviceChat} alt="mobile-image" />
+						<Image src={serviceChat} alt="desktop-image" className="h-[89%] object-contain w-auto"/>
 						<div className="relative left-[176px] bottom-[30px]">
 							<Image src={monetization} alt="mobile-image" />
 						</div>
