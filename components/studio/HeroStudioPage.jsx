@@ -98,9 +98,7 @@ export default function HeroStudioPage() {
 					<h1 className="text-left lg:text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 						Our Studio
 					</h1>
-					<p className="text-left mb-5 text-[#eee] lg:text-center font-medium font-inter text-xl">
-						At Mayur Vihar Phase-1, Delhi-NCR
-					</p>
+
 					<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{
 						transformStyle: "preserve-3d",
 						perspective: '5000px'
