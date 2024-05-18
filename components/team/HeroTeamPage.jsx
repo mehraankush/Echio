@@ -2,41 +2,21 @@
 import React from "react";
 import Image from "next/image";
 import {
-	himanshuOne,
-	himanshuTwo,
-	himanshuThree,
-	himanshuFour,
-	rightArrow,
+	rightArrow
 } from "@/public/index";
 import Navbar from "../Navbar";
 
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel"
+import { cardDetails } from "@/data/teamMembers";
+
 export default function HeroTeamPage() {
-	const cardDetails = [
-		{
-			id: 0,
-			image: himanshuOne,
-			name: "Himanshu Singh",
-			post: "Founder And CEO",
-		},
-		{
-			id: 2,
-			image: himanshuTwo,
-			name: "Piyush Kr. Vikram",
-			post: "Co-founder and COO",
-		},
-		{
-			id: 3,
-			image: himanshuThree,
-			name: "Pankaj",
-			post: "Co-Founder and CTO",
-		},
-		{
-			id: 4,
-			image: himanshuFour,
-			name: "Abhishek Bisht",
-			post: "CMO",
-		},
-	];
+
 
 	return (
 		<div
@@ -58,82 +38,42 @@ export default function HeroTeamPage() {
 				<p className="text-[#eee] text-left lg:text-center font-medium font-inter text-xl mb-10">
 					Meet Echio’s Expert Team Members
 				</p>
-				<div className="flex items-center justify-center">
-					<div className="hidden md:flex justify-center gap-10 items-center">
-						{cardDetails.slice(0, 3).map((item) => (
-							<div
-								key={item.id}
-								className="max-w-sm bg-[#3E3E3E] hover:border hover:border-gray-200 rounded-lg shadow mb-8"
-							>
-								<Image
-									src={item.image}
-									alt="random"
-									className="w-fit h-fit overflow-y-clip"
-								/>
-								<div className="p-5">
-									<h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
-										{item.name}
-									</h5>
-									<p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
-										{item.post}
-									</p>
-									<span className="flex justify-end">
-										<Image src={rightArrow} alt="arrow" />
-									</span>
-								</div>
-							</div>
-						))}
-					</div>
-					<div className="hidden lg:flex justify-center items-center">
-						{cardDetails.slice(3, 4).map((item) => (
-							<div
-								key={item.id}
-								className="static lg:relative max-w-sm bg-[#3E3E3E] hover:border hover:border-gray-200 rounded-xl shadow my-0 mx-10 bottom-[15px]"
-							>
-								<Image
-									src={item.image}
-									alt="random"
-									className="w-[400px] h-fit overflow-clip"
-								/>
-								<div className="p-5">
-									<h5 className="mb-1 text-2xl font-bold text-gray-900 dark:text-white">
-										{item.name}
-									</h5>
-									<p className="mb-3.5 font-normal text-gray-700 dark:text-gray-400">
-										{item.post}
-									</p>
-									<span className="flex justify-end">
-										<Image src={rightArrow} alt="arrow" />
-									</span>
-								</div>
-							</div>
-						))}
-					</div>
-					<div className="grid md:hidden justify-center gap-10 items-center">
-						{cardDetails.map((item) => (
-							<div
-								key={item.id}
-								className="max-w-sm bg-[#3E3E3E] hover:border hover:border-gray-200 rounded-lg shadow mb-8"
-							>
-								<Image
-									src={item.image}
-									alt="random"
-									className="w-fit h-fit overflow-y-clip"
-								/>
-								<div className="p-5">
-									<h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
-										{item.name}
-									</h5>
-									<p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
-										{item.post}
-									</p>
-									<span className="flex justify-end">
-										<Image src={rightArrow} alt="arrow" />
-									</span>
-								</div>
-							</div>
-						))}
-					</div>
+				<div className="flex justify-center items-center">
+					<Carousel className="w-11/12 ">
+						<CarouselContent>
+							{cardDetails.map((item, index) => (
+								<CarouselItem key={index} className="max-w-sm">
+									<div
+										key={item.id}
+										className=" bg-[#3E3E3E] hover:border hover:border-gray-200 rounded-lg shadow"
+									>
+										<div>
+											<Image
+												src={item.image}
+												alt="Team members"
+												height={1000}
+												width={1000}
+												className=" h-[25rem] object-cover"
+											/>
+										</div>
+										<div className="p-5">
+											<h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+												{item.name}
+											</h5>
+											<p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
+												{item.post}
+											</p>
+											<span className="flex justify-end cursor-pointer">
+												<Image src={rightArrow} alt="arrow" />
+											</span>
+										</div>
+									</div>
+								</CarouselItem>
+							))}
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
 				</div>
 			</div>
 		</div>
