@@ -1,52 +1,60 @@
 import React from "react";
 import Image from "next/image";
 import {
-	footerBlackLogo,
+	footerLogo,
 	facebook,
 	instagram,
 	linkedin,
 	twitter,
 	yt,
+	footerWhiteLogo,
 } from "@/public/index";
 
-export default function FooterBlack() {
+export default function WhiteFooter() {
 	const currentYear = new Date().getFullYear();
 	return (
 		<>
-			<style>
+	<style>
 				{`
     .border-gradient {
-      border-image: linear-gradient(to right, #C8F8FF, #19C2D9);
+      border-image: linear-gradient(to right, #00C5D4, #000);
       border-image-slice: 1;
     }
 
     .text-gradient {
-			background:linear-gradient(to right, #C8F8FF, #19C2D9);
+      background: linear-gradient(to right, #00C5D4, #000);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
     }
+
+    .button-gradient {
+      transition: background 300ms ease-in-out;
+    }
+
+    .button-gradient:hover {
+      background: linear-gradient(to bottom, #00D4F1, #00CFEB, #00B6CF);
+      color: black; /* Change text color to black on hover */
+      border: none; /* Hide border on hover */
+    }
   `}
 			</style>
-			<div
-				className=""
-				style={{
-					backgroundImage: `linear-gradient(0deg, #252525 0%, #000 100%)`,
-					backgroundSize: "cover",
-					backgroundPosition: "top",
-					boxShadow: "inset 0 0 10px 10px rgba(0, 0, 0, 0.5)",
-				}}
-			>
-				<div className="lg:mx-20 lg:mt-[8.75rem] lg:pb-20 lg:px-20 lg:py-12">
-					<div className="flex flex-row justify-between items-center mb-16 mx-4">
-						<Image src={footerBlackLogo} alt="footer-logo" />
+			<div className="text-black bg-white border-t ">
+				{/* bg-white */}
+				<div className="mx-4 md:mx-20  md:px-20 py-12">
+					<div className="w-full flex flex-row md:justify-between justify-around items-center mb-16">
+						<Image
+							src={footerWhiteLogo}
+							alt="footer-logo"
+						// className="w-1/2 md:w-[18rem] h-16"
+						/>
 						<button
-							className={`font-inter flex justify-center items-center border text-xl text-gradient border-gradient font-medium rounded-[0.25rem] px-6 py-4 transition duration-300 ease-in-out hover:shadow-top-md hover:shadow-bottom-md `}
+							className={`font-inter flex justify-center items-center border text-xl text-gradient border-gradient font-medium rounded-[0.25rem] px-6 py-3.5 button-gradient`}
 						>
 							Stay in Touch
 						</button>
 					</div>
-					<div className="md:hidden mx-4 my-6 lg:max-w-[20rem] text-[#EEE]">
+					<div className="md:hidden mx-4 my-6 lg:max-w-[20rem]">
 						<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 							Disclaimer
 						</h1>
@@ -64,7 +72,7 @@ export default function FooterBlack() {
 						</p>
 					</div>
 					<div className="mx-4 grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row justify-between items-start gap-14 mb-14">
-						<div className="hidden md:block lg:max-w-[20rem] text-[#EEE]">
+						<div className="hidden md:block lg:max-w-[20rem]">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Disclaimer
 							</h1>
@@ -81,7 +89,7 @@ export default function FooterBlack() {
 								<br />
 							</p>
 						</div>
-						<div className="text-[#eee] text-xl">
+						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Company
 							</h1>
@@ -92,7 +100,7 @@ export default function FooterBlack() {
 							<p>Our Case Study</p>
 							<p>Our Journey</p>
 						</div>
-						<div className="text-[#eee] text-xl">
+						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Features
 							</h1>
@@ -102,14 +110,14 @@ export default function FooterBlack() {
 							<p>Agency</p>
 							<p>Our Services</p>
 						</div>
-						<div className="text-[#eee] text-xl">
+						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Policy
 							</h1>
 							<p>Privacy Policy</p>
 							<p>Terms & Conditions</p>
 						</div>
-						<div className="text-[#eee] text-xl">
+						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Contact Us
 							</h1>

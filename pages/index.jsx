@@ -3,7 +3,7 @@ import HeroHomePage from "@/components/homepage/HeroHomePage";
 import Influencers from "@/components/homepage/Influencers";
 import Studio from "@/components/homepage/Studio";
 import Agency from "@/components/homepage/Agency";
-import Footer from "@/components/Footer";
+import WhiteFooter from "@/components/common/WhiteFooter";
 import BrandComponent from "@/components/homepage/BrandComponent";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
 			<Influencers />
 			<Studio />
 			<Agency />
-			<Footer />
+			<WhiteFooter />
 		</main>
 	);
 }

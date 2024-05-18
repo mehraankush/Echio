@@ -1,5 +1,5 @@
-import FooterBlackInverted from "@/components/FooterBlackInverted";
 import Testimonials from "@/components/Testimonials";
+import BlackFooter from "@/components/common/BlackFooter";
 import HeroStudioPage from "@/components/studio/HeroStudioPage";
 import StudioForCreators from "@/components/studio/StudioForCreators";
 import React from "react";
@@ -10,7 +10,7 @@ export default function studio() {
 			<HeroStudioPage />
 			<StudioForCreators />
 			<Testimonials />
-			<FooterBlackInverted />
+			<BlackFooter />
 		</main>
 	);
 }

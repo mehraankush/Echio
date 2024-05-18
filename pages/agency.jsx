@@ -1,7 +1,7 @@
-import FooterBlack from "@/components/FooterBlack";
 import TestimonialsTopToBottom from "@/components/TestimonialsTopToBottom";
 import AgencyAppFeatures from "@/components/agency/AgencyAppFeatures";
 import HeroAgencyPage from "@/components/agency/HeroAgencyPage";
+import BlackFooter from "@/components/common/BlackFooter";
 import React from "react";
 
 export default function agency() {
@@ -10,7 +10,7 @@ export default function agency() {
 			<HeroAgencyPage />
 			<AgencyAppFeatures />
 			<TestimonialsTopToBottom />
-			<FooterBlack />
+			<BlackFooter />
 		</main>
 	);
 }
