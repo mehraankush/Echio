@@ -2,12 +2,10 @@ import AppFeatures from "@/components/influencer/AppFeatures";
 import DownloadApp from "@/components/influencer/DownloadApp";
 import HeroInfluencerPage from "@/components/influencer/HeroInfluencerPage";
 import StudioForInfluencer from "@/components/influencer/StudioForInfluencer";
-import UsedByInfluencer from "@/components/TestimonialsTopToBottom";
 import React from "react";
 import AppFeaturesWhite from "@/components/influencer/AppFeaturesWhite";
 import AppFeaturesBlack from "@/components/influencer/AppFeaturesBlack";
-import TestimonailsFooterBlack from "@/components/others/TestimonailsFooterBlack";
-import BlackFooter from "@/components/common/BlackFooter";
+import BlackTestimonials from "@/components/common/BlackTestimonials";
 
 export default function influencer() {
 	return (
@@ -18,8 +16,7 @@ export default function influencer() {
 			<AppFeaturesBlack />
 			<DownloadApp />
 			<StudioForInfluencer />
-			<UsedByInfluencer />
-			<BlackFooter />
+			<BlackTestimonials />
 		</main>
 	);
 }

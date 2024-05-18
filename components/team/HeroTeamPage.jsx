@@ -13,6 +13,7 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 import { cardDetails } from "@/data/teamMembers";
 
 export default function HeroTeamPage() {
@@ -39,7 +40,13 @@ export default function HeroTeamPage() {
 					Meet Echio’s Expert Team Members
 				</p>
 				<div className="flex justify-center items-center">
-					<Carousel className="w-11/12 ">
+					<Carousel className="w-11/12 "
+						plugins={[
+							Autoplay({
+								delay: 2000,
+							}),
+						]}
+					>
 						<CarouselContent>
 							{cardDetails.map((item, index) => (
 								<CarouselItem key={index} className="max-w-sm">
