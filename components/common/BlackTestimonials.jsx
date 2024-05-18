@@ -69,7 +69,7 @@ const BlackTestimonials = () => {
 									<CarouselItem key={index} className="w-full">
 										<div className="flex justify-around items-center">
 											<div className="flex-grow border-t border-[#FFF]" />
-											<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl">
+											<div className="relative p-16 max-w-[52rem] text-center font-syne text-2xl text-white">
 												<span className="text-[3rem] bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] bg-clip-text text-transparent leading-8">
 													&ldquo;
 												</span>

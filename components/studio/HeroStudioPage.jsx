@@ -117,7 +117,7 @@ export default function HeroStudioPage() {
             border-image-slice: 1;
         }`}
 				</style>
-				<div className="m-6 lg:m-0 lg:mt-[4rem] lg:mx-20 lg:mb-10">
+				<div className="m-6 lg:m-0 lg:mt-[4rem] lg:mx-20 lg:mb-10 text-white">
 					<div className="lg:flex flex-col justify-center items-center gap-8 lg:mb-10">
 						<h1 className="text-transparent capitalize text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#19C2D9] to-[#C8F8FF] bg-clip-text">
 							Services we offer
@@ -151,7 +151,7 @@ export default function HeroStudioPage() {
 						</div>
 					</div>
 				</div>
-				<div className="m-8 lg:m-0 lg:flex flex-row-reverse justify-evenly items-center gap-6 mb-10 lg:mb-[8rem]">
+				<div className="m-8 lg:m-0 lg:flex flex-row-reverse justify-evenly items-center gap-6 mb-10 lg:mb-[8rem] text-white">
 					<Image
 						src={serviceNewSecond}
 						alt="studio-image-2"

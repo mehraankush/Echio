@@ -50,7 +50,7 @@ export default function BrandComponent() {
 					<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 						Brand
 					</h1>
-					<p className="text-lg font-syne text-let md:max-w-[30rem] mb-10">
+					<p className="text-lg font-syne text-let md:max-w-[30rem] mb-10 text-white">
 						Automate your influencer marketing journey from day zero with the
 						magic of data and AI, creating impact for your brand, tracking
 						performance and achieving results.

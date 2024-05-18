@@ -62,7 +62,7 @@ export default function AppFeatures() {
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
+							<p className="text-2xl font-syne font-medium max-w-[39.25rem] text-white">
 								Connect with other influencers directly for mentorship and
 								collaboration
 							</p>
@@ -79,7 +79,7 @@ export default function AppFeatures() {
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl text-left font-syne font-medium">
+							<p className="text-2xl text-left font-syne font-medium text-white">
 								Help the community to grow in their journey as a content creators
 							</p>
 						</div>

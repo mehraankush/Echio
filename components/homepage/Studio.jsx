@@ -43,7 +43,7 @@ const Studio = () => {
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 							Studio
 						</h1>
-						<p className="text-[1.25rem] max-w-[50rem]">
+						<p className="text-[1.25rem] max-w-[50rem] text-white">
 							A place for executing what&apos;s possible, our studio is ready to
 							meet every requirement of the content creation journey along with
 							special catering to brand’s advertising requirements

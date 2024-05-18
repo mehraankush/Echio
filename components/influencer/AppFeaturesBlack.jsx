@@ -66,7 +66,7 @@ export default function AppFeatures() {
 						</div>
 					</div>
 					<div className="hidden md:flex flex-col m-8 lg:px-10 lg:py-20">
-						<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
+						<p className="text-2xl font-syne font-medium max-w-[39.25rem] text-white">
 							Make Your Business Profile and a Premium Portfolio to get brand
 							deals
 						</p>
@@ -84,7 +84,7 @@ export default function AppFeatures() {
 						</div>
 					</div>
 					<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-						<p className="text-2xl text-left font-syne font-medium">
+						<p className="text-2xl text-left font-syne font-medium text-white">
 							Access to everyday services to enable smooth content creation
 						</p>
 					</div>
@@ -105,7 +105,7 @@ export default function AppFeatures() {
 						</div>
 					</div>
 					<div className="hidden md:flex flex-col m-8 lg:px-10 lg:py-20">
-						<p className="text-2xl font-syne font-medium w-[30.25rem]">
+						<p className="text-2xl font-syne font-medium w-[30.25rem] text-white">
 							Monetization
 						</p>
 					</div>

@@ -118,7 +118,7 @@ export default function HeroAgencyPage() {
 								</div>
 							</div>
 							<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-								<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
+								<p className="text-2xl font-syne font-medium max-w-[39.25rem] text-white">
 									Register your influencer and get access of tools to manage them
 									and track their progress.
 								</p>
@@ -135,7 +135,7 @@ export default function HeroAgencyPage() {
 									</div>
 								</div>
 								<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-									<p className="text-2xl lg:text-right font-syne font-medium max-w-[39.25rem]">
+									<p className="text-2xl  font-syne font-medium max-w-[39.25rem] text-white">
 										Earn commissions when you influencers deliver work for brands
 										not associated with you
 									</p>

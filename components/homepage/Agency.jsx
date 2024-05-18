@@ -28,7 +28,7 @@ export default function Agency() {
 					<div className="block md:hidden justify-center items-center overflow-hidden mb-4">
 						<Image src={agencyPage} alt="graph" className="" />
 					</div>
-					<p className="text-lg font-syne text-left max-w-[40rem] mb-10">
+					<p className="text-lg font-syne text-left max-w-[40rem] text-white mb-10">
 						Echio believes in Promoting partnerships, which goes on to define us
 						and our community approach. We believe in building mutually
 						beneficial relationships with agencies, supporting each other and

@@ -52,7 +52,7 @@ export default function HeroTeamPage() {
 								<CarouselItem key={index} className="max-w-sm">
 									<div
 										key={item.id}
-										className=" bg-[#3E3E3E] hover:border hover:border-gray-200 rounded-lg shadow"
+										className=" bg-[#3E3E3E] border border-transparent hover:border-gray-200 rounded-lg shadow duration-300 ease-in-out"
 									>
 										<div>
 											<Image
@@ -60,14 +60,14 @@ export default function HeroTeamPage() {
 												alt="Team members"
 												height={1000}
 												width={1000}
-												className=" h-[25rem] object-cover"
+												className=" h-[25rem] object-cover rounded-lg"
 											/>
 										</div>
 										<div className="p-5">
-											<h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+											<h5 className="mb-2 text-2xl font-bold text-white">
 												{item.name}
 											</h5>
-											<p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
+											<p className="mb-5 font-normal text-white opacity-80">
 												{item.post}
 											</p>
 											<span className="flex justify-end cursor-pointer">

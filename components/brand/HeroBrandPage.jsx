@@ -137,7 +137,7 @@ export default function HeroBrandPage() {
 									Consultation
 								</h1>
 
-								<div className="text-xl font-syne font-medium lg:max-w-[35rem]">
+								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
 										legitimate and active creators to reach out with amazing
 										audience targeting, with help of precise detailing and filtering
@@ -163,7 +163,7 @@ export default function HeroBrandPage() {
 										Campaign Management
 									</h1>
 
-									<div className="text-xl font-syne font-medium lg:max-w-[35rem]">
+									<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
 									legitimate and active creators to reach out with amazing
 										audience targeting, with help of precise detailing and filtering

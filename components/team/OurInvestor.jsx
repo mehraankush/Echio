@@ -57,7 +57,7 @@ export default function OurInvestor() {
 			<p className="text-[#eee] text-center font-medium font-inter text-xl">
 				People who have invested in our company
 			</p>
-			<div className="m-8 lg:mx-20 lg:mb-24 lg:mt-28">
+			<div className="m-8 lg:mx-20 lg:mb-24 lg:mt-28 text-[#eee]">
 				{/* top 3 */}
 				<div className="lg:mx-20 lg:my-36 lg:flex grid justify-center gap-[8rem] lg:gap-10 items-center">
 					{cardDetails.slice(0, 3).map((item) => (

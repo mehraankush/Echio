@@ -29,7 +29,7 @@ export default function ContactPage() {
 					Reach out to us via the contact below to supercharge your influence
 					with us.
 				</p>
-				<div className="md:flex justify-start items-center lg:gap-8 font-inter">
+				<div className="md:flex justify-start items-center lg:gap-8 font-inter text-[#eee]">
 					<div className="flex justify-start lg:justify-center items-center gap-2 mb-4">
 						<Image src={call} alt="phone-image" />
 						<p>Phone Number: +91-9667525010</p>

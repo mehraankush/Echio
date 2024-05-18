@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Form() {
 	return (
-		<form className="lg:flex flex-col m-4 lg:mx-[20rem]">
+		<form className="lg:flex flex-col m-4 lg:mx-[20rem] text-[#eee]">
 			<div className="">
 				<div className="mb-6">
 					<p className="font-inter text-lg mb-6">You Are A</p>
