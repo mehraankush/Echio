@@ -100,7 +100,7 @@ export default function HeroAgencyPage() {
 						perspective: '5000px'
 					}}>
 						<div className="lg:w-[80rem] lg:h-screen rounded-lg border border-[#C8F8FF] bg-[#d9d9d9] bg-opacity-25 hero-image-brand origin-bottom " style={{ transform: 'rotateX(45deg) scale(0.9)' }}>
-							<Image src={brandHero} alt="hero-image-brand" className="h-full w-full" />
+							<Image src={brandHero} alt="hero-image-brand" className="h-full w-full object-cover" />
 						</div>
 					</div>
 				</div>

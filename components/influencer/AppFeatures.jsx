@@ -56,15 +56,14 @@ export default function AppFeatures() {
 				<div className="lg:mb-24 lg:pb-28" ref={container}>
 					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1 lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={search} alt="mobile-image"  className="h-[89%] w-auto object-contain" />
+							<Image src={networkWithOthers} alt="mobile-image"  className="h-[89%] w-auto object-contain" />
 							<div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={searchPointer} alt="mobile-image" />
 							</div>
 						</div>
 						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
 							<p className="text-2xl font-syne font-medium max-w-[39.25rem] text-white">
-								Connect with other influencers directly for mentorship and
-								collaboration
+							  Connect  and Collaborate with Fellow Influencers
 							</p>
 						</div>
 					</div>
@@ -73,7 +72,7 @@ export default function AppFeatures() {
 
 					<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
 						<div className="px-8  lg:px-0   lg:h-[70vh]">
-							<Image src={networkWithOthers} alt="mobile-image" className="h-[89%] w-auto object-contain"  />
+							<Image src={search} alt="mobile-image" className="h-[89%] w-auto object-contain"  />
 							<div className="hidden md:block relative left-[126px] bottom-[87px]">
 								<Image src={networkWithOthersPointer} alt="mobile-image" />
 							</div>

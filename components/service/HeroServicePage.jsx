@@ -30,11 +30,11 @@ export default function HeroServicePage() {
 					Service Provider
 				</span>{" "}
 			</div>
-			<div className="p-4 lg:flex flex-col justify-center items-center">
+			<div className="p-4 pt-0 lg:flex flex-col justify-center items-center">
 				<h1 className="block md:hidden text-left text-transparent text-[1.5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 					Echio For Service Provider
 				</h1>
-				<div className="space-y-[-2rem]">
+				{/* <div className="space-y-[-2rem]">
 					<h1 className="hidden md:block text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 						Echio
 					</h1>
@@ -44,12 +44,24 @@ export default function HeroServicePage() {
 					<h1 className="hidden md:block text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 						Service Provider
 					</h1>
+				</div> */}
+					<div className="lg:pt-11 -space-y-4">
+					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+						Echio
+					</h1>
+					<p className="font-syne font-bold lg:text-[4rem] text-transparent bg-gradient-to-b from-[#D9D9D9] to-transparent text-center bg-clip-text">
+						For
+					</p>
+					<h1 className="text-center text-transparent font-syne text-[2rem] leading-none lg:text-[7.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+					Service Provider
+					</h1>
 				</div>
+
 				<div className="px-8 my-6 lg:px-0 lg:my-0 lg:mt-[8rem] lg:mx-20 lg:mb-[10.5rem] md:hidden flex justify-center items-center overflow-hidden">
 					<Image src={serviceHeroMockup} alt="app-image" />
 				</div>
 
-				<div className="m-4 text-[#eee] max-w-5xl lg:text-center font-medium font-inter text-xl">
+				{/* <div className="m-4 text-[#eee] max-w-5xl lg:text-center font-medium font-inter text-xl">
 					<p >
 						Elevate your craft and expand your reach as a creative service
 						provider on our platform, unlocking
@@ -58,7 +70,7 @@ export default function HeroServicePage() {
 						new opportunities for growth and
 						recognition.
 					</p>
-				</div>
+				</div> */}
 
 				<div className="lg:mt-[10rem] lg:mx-20 lg:mb-[12.5rem] hidden md:flex justify-center items-center overflow-hidden " data-aos='fade-right' data-aos-duration='1000'>
 					<div className="" >

@@ -30,24 +30,24 @@ const WhiteTestmonilas = () => {
 		<div
 			className="transition-opacity duration-500 ease-in-out relative overflow-hidden"
 		>
-			<div className="w-full overflow-x-auto example" ref={scrollableContainer}>
+			<div className="w-full overflow-x-auto example mt-5" ref={scrollableContainer}>
 
 				<div className="flex flex-nowrap transition-transform  duration-500  ease-in-out">
 					<div className="mb-[7.5rem] w-full overflow-hidden">
-						<h1 className="hidden md:block text-center font-medium font-syne text-[2rem] text-white mb-8">
+						<h1 className="hidden md:block text-center font-medium font-syne text-[2rem] text-black mb-8">
 							Proudly Used by
 						</h1>
-						<div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
+						{/* <div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
 							<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={redditBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={tumblerBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
-						</div>
-						<div className="flex justify-between items-center mx-[28rem]">
+						</div> */}
+						{/* <div className="flex justify-between items-center mx-[28rem]">
 							<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 							<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
-						</div>
+						</div> */}
 
 
 						<Carousel className="w-11/12 "

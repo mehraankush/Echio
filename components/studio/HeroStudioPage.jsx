@@ -99,7 +99,7 @@ export default function HeroStudioPage() {
 						Our Studio
 					</h1>
 
-					<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{
+					<div className="mx-4  lg:mx-20  flex justify-center items-center hero-container " style={{
 						transformStyle: "preserve-3d",
 						perspective: '5000px'
 					}}>
@@ -139,7 +139,7 @@ export default function HeroStudioPage() {
 										<h1 className="font-syne text-2xl font-medium">
 											{index.heading}
 										</h1>
-										<p className="text-base font-syne text-[#090B0Bd]">
+										<p className="text-base font-syne text-slate-400">
 											Unleash your creativity and turn concepts into captivating
 											content effortlessly
 										</p>
@@ -172,7 +172,7 @@ export default function HeroStudioPage() {
 									<h1 className="font-syne text-2xl font-medium">
 										{index.heading}
 									</h1>
-									<p className="text-base font-syne text-[#090B0Bd]">
+									<p className="text-base font-syne text-slate-400">
 										Unleash your creativity and turn concepts into captivating
 										content effortlessly
 									</p>

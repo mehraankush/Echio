@@ -9,7 +9,7 @@ import {
 export default function StudioForCreators() {
 	return (
 		<div className="bg-white text-black">
-			<div className="lg:flex justify-center items-center gap-x-16 lg:mx-20 lg:my-[16rem]">
+			<div className="lg:flex justify-center items-center gap-x-16 lg:mx-20 lg:mb-16 lg:mt-[10rem]">
 				<div className="hidden md:block lg:w-[39.25rem] lg:h-[39.25rem]">
 					<Image src={studioForInfluencer} alt="content-image" />
 				</div>
@@ -41,7 +41,7 @@ export default function StudioForCreators() {
 					</div>
 				</div>
 			</div>
-			<div className="lg:flex flex-row-reverse justify-center items-center gap-x-16 lg:mx-20 lg:mt-[16rem]">
+			<div className="lg:flex flex-row-reverse justify-center items-center gap-x-16 lg:mx-20 ">
 				<div className="hidden md:block lg:w-[39.25rem] lg:h-[39.25rem]">
 					<Image src={studioForBrands} alt="content-image" />
 				</div>

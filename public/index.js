@@ -84,8 +84,11 @@ import solidCubeTestimonials from "./solidCubeTestimonials.svg";
 import semiCircleTestimonials from "./semiCircleTestimonials.svg";
 import angelInvestor from "./angelInvestor.svg";
 import founder from "./founder.svg";
+
 import agencyPage from "./agencyPage.png";
-import brandHero from "./brandHero.png";
+import brandHero from "./agency/agencyHero.png";
+import brandHero2 from "./brandHero.png";
+
 import echioLogoFooter from "./EchioLogoFooter.png";
 import search from "./search.png";
 import influencerHeroImage from "./influencerHeroImage.png";
@@ -167,6 +170,7 @@ export {
 	computerWhite,
 	wallWhite,
 	penWhite,
+	brandHero2,
 	laptopWhite,
 	rightArrow,
 	himanshuOne,

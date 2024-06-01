@@ -44,7 +44,7 @@ const BlackTestimonials = () => {
 						<h1 className="hidden md:block text-center font-medium font-syne text-[2rem] text-white mb-8">
 							Proudly Used by
 						</h1>
-						<div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
+						{/* <div className="hidden lg:flex justify-around items-center mb-[2rem] mx-[28rem]">
 							<Image src={linkedinBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={instagramBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
 							<Image src={quoraBlue} alt="logo" className=' hover:cursor-pointer  shadow-[0px_0px_20px_0px] hover:shadow-white rounded-full transition-all ease-in-out duration-300' />
@@ -54,7 +54,7 @@ const BlackTestimonials = () => {
 						<div className="flex justify-between items-center mx-[28rem]">
 							<Image src={solidCubeTestimonials} alt="random" className="mt-20" />
 							<Image src={grayBorderCubeTestimonials} alt="random" className="mb-8" />
-						</div>
+						</div> */}
 
 
 						<Carousel className="w-11/12 "

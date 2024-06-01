@@ -59,7 +59,14 @@ export default function ServicesWeOffer() {
             border-image-slice: 1;
         }`}
 			</style>
-			<div className="mt-[0rem] mx-20 mb-10">
+			<div className="mx-20 mb-10"
+				style={{
+					backgroundImage: `linear-gradient(180deg, #252525 0%, #000 100%)`,
+					backgroundSize: "cover",
+					backgroundPosition: "top",
+				}}
+			>
+
 				<div className="flex flex-col justify-center items-center gap-8 mb-10">
 					<h1 className="text-transparent capitalize text-[5rem] font-syne font-bold bg-gradient-to-b from-[#19C2D9] to-[#C8F8FF] bg-clip-text">
 						Services We Offer
@@ -77,7 +84,7 @@ export default function ServicesWeOffer() {
 						className="w-[40rem] h-[41.75rem]"
 					/>
 				</div>
-			</div>
+			</div >
 			<div className="mx-64 grid grid-cols-4 grid-rows-2 items-center gap-6 mb-[8rem]">
 				{cardComponents.map((index) => (
 					<div
