@@ -77,6 +77,7 @@ import location from "./location.svg";
 import collageBG from "./collage-bg.svg";
 import collageOne from "./collage-1.svg";
 import collageTwo from "./collage-2.svg";
+import collageTwo2 from "./collageTwo.png";
 import collageThree from "./collage-3.svg";
 import Graph from "./Graph.png";
 import grayBorderCubeTestimonials from "./grayBorderCubeTestimonials.svg";
@@ -88,6 +89,12 @@ import founder from "./founder.svg";
 import agencyPage from "./agencyPage.png";
 import brandHero from "./agency/agencyHero.png";
 import brandHero2 from "./brandHero.png";
+
+// brand 
+import collage2 from "./collage2.png";
+import collage3 from "./collage3.png";
+import collage4 from "./collage4.png";
+
 
 import echioLogoFooter from "./EchioLogoFooter.png";
 import search from "./search.png";
@@ -135,6 +142,10 @@ export {
 	linkedin,
 	twitter,
 	yt,
+	collage2,
+	collage3,
+	collage4,
+	collageTwo2,
 	footerLogo,
 	circle,
 	redbull,
