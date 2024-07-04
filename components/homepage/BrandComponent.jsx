@@ -46,12 +46,12 @@ export default function BrandComponent() {
 				</marquee>
 			</div>
 			<div className="block md:flex flex-row-reverse justify-center items-center gap-14 my-[5rem] lg:my-[5rem] lg:mx-[3.5rem] mx-[2.5rem]">
-				<div className="flex flex-start flex-col">
+				<div className="flex flex-start flex-col mt-[-80px]">
 					<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 						Brand
 					</h1>
 					<p className="text-lg font-syne text-let md:max-w-[30rem] mb-10 text-white">
-						Automate your influencer marketing journey from day zero with the
+						Automate your  marketing journey from day zero with the
 						magic of data and AI, creating impact for your brand, tracking
 						performance and achieving results.
 					</p>
@@ -64,7 +64,7 @@ export default function BrandComponent() {
 							data-aos="fade-up-right"
 						/>
 					</div>
-					<div className="flex flex-col md:flex-row gap-6">
+					<div className="flex flex-col md:flex-row gap-4">
 						<Button
 							button="default"
 							className="![border-image:unset] !bg-white !text-black"

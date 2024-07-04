@@ -38,7 +38,7 @@ const Studio = () => {
 			}}
 		>
 			<div>
-				<div className="md:mt-[6.15rem] mx-4 my-10 md:mx-20 md:mb-[6.18rem]">
+				<div className="md:mt-[20rem] mx-4 my-10 md:mx-20 md:mb-[6.18rem]">
 					<div className="md:flex flex-col justify-center items-center gap-8 mb-10">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 							Studio

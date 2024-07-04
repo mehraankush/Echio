@@ -85,7 +85,7 @@ export default function HeroHomePage() {
 						Homepage
 					</span>{" "}
 				</div>
-				<div className="md:space-y-[-3rem]">
+				<div className="md:space-y-[-3rem] px-10">
 					<h1 className="text-center text-transparent font-syne text-[2rem] md:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 						Makes You
 						<span className="inline md:hidden text-center text-transparent font-syne text-[2rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
@@ -99,11 +99,11 @@ export default function HeroHomePage() {
 
 
 				<div className="self-start md:mx-[8rem] max-w-auto md:max-w-[21.75rem] gap-8 flex flex-col items-center justify-center text-center">
-					<p className="text-[#eee] font-syne text-lg leading-8 mt-6 lg:mt-0 text-center">
+					<p className="text-[#eee] font-syne text-lg leading-8 mt-6 lg:mt-0 text-left px-10 ">
 						Dive into Echio’s AI-driven ecosystem and explore the intriguing
 						possibilities lying with redefined influencer experience for all.
 					</p>
-					<div className="w-full px-10 mb-10 md:mb-0">
+					<div className="w-full px-10 mb-10 md:mb-0 z-[-1]">
 						<Button
 							button="default"
 							className="![border-image:unset] !bg-white !text-black w-full md:w-fit"
