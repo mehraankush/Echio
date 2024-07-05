@@ -39,17 +39,19 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="flex text-white justify-between items-center h-16 mx-4 py-6 md:mx-[5rem] p-2 md:pt-[2rem] md:mb-14 ">
+		<div className="flex text-white justify-between items-center h-16 mx-4 py-6 md:mx-[5rem] p-2 md:pt-[2rem] md:mb-14">
 			<span className="lg:px-2 md:px-2 py-3 mx-3">
 				<Image src={echioNav} alt="logo" className="" />
 			</span>
 			<div
 				className="md:hidden cursor-pointer flex justify-between items-center"
-				onClick={toggleNav}
+				onClick={()=>setNav(!nav)}
 			>
 				{nav ? (
-					<Image src={close} alt="cross-icon" />
-				) : (
+					<div className="absolute top-6 right-7 z-50 bg-white rounded">
+					<Image src={close} alt="cross-icon" /> 
+					</div>
+				) :(
 					<Image src={hamburger} alt="menu-icon" />
 				)}
 			</div>
@@ -69,19 +71,20 @@ const Navbar = () => {
 				))}
 			</ul>
 			{nav && (
-				<div className="md:hidden fixed inset-0 z-50 bg-[#1c1c1c]">
-					<ul className="text-white text-center">
+	
+				<div className="md:hidden fixed inset-0 bg-[#1c1c1c] mb-">
+					<ul className="text-white text-center bg-[#1c1c1c]">
 						{navbarItems.map((item) => (
 							<li
 								key={item.id}
-								className={`m-8 p-4 cursor-pointer ${
+								className={`m-8 p-3 cursor-pointer ${
 									activeTag === item.tag
 										? "text-[#5AEBFF]"
 										: "hover:text-[#5AEBFF]"
 								}`}
 								onClick={() => handleTagClick(item.tag)}
 							>
-								<Link href={item.href} className="no-word-wrap">
+								<Link href={item.href} className="">
 									{item.tag}
 								</Link>
 							</li>

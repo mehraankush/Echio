@@ -21,7 +21,7 @@ export default function Agency() {
 					<Image src={agencyPage} alt="graph" width={1000} height={1000} className="h-[22rem] w-auto" />
 				</div>
 
-				<div className="flex flex-start justify-around flex-col  lg:h-[22rem] space-y-[2rem]">
+				<div className="flex flex-start justify-around flex-col  lg:h-[22rem] space-y-[2rem] px-6">
 					<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00EDFF] to-[#CBFBFF] bg-clip-text">
 						Agency
 					</h1>
