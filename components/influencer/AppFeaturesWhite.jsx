@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from "react";
 import Image from "next/image";
-import { chat, chatPointer, connectWithOthers } from "@/public/index";
+import { chat, chatPointer, connectWithOthers, profile, profilePointer } from "@/public/index";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -34,47 +34,56 @@ export default function AppFeaturesWhite() {
 
 
 	return (
-		
 
-
-			<div className="  text-[#090B0B] -z-[10]  " ref={container}>
-				<Parallax>
-					<div className="flex flex-col lg:flex-row justify-center items-center  h-screen lg:mx-[9.5rem]">
-						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={chat} alt="mobile-image" className="h-[89%] w-auto object-contain" />
-							<div className="hidden md:block relative left-[176px] bottom-[87px]">
-								<Image src={chatPointer} alt="mobile-image" />
-							</div>
-						</div>
-						<div className="flex flex-col m-8 lg:px-10 lg:py-20">
-							<p className="text-2xl font-syne font-medium max-w-[39.25rem]">
-								Growth Consultations of your channel and understanding how it can be
-								improved and to make it happen
-							</p>
+		<div className="  text-[#090B0B] -z-[10]  " ref={container}>
+			{/* <Parallax>
+				<div className="lg:flex justify-center items-center gap-10 h-screen ">
+					<div
+						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+						data-aos="fade-up-right"
+					>
+						<Image src={profile} alt="mobile-image"  className="h-[89%] w-auto object-contain"/>
+						<div className="hidden md:block relative left-[176px] bottom-[87px]">
+							<Image src={profilePointer} alt="mobile-image" />
 						</div>
 					</div>
-				</Parallax>
+					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20 ">
 
-				<Parallax>
-					<div className="flex flex-col  lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mr-[9.5rem] ">
-						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={chat} alt="mobile-image" className="h-[80%] w-auto object-contain" />
-							<div className="hidden md:block relative left-[176px] bottom-[87px]">
-								<Image src={connectWithOthers} alt="mobile-image" />
-							</div>
+						<div className="font-syne flex flex-col text-[2rem] font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+							Create your Work Portfolio
 						</div>
-						<div className="flex flex-col m-8 lg:px-5 lg:py-20">
-							<p className="text-2xl text-left font-syne font-medium max-w-[42.25rem]">
-								Content Solutions to have creative content ideas and hacks to
-								optimize the quality of the content
-							</p>
+						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
+							Make Your Business Profile and a Premium Portfolio to get brand deals
+						</p>
+					</div>
+				</div>
+			</Parallax> */}
+
+			<Parallax>
+				<div className="lg:flex flex-row-reverse justify-center items-center gap-10 h-screen ">
+					<div
+						className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+						data-aos="fade-up-right"
+					>
+						<Image src={chat} alt="mobile-image" className="h-[80%] w-auto object-contain" />
+						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
+							<Image src={connectWithOthers} alt="mobile-image" />
 						</div>
 					</div>
-				</Parallax>
+					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20 ">
 
-			</div>
-		
-		
+						<div className="font-syne flex flex-col text-[2rem] font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
+							Other services for influencers
+						</div>
+						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
+							Content Solutions to have creative content ideas and hacks to
+							optimize the quality of the content
+						</p>
+					</div>
+				</div>
+			</Parallax>
+
+		</div>
 
 	);
 }

@@ -80,15 +80,15 @@ export const MultiCards = () => {
 					>
 						<Image src={collageTwo2} alt="collage-bg " />
 					</motion.div>
-					<motion.div
+					{/* <motion.div
 						className={`${isHovered? 'blur-sm hover:blur-0 hover:scale-110':''} border border-solid border-transparent left-0 top-[110px] rounded-[4px] bg-[#ffffff29]   absolute transition-all duration-500 ease-in-out w-[265px] h-[180px]`}
 						// variants={imageVariants}
 					>
 						<div className="flex items-center h-full">
 						<Image src={collage2} alt="collage-one" />
 						</div>
-					</motion.div>
-					<motion.div
+					</motion.div> */}
+					{/* <motion.div
 						className={`${isHovered? 'blur-sm hover:blur-0 hover:scale-110':''} border border-solid border-transparent left-[438px] top-0 rounded-[4px] bg-[#ffffff29]    absolute transition-all  duration-500 ease-in-out w-[265px] h-[180px]`}
 						// variants={imageVariants}
 					>
@@ -99,7 +99,7 @@ export const MultiCards = () => {
 						// variants={imageVariants}
 					>
 						<Image src={collage4} alt="collage-two" className="object-contain w-[265px] h-[180px]"/>
-					</motion.div>
+					</motion.div> */}
 				</motion.div>
 			</motion.div>
 		</div>

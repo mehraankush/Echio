@@ -57,8 +57,14 @@ export default function HeroServicePage() {
 					</h1>
 				</div>
 
-				<div className="px-8 my-6 lg:px-0 lg:my-0 lg:mt-[8rem] lg:mx-20 lg:mb-[10.5rem] md:hidden flex justify-center items-center overflow-hidden">
+				{/* <div className="px-8 my-6 lg:px-0 lg:my-0 lg:mt-[8rem] lg:mx-20 lg:mb-[10.5rem] md:hidden flex justify-center items-center overflow-hidden">
 					<Image src={serviceHeroMockup} alt="app-image" />
+				</div> */}
+				<div className="h-[800px] mt-[6rem]">
+					<Image src='/influencerHeroImage2.png' width={1000} height={1000}
+					 className="h-4/5 w-auto"
+					 alt="image"
+					/>
 				</div>
 
 				{/* <div className="m-4 text-[#eee] max-w-5xl lg:text-center font-medium font-inter text-xl">
@@ -72,11 +78,11 @@ export default function HeroServicePage() {
 					</p>
 				</div> */}
 
-				<div className="lg:mt-[10rem] lg:mx-20 lg:mb-[12.5rem] hidden md:flex justify-center items-center overflow-hidden " data-aos='fade-right' data-aos-duration='1000'>
+				{/* <div className="lg:mt-[10rem] lg:mx-20 lg:mb-[12.5rem] hidden md:flex justify-center items-center overflow-hidden " data-aos='fade-right' data-aos-duration='1000'>
 					<div className="" >
 						<Image src={serviceHeroMockup} alt="app-image" />
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<div className="flex md:hidden flex-col justify-center items-center lg:mx-[5rem] lg:mt-[9.75rem]">
 				<div className="m-8 lg:m-0 lg:flex flex-row-reverse justify-center items-center gap-20">

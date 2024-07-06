@@ -37,8 +37,6 @@ export default function HeroInfluencerPage() {
 
 
 
-
-
 	return (
 		<div
 			style={{
@@ -66,29 +64,11 @@ export default function HeroInfluencerPage() {
 						Influencers
 					</h1>
 				</div>
-				<div className="p-10 w-full flex justify-center  " 
-					style={{
-						transformStyle: 'preserve-3d',
-						perspective: '1000px',
-						
-					
-					}}
-				 data-aos='fade-right' data-aos-duration='1000'>
-					<span className="w-[90%] flex h-[55vh] my-10 origin-center items-center img-rotate "
-					style={{
-						transform: 'rotateY(30deg)',
-						transformStyle: 'preserve-3d',
-						
-						}}>
-
-						<img src='/influencerHeroImage2.png' alt="mobile-view-asset" quality={100} height={1000} width={1000} className="h-[80%] w-auto  origin-center" 
-						style={{
-							transform: 'rotateY(-90deg)'
-						}}
-						
-						/>
-					</span>
-					
+				<div className="h-[800px]">
+					<Image src='/influencerHeroImage2.png' width={1000} height={1000}
+					 className="h-4/5 w-auto"
+					 alt="image"
+					/>
 				</div>
 			</div>
 		</div>

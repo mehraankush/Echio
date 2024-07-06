@@ -105,7 +105,7 @@ export default function HeroAgencyPage() {
 					</div>
 				</div>
 
-				<div className="my-10 lg:my-0">
+				{/* <div className="my-10 lg:my-0">
 					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text ">
 						App Features
 					</h1>
@@ -143,7 +143,8 @@ export default function HeroAgencyPage() {
 							</div>
 						</Parallax>
 					</div>
-				</div>
+				</div> */}
+				
 			</div>
 		</SmoothScroll>
 	);
