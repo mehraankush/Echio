@@ -48,21 +48,21 @@ export default function HeroInfluencerPage() {
 			}}
 		>
 			<Navbar />
-			<div className="m-4 block md:hidden">
+			<div className="ml-6 block md:hidden">
 				Home /{" "}
-				<span className="text-center text-[#43DEF3] font-syne mb-6">
+				<span className="text-center text-[#43DEF3] font-syne mb-10">
 					Influencer
 				</span>{" "}
 			</div>
-			<div className="m-4 lg:flex flex-col justify-center items-center lg:mx-20 lg:my-[3rem] lg:gap-16">
+			<div className="mt-[3.3rem] lg:flex flex-col justify-center items-center lg:mx-20 lg:my-[3rem] lg:gap-16">
 				<div className="lg:pt-11 -space-y-4">
-					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+					<h1 className="pt-5 text-center text-transparent font-syne text-[2rem] lg:text-[7rem] mt-[-60px] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text ">
 						Exclusive Community
 					</h1>
-					<p className="font-syne font-bold lg:text-[4rem] text-transparent bg-gradient-to-b from-[#D9D9D9] to-transparent text-center bg-clip-text">
+					<p className="p-3 lg:p-0 font-syne font-bold lg:text-[4rem] text-transparent bg-gradient-to-b from-[#D9D9D9] to-transparent text-center bg-clip-text">
 						For
 					</p>
-					<h1 className="text-center text-transparent font-syne text-[2rem] leading-none lg:text-[7.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+					<h1 className="text-center text-transparent font-syne text-[2rem] leading-none lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 						Influencers
 					</h1>
 				</div>

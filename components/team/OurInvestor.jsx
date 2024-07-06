@@ -54,12 +54,12 @@ export default function OurInvestor() {
 			<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 				Our Investors
 			</h1>
-			<p className="text-[#eee] text-center font-medium font-inter text-xl">
+			<p className="text-[#eee] text-center font-medium font-inter text-xl pb-5">
 				People who have invested in our company
 			</p>
-			<div className="m-8 lg:mx-20 lg:mb-24 lg:mt-28 text-[#eee]">
+			<div className=" lg:mx-20 lg:mb-24 lg:mt-28 text-[#eee]">
 				{/* top 3 */}
-				<div className="lg:mx-20 lg:my-36 lg:flex grid justify-center gap-[8rem] lg:gap-10 items-center">
+				<div className=" mt-20 ml-10 mr-10 lg:mx-20 lg:my-36 lg:flex grid justify-center gap-[8rem] lg:gap-10 items-center">
 					{cardDetails.slice(0, 3).map((item) => (
 						<div
 							key={item.id}

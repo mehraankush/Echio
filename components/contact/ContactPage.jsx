@@ -15,7 +15,7 @@ export default function ContactPage() {
 			}}
 		>
 			<Navbar />
-			<div className="ml-4 block md:hidden">
+			<div className="ml-6 block md:hidden">
 				Home /{" "}
 				<span className="text-center text-[#43DEF3] font-syne mb-6">
 					Contact Us

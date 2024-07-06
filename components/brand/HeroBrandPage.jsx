@@ -81,7 +81,7 @@ export default function HeroBrandPage() {
 			>
 
 				<Navbar />
-				<div className="m-4 block md:hidden">
+				<div className="ml-6 block md:hidden">
 					Home /{" "}
 					<span className="text-center text-[#43DEF3] font-syne mb-6">Brand</span>{" "}
 				</div>
@@ -91,11 +91,11 @@ export default function HeroBrandPage() {
 						perspective: '5000px'
 					}}
 				>
-					<div className="space-y-[-3rem]">
-						<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+					<div className="mt-3 lg:space-y-[-5rem]">
+						<h1 className="mt-[-2px] text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] mt-20 font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text ">
 							AI Driven
 						</h1>
-						<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+						<h1 className="mt-[-3.2rem] text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] pt-10 font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 							Market Place
 						</h1>
 					</div>

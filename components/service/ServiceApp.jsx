@@ -16,7 +16,7 @@ export default function ServiceApp() {
 			<div className="hidden md:flex flex-col justify-center items-center mx-[5rem] mt-[9.75rem]">
 				<div className="flex flex-row-reverse justify-center items-center gap-20">
 					<div className="flex flex-col">
-						<h1 className="text-transparent text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#C8F8FF] bg-clip-text">
+						<h1 className="text-transparent text-[4rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#C8F8FF] bg-clip-text">
 							App features
 						</h1>
 						<p className="text-xl font-syne mb-10">

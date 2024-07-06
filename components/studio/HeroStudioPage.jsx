@@ -88,7 +88,7 @@ export default function HeroStudioPage() {
 				}}
 			>
 				<Navbar />
-				<div className="ml-8 mb-3.5 block md:hidden">
+				<div className="ml-6 mb-3.5 block md:hidden">
 					Home /{" "}
 					<span className="text-center text-[#43DEF3] font-syne mb-6">
 						Studio

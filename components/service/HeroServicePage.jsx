@@ -31,7 +31,7 @@ export default function HeroServicePage() {
 				</span>{" "}
 			</div>
 			<div className="p-4 pt-0 lg:flex flex-col justify-center items-center">
-				<h1 className="block md:hidden text-left text-transparent text-[1.5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
+				<h1 className="hidden block md:hidden text-left pl-6 pt-5 text-transparent text-[1.5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 					Echio For Service Provider
 				</h1>
 				{/* <div className="space-y-[-2rem]">
@@ -45,14 +45,14 @@ export default function HeroServicePage() {
 						Service Provider
 					</h1>
 				</div> */}
-					<div className="lg:pt-11 -space-y-4">
-					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+					<div className="mt-[0.5rem] lg:pt-11 -space-y-4 lg:mt-[-2.3rem] ">
+					<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 						Echio
 					</h1>
-					<p className="font-syne font-bold lg:text-[4rem] text-transparent bg-gradient-to-b from-[#D9D9D9] to-transparent text-center bg-clip-text">
+					<p className="p-3 lg:p-0 font-syne font-bold lg:text-[4rem] text-transparent bg-gradient-to-b from-[#D9D9D9] to-transparent text-center bg-clip-text">
 						For
 					</p>
-					<h1 className="text-center text-transparent font-syne text-[2rem] leading-none lg:text-[7.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+					<h1 className="pt-1 text-center text-transparent font-syne text-[2rem] leading-none lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 					Service Provider
 					</h1>
 				</div>

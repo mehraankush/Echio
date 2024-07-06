@@ -48,7 +48,7 @@ const Navbar = () => {
 				onClick={()=>setNav(!nav)}
 			>
 				{nav ? (
-					<div className="absolute top-6 right-7 z-50 bg-white rounded">
+					<div className="fixed top-7 right-7 z-50 bg-white rounded">
 					<Image src={close} alt="cross-icon" /> 
 					</div>
 				) :(
@@ -72,7 +72,7 @@ const Navbar = () => {
 			</ul>
 			{nav && (
 	
-				<div className="md:hidden fixed inset-0 bg-[#1c1c1c] mb-">
+				<div className="md:hidden absolute inset-0 bg-[#1c1c1c] z-40">
 					<ul className="text-white text-center bg-[#1c1c1c]">
 						{navbarItems.map((item) => (
 							<li

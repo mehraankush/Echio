@@ -86,7 +86,7 @@ export default function HeroHomePage() {
 					</span>{" "}
 				</div>
 				<div className="md:space-y-[-3rem] px-10">
-					<h1 className="text-center text-transparent font-syne text-[2rem] md:text-[6.875rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+					<h1 className="text-center mt-20 mb-5 text-transparent font-syne text-[2rem] md:text-[6.875rem] mt-[-0.25rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 						Makes You
 						<span className="inline md:hidden text-center text-transparent font-syne text-[2rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 							Viral.

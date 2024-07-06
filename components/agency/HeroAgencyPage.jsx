@@ -71,15 +71,15 @@ export default function HeroAgencyPage() {
 
 				<div className="lg:flex flex-col justify-center items-center">
 
-					<div className="space-y-[-1rem]">
-						<h1 className="flex flex-col  text-center text-transparent font-syne text-[2rem] lg:text-[6rem] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+					<div className=" space-y-[-1rem]">
+						<h1 className="pt-6 flex flex-col text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] mt-[-15px] font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 							Influencer Marketing
-							<span className="md:mt-[-2rem]"> Agency</span>
+							<span className=" mt-[-0.5rem] lg:mt-[-2.5rem]"> Agency</span>
 						</h1>
-						<p className="text-transparent text-center font-syne text-base lg:text-[2rem] font-bold bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
+						<p className="p-3 text-transparent text-center font-syne text-base lg:text-[2rem] font-bold bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text">
 							As
 						</p>
-						<h1 className="text-transparent font-syne text-center text-[2rem] lg:text-[6.25rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
+						<h1 className="text-transparent font-syne text-center text-[2rem] lg:text-[8.125rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text mb-6">
 							Echio’s Partner
 						</h1>
 					</div>
