@@ -76,8 +76,7 @@ export default function AppFeaturesWhite() {
 							Other services for influencers
 						</div>
 						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
-							Content Solutions to have creative content ideas and hacks to
-							optimize the quality of the content
+							Enhance your content with access to expert video editors, graphic designers, and studios tailored for influencer needs.
 						</p>
 					</div>
 				</div>
