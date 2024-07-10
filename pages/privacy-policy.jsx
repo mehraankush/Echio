@@ -22,7 +22,7 @@ const styleMap = {
   '4. Links to Other Websites': 'text-[1.7rem] font-semibold my-4',
   '5. Changes to this Privacy Policy': 'text-[1.7rem] font-semibold my-4',
   'Contact Us': 'text-[1.7rem] font-semibold mt-4',
-  '© 2023 Copyright echio.in':'bg-gray-300 text-center text-gray-900 py-2 mx-[-20rem] text-[1.3rem] mt-8'
+  '© 2023 Copyright echio.in':'bg-zinc-950 text-center text-white py-2 mx-[-20rem] text-[1.3rem] mt-8'
 
 };
 
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
   const replaceLinks = (line) => {
     const links = {
       'Google API Services User Data Policy': 'https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes',
-      'https://echio.in/home.html': 'https://echio.in/home.html#Contact',
+      'Click Here': 'https://echio.in/home.html#Contact',
       'support@echio.in': 'mailto:support@echio.in',
     };
 
