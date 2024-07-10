@@ -13,7 +13,7 @@ export default function influencer() {
 			<HeroInfluencerPage />
 			<AppFeatures />
 			<AppFeaturesWhite />
-			<AppFeaturesBlack />
+			{/* <AppFeaturesBlack /> */}
 			<DownloadApp />
 			<StudioForInfluencer />
 			<BlackTestimonials />

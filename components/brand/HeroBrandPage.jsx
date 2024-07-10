@@ -126,7 +126,7 @@ export default function HeroBrandPage() {
 
 						<div className="flex flex-col md:flex-row justify-center items-center gap-10 h-screen feature1 ">
 							<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up">
-								<Image src={influencerone} alt="brand-image" className="h-[89%] w-auto object-contain"/>
+								<Image src={influencerone} alt="brand-image" className="h-[89%] w-auto object-contain" />
 								<div className="hidden md:block relative left-[176px] bottom-[87px]">
 									<Image src={monetizationWhite} alt="mobile-image" />
 								</div>
@@ -134,7 +134,7 @@ export default function HeroBrandPage() {
 							</div>
 							<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
 								<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
-									Consultation
+									Creator Discovery
 								</h1>
 
 								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
@@ -160,16 +160,16 @@ export default function HeroBrandPage() {
 								</div>
 								<div className="lg:flex flex-col mx-4 my-8 lg:px-10 lg:py-20 ">
 									<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
-										Campaign Management
+										Target your Audience
 									</h1>
 
 									<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
-									<p>
-									legitimate and active creators to reach out with amazing
-										audience targeting, with help of precise detailing and filtering
-										with our tech
-									</p>
-								</div>
+										<p>
+											legitimate and active creators to reach out with amazing
+											audience targeting, with help of precise detailing and filtering
+											with our tech
+										</p>
+									</div>
 
 								</div>
 							</div>

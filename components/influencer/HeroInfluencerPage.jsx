@@ -37,8 +37,6 @@ export default function HeroInfluencerPage() {
 
 
 
-
-
 	return (
 		<div
 			style={{
@@ -66,6 +64,7 @@ export default function HeroInfluencerPage() {
 						Influencers
 					</h1>
 				</div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 				<div className="p-10 w-full flex justify-center  " 
 					style={{
@@ -92,11 +91,17 @@ export default function HeroInfluencerPage() {
 					
 =======
 				<div className="h-[800px] px-8 py-6">
+=======
+				<div className="h-[800px]">
+>>>>>>> e9fdd3ab8b005fd9c1308cc5cadc20801bedf3a9
 					<Image src='/influencerHeroImage2.png' width={1000} height={1000}
 					 className="h-4/5 w-auto"
 					 alt="image"
 					/>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> e9fdd3ab8b005fd9c1308cc5cadc20801bedf3a9
 				</div>
 			</div>
 		</div>

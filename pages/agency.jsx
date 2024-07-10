@@ -8,7 +8,7 @@ export default function agency() {
 	return (
 		<main className={`flex min-h-screen flex-col overflow-hidden`}>
 			<HeroAgencyPage />
-			<AgencyAppFeatures />
+			{/* <AgencyAppFeatures /> */}
 			<BlackTestimonials />
 		</main>
 	);

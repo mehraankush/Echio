@@ -88,9 +88,7 @@ export default function BrandAndProductShoot() {
 						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20 ">
 
 							<div className="font-syne flex flex-col text-[2rem] font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-								<span>Intelligent Campaign</span>
-								<span>Planning and recommender</span>
-								<span>systems</span>
+								Campaign Management
 							</div>
 							<p className="text-xl font-syne font-medium max-w-[34.25rem]">
 								legitimate and active creators to reach out with amazing audience
@@ -115,9 +113,7 @@ export default function BrandAndProductShoot() {
 					</div>
 					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
 						<div className="font-syne flex flex-col text-[2rem]  font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
-							<span>Intelligent Campaign</span>
-							<span>Planning and recommender</span>
-							<span>systems</span>
+							campaign analysis
 						</div>
 						<p className="text-xl font-syne font-medium max-w-[34.25rem]">
 							legitimate and active creators to reach out with amazing audience
@@ -126,8 +122,6 @@ export default function BrandAndProductShoot() {
 						</p>
 					</div>
 				</div>
-
-
 
 
 			</div>
