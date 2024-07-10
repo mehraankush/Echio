@@ -71,7 +71,7 @@ export default function AppFeatures() {
 							</h1>
 							<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 								<p>
-									Connect and Collaborate with Fellow Influencers
+									Network with like-minded influencers and find exciting collaboration opportunities that
 								</p>
 							</div>
 						</div>
@@ -91,7 +91,7 @@ export default function AppFeatures() {
 								</h1>
 								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
-										Help the community to grow in their journey as a content creators
+										Be part of a selective community designed exclusively for influencers, where you can share insights and gain inspiration.
 									</p>
 								</div>
 							</div>
@@ -112,7 +112,7 @@ export default function AppFeatures() {
 								</h1>
 								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
-										Connect and Collaborate with Fellow Influencers
+										Monetize your influence by accessing exclusive brand deals and opportunities tailored to your niche and audience.
 									</p>
 								</div>
 							</div>
@@ -133,7 +133,7 @@ export default function AppFeatures() {
 								</h1>
 								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
-										Connect and Collaborate with Fellow Influencers
+									Showcase your content and collaboration highlights in a well-organized portfolio that attracts brands and other influencers.
 									</p>
 								</div>
 							</div>
