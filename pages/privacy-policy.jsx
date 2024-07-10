@@ -22,6 +22,8 @@ const styleMap = {
   '4. Links to Other Websites': 'text-[1.7rem] font-semibold my-4',
   '5. Changes to this Privacy Policy': 'text-[1.7rem] font-semibold my-4',
   'Contact Us': 'text-[1.7rem] font-semibold mt-4',
+  '© 2023 Copyright echio.in':'bg-gray-300 text-center text-gray-900 py-2 mx-[-20rem] text-[1.3rem] mt-8'
+
 };
 
 const defaultStyle = 'text-[18px] text-white';
@@ -85,8 +87,8 @@ const PrivacyPolicy = () => {
   };
 
   return (
-    <div className="px-[20rem] py-8 bg-black text-white">
-      <div className="max-w-full overflow-hidden">
+    <div className="px-[20rem] pt-8 bg-black text-white">
+      <div className="max-w-full">
         {parseContent(content)}
       </div>
     </div>

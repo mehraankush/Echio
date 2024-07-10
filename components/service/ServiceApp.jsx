@@ -44,7 +44,7 @@ export default function ServiceApp() {
 						<div className="px-8 my-6 md:hidden">
 							<Image src={downloadAppNew} alt="mobile-image" />
 						</div>
-						<div className="flex justify-center items-center lg:justify-normal lg:items-baseline gap-10">
+						<div className="flex justify-center items-center lg:justify-normal lg:items-baseline gap-10 mb-3">
 							<Image src={googlePlayImage} alt="download-from-google-play" className="hover:scale-105 hover:cursor-pointer transition-all ease-in-out"/>
 							<Image src={appStore} alt="download-from-app-store" className="hover:scale-105 hover:cursor-pointer transition-all ease-in-out"/>
 						</div>
