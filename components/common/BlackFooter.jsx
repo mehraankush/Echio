@@ -32,7 +32,7 @@ const BlackFooter = () => {
             `}
             </style>
             <div className="bg-black">
-                <div className="lg:mx-20 lg:px-20 lg:py-12">
+                <div className="py-10 lg:mx-20 lg:px-20 lg:py-12">
                     <div className="flex flex-row justify-between items-center mb-16 mx-4">
                         <Image src={footerBlackLogo} alt="footer-logo" />
                         <button

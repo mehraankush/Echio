@@ -59,6 +59,15 @@ export default function HeroServicePage() {
 
 				<div className="px-8 my-6 lg:px-0 lg:my-0 lg:mt-[8rem] lg:mx-20 lg:mb-[10.5rem] md:hidden flex justify-center items-center overflow-hidden">
 					<Image src={serviceHeroMockup} alt="app-image" />
+<<<<<<< Updated upstream
+=======
+				</div> */}
+				<div className="h-[800px] mt-[4rem] px-8">
+					<Image src='/influencerHeroImage2.png' width={1000} height={1000}
+					 className="h-4/5 w-auto"
+					 alt="image"
+					/>
+>>>>>>> Stashed changes
 				</div>
 
 				{/* <div className="m-4 text-[#eee] max-w-5xl lg:text-center font-medium font-inter text-xl">
@@ -78,7 +87,7 @@ export default function HeroServicePage() {
 					</div>
 				</div>
 			</div>
-			<div className="flex md:hidden flex-col justify-center items-center lg:mx-[5rem] lg:mt-[9.75rem]">
+			<div className="flex md:hidden mt-[-10rem] flex-col justify-center items-center lg:mx-[5rem] lg:mt-[9.75rem]">
 				<div className="m-8 lg:m-0 lg:flex flex-row-reverse justify-center items-center gap-20">
 					<div className="lg:flex flex-col">
 						<h1 className="text-transparent text-[2rem] my-5 lg:my-0 lg:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">

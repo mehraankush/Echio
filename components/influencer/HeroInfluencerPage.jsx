@@ -66,6 +66,7 @@ export default function HeroInfluencerPage() {
 						Influencers
 					</h1>
 				</div>
+<<<<<<< Updated upstream
 				<div className="p-10 w-full flex justify-center  " 
 					style={{
 						transformStyle: 'preserve-3d',
@@ -89,6 +90,13 @@ export default function HeroInfluencerPage() {
 						/>
 					</span>
 					
+=======
+				<div className="h-[800px] px-8 py-6">
+					<Image src='/influencerHeroImage2.png' width={1000} height={1000}
+					 className="h-4/5 w-auto"
+					 alt="image"
+					/>
+>>>>>>> Stashed changes
 				</div>
 			</div>
 		</div>

@@ -145,12 +145,12 @@ export default function BrandAndProductShoot() {
 					Login
 				</button>
 			</div>
-			<div className="px-4 py-8 lg:pt-[5.25rem] lg:px-20 lg:pb-[10rem] bg-white">
+			<div className="px-8 py-6 lg:pt-[5.25rem] lg:px-20 lg:pb-[10rem] bg-white">
 				<div className="lg:flex flex-col justify-center items-center lg:mb-10 ">
 					<h1 className="text-transparent text-[2rem] lg:text-[5rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 						Brand & Product Shoot
 					</h1>
-					<p className="text-[1.25rem] text-center text-[#090B0B] max-w-[50rem] mb-6">
+					<p className="text-[1.25rem] text-[#090B0B] max-w-[50rem] mb-6 md:text-left lg:text-center">
 						Explore our influencer marketing studio for unmatched creative
 						excellence for your product shoots, branding and content creation
 						needs.

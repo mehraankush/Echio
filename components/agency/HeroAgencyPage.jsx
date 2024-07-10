@@ -84,7 +84,7 @@ export default function HeroAgencyPage() {
 						</h1>
 					</div>
 
-					<div className="text-[#eee] m-4 lg:text-center font-medium font-inter text-xl">
+					<div className="text-[#eee] m-4 lg:text-center font-medium font-inter text-xl px-6">
 						<p >
 							Grow your agency&apos;s impact - Partner with @Echio and unlock a
 							world of unparalleled growth
@@ -95,7 +95,7 @@ export default function HeroAgencyPage() {
 						</p>
 					</div>
 
-					<div className="mx-4 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{
+					<div className="mx-8 my-6 lg:mt-10 lg:mx-20 lg:mb-[12.5rem] flex justify-center items-center hero-container " style={{
 						transformStyle: "preserve-3d",
 						perspective: '5000px'
 					}}>

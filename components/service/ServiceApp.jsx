@@ -31,7 +31,7 @@ export default function ServiceApp() {
 					</div>
 				</div>
 			</div>
-			<div className="lg:mx-[5rem] lg:my-[18.5rem] lg:flex flex-col justify-center items-center">
+			<div className="px-7 lg:mx-[5rem] lg:my-[18.5rem] lg:flex flex-col justify-center items-center">
 				<div className=" lg:m-0 lg:flex justify-around items-center w-full">
 					<div className="lg:flex flex-col">
 						<h1 className="text-transparent text-[2rem] my-5 lg:my-0 lg:text-[4rem] font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">

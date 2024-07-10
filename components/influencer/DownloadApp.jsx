@@ -13,7 +13,7 @@ export default function DownloadApp() {
 			<div className="lg:mx-[5rem] lg:mt-[12.5rem] lg:flex flex-col justify-center items-center">
 				<div className=" lg:m-0 lg:flex justify-around items-center gap-[8rem] w-full">
 					
-					<div className="lg:flex flex-col">
+					<div className="px-8 lg:flex flex-col">
 						<h1 className="text-transparent text-[2rem] lg:text-[4rem] mb-6 lg:mb-0 font-syne font-bold bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text">
 							Download App
 						</h1>

@@ -53,7 +53,7 @@ export default function AppFeatures() {
 				<h1 className="text-center text-transparent font-syne text-[2rem] lg:text-[5rem] font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
 					App Features
 				</h1>
-				<div className="lg:mb-24 lg:pb-28" ref={container}>
+				<div className="mt-5 lg:mb-24 lg:pb-28" ref={container}>
 					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1 lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
 							<Image src={networkWithOthers} alt="mobile-image"  className="h-[89%] w-auto object-contain" />
