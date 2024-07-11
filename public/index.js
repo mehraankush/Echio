@@ -77,7 +77,7 @@ import location from "./location.svg";
 import collageBG from "./collage-bg.svg";
 import collageOne from "./collage-1.svg";
 import collageTwo from "./collage-2.svg";
-import collageTwo2 from "./collageTwo.png";
+import collageTwo2 from "./Influencer.png";
 import collageThree from "./collage-3.svg";
 import Graph from "./Graph.png";
 import grayBorderCubeTestimonials from "./grayBorderCubeTestimonials.svg";

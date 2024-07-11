@@ -75,10 +75,10 @@ export const MultiCards = () => {
 			>
 				<motion.div className="group">
 					<motion.div
-						className={`${isHovered? 'blur-sm hover:blur-0 hover:scale-110':''} rounded-[4px] bg-[#ffffff14] absolute w-[402px] left-[128px] top-[40px] h-[325px]    transition-all ease-in-out duration-500`}
+						className={`${isHovered? 'blur-sm hover:blur-0 hover:scale-110':''} rounded-[4px] bg-[#ffffff14] absolute w-[500px]  top-[60px]     transition-all ease-in-out duration-500`}
 						// variants={imageVariants}
 					>
-						<Image src={collageTwo2} alt="collage-bg " />
+						<Image src={collageTwo2} alt="collage-bg" className="object-contain" />
 					</motion.div>
 					{/* <motion.div
 						className={`${isHovered? 'blur-sm hover:blur-0 hover:scale-110':''} border border-solid border-transparent left-0 top-[110px] rounded-[4px] bg-[#ffffff29]   absolute transition-all duration-500 ease-in-out w-[265px] h-[180px]`}
