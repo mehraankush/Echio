@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 import {
     footerBlackLogo,
     facebook,
@@ -81,7 +81,9 @@ const BlackFooter = () => {
                                 Company
                             </h1>
                             <p>Blogs</p>
+                            <Link href="/team" className=" text-blue-400 hover:underline">
                             <p>Team</p>
+                            </Link>
                             <p>About</p>
                             <p>Partner With Us</p>
                             <p>Our Case Study</p>
@@ -91,29 +93,49 @@ const BlackFooter = () => {
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Features
                             </h1>
+                            <Link href="/brand" className=" text-blue-400 hover:underline">
                             <p>Brands</p>
+                            </Link>
+
+                            <Link href="/influencer" className="text-blue-400 hover:underline">
                             <p>Influencers</p>
+                            </Link>
+
+                            <Link href="/studio" className="text-blue-400 hover:underline">
                             <p>Studio</p>
+                            </Link>
+
+                            <Link href="/agency" className="text-blue-400 hover:underline">
                             <p>Agency</p>
+                            </Link>
+
+                            <Link href="/service" className="text-blue-400 hover:underline">
                             <p>Our Services</p>
+                            </Link>
                         </div>
                         <div className="text-[#eee] text-xl">
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Policy
                             </h1>
+                            <Link href="/privacy-policy" className="text-blue-400 hover:underline">
                             <p>Privacy Policy</p>
+                            </Link>
                             <p>Terms & Conditions</p>
                         </div>
                         <div className="text-[#eee] text-xl">
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Contact Us
                             </h1>
+                            <Link href="/contact" className="text-blue-400 hover:underline">
                             <p>Call Us</p>
+                            </Link>
+                            <Link href="/contact" className="text-blue-400 hover:underline">
                             <p>Email Us</p>
+                            </Link>
                             <p>Bangalore, India</p>
                         </div>
                     </div>
-                    <div className="m-4 lg:flex lg:flex-row justify-between items-center">
+                    <div className="m-4 lg:flex lg:flex-row justify-between items-center text-white">
                         <div className="lg:flex justify-center items-center">
                             <p className="lg:text-center max-w-xs md:max-w-none">
                                 201301. &copy; Copyright {currentYear} Echiofy Private Limited.
