@@ -1,6 +1,7 @@
 // home section
 import influencerone from "./influencerone.png";
 import influencerOne from "./influencerOne1.png";
+import CampainManagement from './campaign.png'
 
 
 
@@ -24,7 +25,7 @@ import sadar from "./sadar.png";
 import qlan from "./qlan.png";
 import loco from "./loco.png";
 import influencertwo from "./influencerTwo2.png";
-import influencerTwo from "./influencerTwo.png";
+import influencerTwo from "./filter.png";
 import studio from "./Studio.png";
 import studioone from "./studioone.png";
 import studiotwo from "./studiotwo.png";
@@ -78,6 +79,7 @@ import collageBG from "./collage-bg.svg";
 import collageOne from "./collage-1.svg";
 import collageTwo from "./collage-2.svg";
 import collageTwo2 from "./Influencer.png";
+import CreatorDIacovery from './creator.png'
 import collageThree from "./collage-3.svg";
 import Graph from "./Graph.png";
 import grayBorderCubeTestimonials from "./grayBorderCubeTestimonials.svg";
@@ -103,7 +105,7 @@ import influencerHeroImage2 from "./influencerHeroImage2.png";
 import searchPointer from "./searchPointer.png";
 import networkWithOthers from "./networkWithOthers.png";
 import networkWithOthersPointer from "./networkWithOthersPointer.png";
-import chat from "./chat.png";
+import chat from "./others.png";
 import chatPointer from "./chatPointer.png";
 import connectWithOthers from "./connectWithOthers.png";
 import profile from "./profile.png";
@@ -154,6 +156,7 @@ export {
 	sadar,
 	qlan,
 	loco,
+	CampainManagement,
 	influencerone,
 	influencertwo,
 	studio,
@@ -182,6 +185,7 @@ export {
 	wallWhite,
 	penWhite,
 	brandHero2,
+	CreatorDIacovery,
 	laptopWhite,
 	rightArrow,
 	himanshuOne,

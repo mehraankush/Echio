@@ -12,6 +12,8 @@ import {
 	monetization,
 	monetizationWhite,
 	brandHero2,
+	collageTwo2,
+	CreatorDIacovery,
 } from "@/public/index";
 
 import { gsap } from "gsap";
@@ -92,7 +94,7 @@ export default function HeroBrandPage() {
 					}}
 				>
 					<div className="mt-3 lg:space-y-[-5rem]">
-						<h1 className="mt-[-2px] text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] mt-20 font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text ">
+						<h1 className=" text-center text-transparent font-syne text-[2rem] lg:text-[6.875rem] mt-20 font-bold leading- bg-gradient-to-b from-[#f0f0f0] via-[#fff] to-transparent bg-clip-text ">
 							AI Driven
 						</h1>
 						<h1 className="mt-[-3.2rem] text-center text-transparent font-syne text-[2rem] lg:text-[8.125rem] pt-10 font-bold bg-gradient-to-b from-[#C8F8FF] to-[#19C2D9] bg-clip-text">
@@ -126,10 +128,10 @@ export default function HeroBrandPage() {
 
 						<div className="flex flex-col md:flex-row justify-center items-center gap-10 h-screen feature1 ">
 							<div className="lg:w-[34.25rem] lg:h-[36.1875rem]" data-aos="fade-up">
-								<Image src={influencerone} alt="brand-image" className="h-[89%] w-auto object-contain" />
-								<div className="hidden md:block relative left-[176px] bottom-[87px]">
+								<Image src={CreatorDIacovery} alt="brand-image" className="h-[89%] w-auto object-contain" />
+								{/* <div className="hidden md:block relative left-[176px] bottom-[87px]">
 									<Image src={monetizationWhite} alt="mobile-image" />
-								</div>
+								</div> */}
 
 							</div>
 							<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
@@ -154,9 +156,6 @@ export default function HeroBrandPage() {
 									data-aos="fade-up-left"
 								>
 									<Image src={influencerTwo} alt="mobile-image" />
-									<div className="hidden md:block relative left-[176px] bottom-[87px]">
-										<Image src={monetizationWhite} alt="mobile-image" />
-									</div>
 								</div>
 								<div className="lg:flex flex-col mx-4 my-8 lg:px-10 lg:py-20 ">
 									<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">

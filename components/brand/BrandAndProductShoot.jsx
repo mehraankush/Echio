@@ -10,6 +10,7 @@ import {
 	brandProductOne,
 	brandProductTwo,
 	influencerOne,
+	CampainManagement,
 	influencertwo,
 	monetization,
 } from "@/public/index";
@@ -77,13 +78,13 @@ export default function BrandAndProductShoot() {
 
 					<div className="lg:flex justify-center items-center gap-10 h-screen ">
 						<div
-							className="px-8 my-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
+							className="px-8 my-6   flex items-center lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem]"
 							data-aos="fade-up-right"
 						>
-							<Image src={influencerOne} alt="mobile-image" />
-							<div className="hidden lg:block relative left-[176px] bottom-[87px]">
+							<Image src={CampainManagement} alt="mobile-image" />
+							{/* <div className="hidden lg:block relative left-[176px] bottom-[87px]">
 								<Image src={monetization} alt="mobile-image" />
-							</div>
+							</div> */}
 						</div>
 						<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20 ">
 
