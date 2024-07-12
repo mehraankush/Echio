@@ -13,6 +13,8 @@ import gsap from "gsap";
 import SmoothScroll from "../Animation/SmoothScroll";
 import Parallax from "../Animation/Parallax";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { Button } from "../others/Button";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroAgencyPage() {
@@ -144,7 +146,17 @@ export default function HeroAgencyPage() {
 						</Parallax>
 					</div>
 				</div> */}
-				
+				<div className="flex justify-center pb-8">
+					<Link href={'/contact'}>
+						<Button
+							button="default"
+							className="hidden md:flex ![border-image:unset] !bg-white !text-black no-word-wrap"
+							rectangleClassName="!bg-neutral-white-lite"
+							text="Contact us"
+						/>
+					</Link>
+				</div>
+
 			</div>
 		</SmoothScroll>
 	);

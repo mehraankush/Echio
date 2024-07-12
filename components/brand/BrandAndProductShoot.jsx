@@ -13,6 +13,7 @@ import {
 	CampainManagement,
 	influencertwo,
 	monetization,
+	analysis
 } from "@/public/index";
 import { Button } from "../others/Button";
 
@@ -22,6 +23,7 @@ gsap.registerPlugin(useGSAP);
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SmoothScroll from "../Animation/SmoothScroll";
 import Parallax from "../Animation/Parallax";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -107,10 +109,10 @@ export default function BrandAndProductShoot() {
 						className="px-8 py-6 lg:px-0 lg:my-0 lg:w-[36.25rem] lg:h-[36.1875rem] bg-white"
 						data-aos="fade-up-left"
 					>
-						<Image src={influencertwo} alt="mobile-image" />
-						<div className="hidden lg:block relative left-[176px] bottom-[87px]">
+						<Image src={analysis} alt="mobile-image" />
+						{/* <div className="hidden lg:block relative left-[176px] bottom-[87px]">
 							<Image src={monetization} alt="mobile-image" />
-						</div>
+						</div> */}
 					</div>
 					<div className="lg:flex flex-col m-8 lg:px-10 lg:py-20">
 						<div className="font-syne flex flex-col text-[2rem]  font-bold mb-8 max-w-xs md:max-w-[36rem] bg-gradient-to-r from-[#00C5D4] to-[#000] bg-clip-text text-transparent">
@@ -128,17 +130,21 @@ export default function BrandAndProductShoot() {
 			</div>
 
 			<div className="lg:flex  gap-7 justify-center items-center bg-white lg:bg-[#090B0B] text-white p-8">
-				<Button
-					button="default"
-					className="w-full ![border-image:unset] !bg-white !text-black lg:w-[12.25rem] h-[3.75rem]"
-					rectangleClassName="!bg-neutral-white-lite"
-					text="Sign In"
-				/>
-				<button
-					className={`font-inter flex justify-center items-center text-black lg:text-white border border-black mt-6 lg:mt-0 lg:border-[#EEEEEE] text-xl font-medium rounded-[0.25rem] w-full lg:w-[12.25rem] py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
-				>
-					Login
-				</button>
+				<Link href={'https://brand.echio.in/signup'}>
+					<Button
+						button="default"
+						className="w-full ![border-image:unset] !bg-white !text-black lg:w-[12.25rem] h-[3.75rem]"
+						rectangleClassName="!bg-neutral-white-lite"
+						text="Sign Up"
+					/>
+				</Link>
+				<Link href={'https://brand.echio.in/login'}>
+					<button
+						className={`font-inter flex justify-center items-center text-black lg:text-white border border-black mt-6 lg:mt-0 lg:border-[#EEEEEE] text-xl font-medium rounded-[0.25rem] w-full lg:w-[12.25rem] py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
+					>
+						Login
+					</button>
+				</Link>
 			</div>
 			<div className="px-8 py-6 lg:pt-[5.25rem] lg:px-20 lg:pb-[10rem] bg-white">
 				<div className="lg:flex flex-col justify-center items-center lg:mb-10 ">

@@ -12,7 +12,7 @@ const Navbar = () => {
 		{ id: 1, href: "/brand", tag: "Brands" },
 		{ id: 2, href: "/influencer", tag: "Influencers" },
 		{ id: 3, href: "/agency", tag: "Agency" },
-		{ id: 4, href: "/service", tag: "Services" },
+		// { id: 4, href: "/service", tag: "Services" },
 		{ id: 5, href: "/studio", tag: "Studio" },
 		{ id: 6, href: "/team", tag: "Team" },
 		{ id: 7, href: "/contact", tag: "Contact Us" },
@@ -45,13 +45,13 @@ const Navbar = () => {
 			</span>
 			<div
 				className="md:hidden cursor-pointer flex justify-between items-center"
-				onClick={()=>setNav(!nav)}
+				onClick={() => setNav(!nav)}
 			>
 				{nav ? (
 					<div className="fixed top-7 right-7 z-50 bg-white rounded">
-					<Image src={close} alt="cross-icon" /> 
+						<Image src={close} alt="cross-icon" />
 					</div>
-				) :(
+				) : (
 					<Image src={hamburger} alt="menu-icon" />
 				)}
 			</div>
@@ -59,9 +59,8 @@ const Navbar = () => {
 				{navbarItems.map((item) => (
 					<li
 						key={item.id}
-						className={`p-2 lg:p-4 cursor-pointer ${
-							activeTag === item.tag ? "text-[#5AEBFF]" : "hover:text-[#5AEBFF]"
-						}`}
+						className={`p-2 lg:p-4 cursor-pointer ${activeTag === item.tag ? "text-[#5AEBFF]" : "hover:text-[#5AEBFF]"
+							}`}
 						onClick={() => handleTagClick(item.tag)}
 					>
 						<Link href={item.href} className="no-word-wrap">
@@ -71,17 +70,16 @@ const Navbar = () => {
 				))}
 			</ul>
 			{nav && (
-	
+
 				<div className="md:hidden absolute inset-0 bg-[#1c1c1c] z-40">
 					<ul className="text-white text-center bg-[#1c1c1c]">
 						{navbarItems.map((item) => (
 							<li
 								key={item.id}
-								className={`m-8 p-3 cursor-pointer ${
-									activeTag === item.tag
+								className={`m-8 p-3 cursor-pointer ${activeTag === item.tag
 										? "text-[#5AEBFF]"
 										: "hover:text-[#5AEBFF]"
-								}`}
+									}`}
 								onClick={() => handleTagClick(item.tag)}
 							>
 								<Link href={item.href} className="">
@@ -92,12 +90,14 @@ const Navbar = () => {
 					</ul>
 				</div>
 			)}
-			<Button
-				button="default"
-				className="hidden md:flex ![border-image:unset] !bg-white !text-black no-word-wrap"
-				rectangleClassName="!bg-neutral-white-lite"
-				text="Login Now"
-			/>
+			<Link href={'https://brand.echio.in/login'}>
+				<Button
+					button="default"
+					className="hidden md:flex ![border-image:unset] !bg-white !text-black no-word-wrap"
+					rectangleClassName="!bg-neutral-white-lite"
+					text="Login Now"
+				/>
+			</Link>
 		</div>
 	);
 };

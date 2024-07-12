@@ -12,11 +12,13 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroHomePage() {
+
 
 	useGSAP(() => {
 		const tl = gsap.timeline({
@@ -56,6 +58,7 @@ export default function HeroHomePage() {
 
 
 	}, [])
+
 
 
 	return (
@@ -103,22 +106,26 @@ export default function HeroHomePage() {
 						Dive into Echio’s AI-driven ecosystem and explore the intriguing
 						possibilities lying with redefined influencer experience for all.
 					</p>
-					<div className="w-full px-10 mb-10 md:mb-0 z-[-1]">
-						<Button
-							button="default"
-							className="![border-image:unset] !bg-white !text-black w-full md:w-fit"
-							rectangleClassName="!bg-neutral-white-lite"
-							text="Get Started"
-						/>
-					</div>
+
+					<Link href={'https://brand.echio.in/login'}>
+						<div className="w-full px-10 mb-10 md:mb-0 z-[-1]"
+						>
+							<Button
+								button="default"
+								className="![border-image:unset] !bg-white !text-black w-full md:w-fit"
+								rectangleClassName="!bg-neutral-white-lite"
+								text="Get Started"
+							/>
+						</div>
+					</Link>
 				</div>
 
 			</div>
 
 
 
-			
-			
+
+
 
 		</div>
 	);

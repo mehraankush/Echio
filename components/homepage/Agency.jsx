@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { agencyPage } from "@/public/index";
 import { Button } from "../others/Button";
+import Link from "next/link";
 
 export default function Agency() {
 	return (
@@ -35,20 +36,24 @@ export default function Agency() {
 						delivering the best output.
 					</p>
 					<div className="flex flex-col md:flex-row gap-10">
-						<Button
-							button="default"
-							className="![border-image:unset] !bg-white !text-black"
-							rectangleClassName="!bg-neutral-white-lite"
-							text="Agency Login"
-						/>
-						<button
-							className={`font-inter hover:text-black flex justify-center items-center text-white border border-[#EEEEEE] text-xl font-medium rounded-[0.25rem] px-6 py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
-						>
-							More Details
-						</button>
+						<Link href={'/contact'}>
+							<Button
+								button="default"
+								className="![border-image:unset] !bg-white !text-black"
+								rectangleClassName="!bg-neutral-white-lite"
+								text="Contact Us"
+							/>
+						</Link>
+						<Link href={'/agency'}>
+							<button
+								className={`font-inter hover:text-black flex justify-center items-center text-white border border-[#EEEEEE] text-xl font-medium rounded-[0.25rem] px-6 py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
+							>
+								More Details
+							</button>
+						</Link>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	);

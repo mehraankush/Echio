@@ -80,45 +80,43 @@ const BlackFooter = () => {
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Company
                             </h1>
-                            <p>Blogs</p>
-                            <Link href="/team" className=" text-blue-400 hover:underline">
-                            <p>Team</p>
+                            <Link href="/team" className="  hover:underline">
+                                <p>Team</p>
                             </Link>
-                            <p>About</p>
-                            <p>Partner With Us</p>
-                            <p>Our Case Study</p>
-                            <p>Our Journey</p>
+                            <Link href="/contact" className="  hover:underline">
+                                <p>About</p>
+                            </Link>
                         </div>
                         <div className="text-[#eee] text-xl">
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Features
                             </h1>
-                            <Link href="/brand" className=" text-blue-400 hover:underline">
-                            <p>Brands</p>
+                            <Link href="/brand" className="  hover:underline">
+                                <p>Brands</p>
                             </Link>
 
-                            <Link href="/influencer" className="text-blue-400 hover:underline">
-                            <p>Influencers</p>
+                            <Link href="/influencer" className=" hover:underline">
+                                <p>Influencers</p>
                             </Link>
 
-                            <Link href="/studio" className="text-blue-400 hover:underline">
-                            <p>Studio</p>
+                            <Link href="/studio" className=" hover:underline">
+                                <p>Studio</p>
                             </Link>
 
-                            <Link href="/agency" className="text-blue-400 hover:underline">
-                            <p>Agency</p>
+                            <Link href="/agency" className=" hover:underline">
+                                <p>Agency</p>
                             </Link>
 
-                            <Link href="/service" className="text-blue-400 hover:underline">
-                            <p>Our Services</p>
+                            <Link href="/service" className=" hover:underline">
+                                <p>Our Services</p>
                             </Link>
                         </div>
                         <div className="text-[#eee] text-xl">
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Policy
                             </h1>
-                            <Link href="/privacy-policy" className="text-blue-400 hover:underline">
-                            <p>Privacy Policy</p>
+                            <Link href="/privacy-policy" className=" hover:underline">
+                                <p>Privacy Policy</p>
                             </Link>
                             <p>Terms & Conditions</p>
                         </div>
@@ -126,11 +124,11 @@ const BlackFooter = () => {
                             <h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
                                 Contact Us
                             </h1>
-                            <Link href="/contact" className="text-blue-400 hover:underline">
-                            <p>Call Us</p>
+                            <Link href="/contact" className=" hover:underline">
+                                <p>Call Us</p>
                             </Link>
-                            <Link href="/contact" className="text-blue-400 hover:underline">
-                            <p>Email Us</p>
+                            <Link href="/contact" className=" hover:underline">
+                                <p>Email Us</p>
                             </Link>
                             <p>Bangalore, India</p>
                         </div>

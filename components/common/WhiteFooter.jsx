@@ -15,7 +15,7 @@ export default function WhiteFooter() {
 	const currentYear = new Date().getFullYear();
 	return (
 		<>
-	<style>
+			<style>
 				{`
     .border-gradient {
       border-image: linear-gradient(to right, #00C5D4, #000);
@@ -49,11 +49,13 @@ export default function WhiteFooter() {
 							alt="footer-logo"
 						// className="w-1/2 md:w-[18rem] h-16"
 						/>
-						<button
-							className={`font-inter flex justify-center items-center border text-xl text-gradient border-gradient font-medium rounded-[0.25rem] px-6 py-3.5 button-gradient`}
-						>
-							Stay in Touch
-						</button>
+						<Link href={'/contact'}>
+							<button
+								className={`font-inter flex justify-center items-center border text-xl text-gradient border-gradient font-medium rounded-[0.25rem] px-6 py-3.5 button-gradient`}
+							>
+								Stay in Touch
+							</button>
+						</Link>
 					</div>
 					<div className="md:hidden mx-4 my-6 lg:max-w-[20rem]">
 						<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
@@ -94,45 +96,43 @@ export default function WhiteFooter() {
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Company
 							</h1>
-							<p>Blogs</p>
-							<Link href="/team" className=" text-blue-400 hover:underline">
-							<p>Team</p>
+							<Link href="/team" className="  hover:underline">
+								<p>Team</p>
 							</Link>
-							<p>About</p>
-							<p>Partner With Us</p>
-							<p>Our Case Study</p>
-							<p>Our Journey</p>
+							<Link href={'/contact'} className="  hover:underline">
+								<p>About</p>
+							</Link>
 						</div>
 						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Features
 							</h1>
-							<Link href="/brand" className=" text-blue-400 hover:underline">
-							<p>Brands</p>
+							<Link href="/brand" className="  hover:underline">
+								<p>Brands</p>
 							</Link>
 
-							<Link href="/influencer" className=" text-blue-400 hover:underline">
-							<p>Influencers</p>
+							<Link href="/influencer" className="  hover:underline">
+								<p>Influencers</p>
 							</Link>
 
-							<Link href="/studio" className=" text-blue-400 hover:underline">
-							<p>Studio</p>
+							<Link href="/studio" className="  hover:underline">
+								<p>Studio</p>
 							</Link>
 
-							<Link href="/agency" className=" text-blue-400 hover:underline">
-							<p>Agency</p>
+							<Link href="/agency" className="  hover:underline">
+								<p>Agency</p>
 							</Link>
 
-							<Link href="/service" className=" text-blue-400 hover:underline">
-							<p>Our Services</p>
+							<Link href="/service" className="  hover:underline">
+								<p>Our Services</p>
 							</Link>
 						</div>
 						<div className="text-xl">
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Policy
 							</h1>
-							<Link href="/privacy-policy" className=" text-blue-400 hover:underline">
-							<p>Privacy Policy</p>
+							<Link href="/privacy-policy" className="  hover:underline">
+								<p>Privacy Policy</p>
 							</Link>
 							<p>Terms & Conditions</p>
 						</div>
@@ -140,13 +140,12 @@ export default function WhiteFooter() {
 							<h1 className="font-syne text-2xl lg:text-4xl font-medium mb-[1.5rem]">
 								Contact Us
 							</h1>
-							<Link href="/contact" className=" text-blue-400 hover:underline">
-							<p>Call Us</p>
+							<Link href="/contact" className="  hover:underline">
+								<p>Call Us</p>
 							</Link>
-							<Link href="/contact" className=" text-blue-400 hover:underline">
-							<p>Email Us</p>
+							<Link href="/contact" className="  hover:underline">
+								<p>Email Us</p>
 							</Link>
-							<p>Bangalore, India</p>
 						</div>
 					</div>
 					<div className="m-4 lg:flex lg:flex-row justify-between items-center">

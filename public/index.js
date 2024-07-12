@@ -3,6 +3,7 @@ import influencerone from "./influencerone.png";
 import influencerOne from "./influencerOne1.png";
 import CampainManagement from './campaign.png'
 
+import analysis from './analysis.jpg'
 
 
 import echio from "./echio-logo.svg";
@@ -135,6 +136,7 @@ import serviceMobile from "./servicesSecondNew.png";
 import serviceChat from "./service/serviceChat.png";
 
 export {
+	analysis,
 	echio,
 	echioNav,
 	arrowRight,

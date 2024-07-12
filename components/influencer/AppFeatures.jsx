@@ -60,18 +60,21 @@ export default function AppFeatures() {
 				<div className="mt-10 lg:mb-24 lg:pb-28" ref={container}>
 					<div className="flex flex-col lg:flex-row justify-center items-center gap-10 h-screen feature1 lg:mx-[9.5rem]">
 						<div className="px-8 lg:px-0  lg:h-[70vh]">
-							<Image src={networkWithOthers} alt="mobile-image" className="h-[89%] w-auto object-contain" />
-							<div className="hidden md:block relative left-[176px] bottom-[87px]">
+							<Image src={search} alt="mobile-image" className="h-[89%] w-auto object-contain" />
+
+							{/* <div className="hidden md:block relative left-[176px] bottom-[87px]">
 								<Image src={searchPointer} alt="mobile-image" />
-							</div>
+							</div> */}
 						</div>
 						<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
 							<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
-								Connect  and Collaborate <br />with Fellow Influencers
+								Exclusive Social Media Community
+
 							</h1>
 							<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 								<p>
-									Network with like-minded influencers and find exciting collaboration opportunities that
+									Be part of a selective community designed exclusively for influencers, where you can share insights and gain inspiration.
+
 								</p>
 							</div>
 						</div>
@@ -80,18 +83,40 @@ export default function AppFeatures() {
 					<Parallax>
 						<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
 							<div className="px-8  lg:px-0   lg:h-[70vh]">
-								<Image src={search} alt="mobile-image" className="h-[89%] w-auto object-contain" />
+								<Image src={profile} alt="mobile-image" className="h-[89%] w-auto object-contain" />
 								<div className="hidden md:block relative left-[126px] bottom-[87px]">
-									<Image src={networkWithOthersPointer} alt="mobile-image" />
+									<Image src={profilePointer} alt="mobile-image" />
 								</div>
 							</div>
 							<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
 								<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
-									Exclusive Social Media Community
+									Create your Work Portfolio
 								</h1>
 								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
 									<p>
-										Be part of a selective community designed exclusively for influencers, where you can share insights and gain inspiration.
+										Showcase your content and collaboration highlights in a well-organized portfolio that attracts brands and other influencers.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Parallax>
+
+
+					<Parallax>
+						<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
+							<div className="px-8  lg:px-0   lg:h-[70vh]">
+								<Image src={networkWithOthers} alt="mobile-image" className="h-[89%] w-auto object-contain" />
+								{/* <div className="hidden md:block relative left-[126px] bottom-[87px]">
+									<Image src={networkWithOthersPointer} alt="mobile-image" />
+								</div> */}
+							</div>
+							<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
+								<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
+									Connect  and Collaborate <br />with Fellow Influencers
+								</h1>
+								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
+									<p>
+										Network with like-minded influencers and find exciting collaboration opportunities that
 									</p>
 								</div>
 							</div>
@@ -119,27 +144,7 @@ export default function AppFeatures() {
 						</div>
 					</Parallax>
 
-					<Parallax>
-						<div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10 h-screen lg:mx-[9.5rem]">
-							<div className="px-8  lg:px-0   lg:h-[70vh]">
-								<Image src={profile} alt="mobile-image" className="h-[89%] w-auto object-contain" />
-								<div className="hidden md:block relative left-[126px] bottom-[87px]">
-									<Image src={profilePointer} alt="mobile-image" />
-								</div>
-							</div>
-							<div className="lg:flex flex-col m-4 lg:px-10 lg:py-20">
-								<h1 className="font-syne text-[2.5rem] font-bold mb-2 bg-gradient-to-b from-[#D9D9D9] to-transparent bg-clip-text text-transparent">
-									Create your Work Portfolio
-								</h1>
-								<div className="text-xl font-syne font-medium lg:max-w-[35rem] text-white">
-									<p>
-									Showcase your content and collaboration highlights in a well-organized portfolio that attracts brands and other influencers.
-									</p>
-								</div>
-							</div>
-						</div>
-					</Parallax>
-
+					
 
 				</div>
 			</div>

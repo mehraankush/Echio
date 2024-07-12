@@ -14,6 +14,7 @@ import { Button } from "../others/Button";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 
 export default function BrandComponent() {
@@ -23,7 +24,7 @@ export default function BrandComponent() {
 
 	return (
 		<div
-			className="h-[100vh]"
+			className="h-full pb-10 "
 			style={{
 				backgroundImage: `linear-gradient(180deg, #000 0%, #252525 100%)`,
 				backgroundSize: "cover",
@@ -31,9 +32,6 @@ export default function BrandComponent() {
 			}}
 		>
 			<div className="w-auto">
-
-				<marquee behavior="alternate" direction="" className='w-auto' scrollamount='10'>
-
 					<div className="hidden md:flex  justify-evenly items-center ">
 						<Image src={booyah} alt="logo" />
 						<Image src={redbull} alt="logo" />
@@ -43,7 +41,6 @@ export default function BrandComponent() {
 						<Image src={qlan} alt="logo" />
 						<Image src={loco} alt="logo" />
 					</div>
-				</marquee>
 			</div>
 			<div className="block md:flex flex-row-reverse justify-center items-center gap-14 my-[5rem] lg:my-[5rem] lg:mx-[3.5rem] mx-[2.5rem]">
 				<div className="flex flex-start flex-col mt-[-80px]">
@@ -65,17 +62,21 @@ export default function BrandComponent() {
 						/>
 					</div>
 					<div className="flex flex-col md:flex-row gap-4">
+						<Link href={'https://brand.echio.in/login'} className="border" target="_blank">
 						<Button
 							button="default"
 							className="![border-image:unset] !bg-white !text-black"
 							rectangleClassName="!bg-neutral-white-lite"
 							text="Brand Login"
 						/>
+						</Link>
+						<Link href={'/brand'}>
 						<button
 							className={`font-inter flex justify-center items-center text-white border border-[#EEEEEE] text-xl font-medium rounded-[0.25rem] px-6 py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-none`}
 						>
 							More Details
 						</button>
+						</Link>
 					</div>
 				</div>
 				<div className="hidden md:block">

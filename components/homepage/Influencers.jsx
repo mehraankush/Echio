@@ -11,6 +11,7 @@ import {
 } from "@/public/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const buttonVariants = {
 	hover: {
@@ -46,7 +47,7 @@ export default function Influencers() {
 								animate="whileNotHover"
 								className="group"
 							>
-								<Image src={influencerone}  alt="mobile-image" />
+								<Image src={influencerone} alt="mobile-image" />
 							</motion.div>
 						</div>
 						<p className="text-lg font-syne text-left max-w-[30rem] mb-10">
@@ -60,18 +61,20 @@ export default function Influencers() {
 								whileHover="hover"
 								className={`font-inter flex justify-center items-center bg-black text-white text-xl font-medium rounded-[0.25rem] py-[0.6875rem] pr-4 pl-6 transition duration-300 ease-in-out hover:shadow-top-md hover:shadow-bottom-md `}
 							>
-								View Services
+								Download App
 								<span className="">
 									<Image src={arrowRightWhite} alt="logo" />
 								</span>
 							</motion.button>
-							<motion.button
-								variants={buttonVariants}
-								whileHover="hover"
-								className={`font-inter flex justify-center items-center text-black border border-[#090B0B] text-xl font-medium rounded-[0.25rem] px-6 py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
-							>
-								More Details
-							</motion.button>
+							<Link href={'/influencer'}>
+								<motion.button
+									variants={buttonVariants}
+									whileHover="hover"
+									className={`font-inter flex justify-center items-center text-black border border-[#090B0B] text-xl font-medium rounded-[0.25rem] px-6 py-3.5 hover:transition hover:duration-300 hover:ease-in-out hover:bg-gradient-to-b from-[#00D4F1] via-[#00CFEB] to-[#00B6CF] hover:border-transparent`}
+								>
+									More Details
+								</motion.button>
+							</Link>
 						</div>
 					</div>
 					<div
@@ -94,7 +97,7 @@ export default function Influencers() {
 				</div>
 			</div>
 
-			<div className= "relative  mx-6 md:mx-[5rem] h-screen flex flex-col justify-center items-center z-[2] bg-white mt-10 mb-10">
+			{/* <div className= "relative  mx-6 md:mx-[5rem] h-screen flex flex-col justify-center items-center z-[2] bg-white mt-10 mb-10">
 				<div className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 md:gap-20">
 					<div className="flex flex-col">
 						<h1 className="text-transparent text-[2rem] md:text-[5rem] font-syne font-bold bg-gradient-to-b from-[#00C5D4] to-[#000] bg-clip-text">
@@ -156,7 +159,7 @@ export default function Influencers() {
 						</motion.div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
