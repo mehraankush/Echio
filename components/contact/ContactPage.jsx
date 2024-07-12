@@ -3,6 +3,7 @@ import React from "react";
 import { call, mail, location } from "@/public/index";
 import Form from "./Form";
 import Navbar from "../Navbar";
+import { Star } from "lucide-react";
 
 export default function ContactPage() {
 	return (

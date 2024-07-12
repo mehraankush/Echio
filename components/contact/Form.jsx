@@ -1,3 +1,4 @@
+import { Star } from "lucide-react";
 import React from "react";
 
 export default function Form() {
@@ -5,7 +6,10 @@ export default function Form() {
 		<form className="lg:flex flex-col m-4 lg:mx-[20rem] text-[#eee]">
 			<div className="">
 				<div className="mb-6">
-					<p className="font-inter text-lg mb-6">You Are A</p>
+					<div className="flex gap-1">
+						<p className="font-inter text-lg mb-6">You are a</p>
+						<Star className="text-yellow-600 mt-2" size={10} fill="yellow" />
+					</div>
 					<select
 						type="text"
 						className="w-full h-[3.25rem] bg-[#292929] border border-[#333333] rounded-md p-4"
@@ -19,7 +23,11 @@ export default function Form() {
 				{/* first and last name */}
 				<div className="lg:flex items-center mb-6 gap-6">
 					<div className="w-full">
-						<p className="font-inter text-lg mb-6">First Name</p>
+						<div className="flex gap-1">
+							<p className="font-inter text-lg mb-6">First Name  </p>
+							<Star className="text-yellow-600 mt-2" size={10} fill="yellow" />
+						</div>
+
 						<input
 							type="text"
 							className="w-full h-[3.25rem] bg-[#292929] border border-[#333333] rounded-md p-4"
@@ -35,7 +43,10 @@ export default function Form() {
 				</div>
 				{/* email */}
 				<div className="mb-6">
-					<p className="font-inter text-lg mb-6">Email Address</p>
+					<div className="flex gap-1">
+						<p className="font-inter text-lg mb-6">Email Address</p>
+						<Star className="text-yellow-600 mt-2" size={10} fill="yellow" />
+					</div>
 					<input
 						type="email"
 						className="w-full h-[3.25rem] bg-[#292929] border border-[#333333] rounded-md p-4"
@@ -43,7 +54,10 @@ export default function Form() {
 				</div>
 				{/* Phone */}
 				<div className="mb-6">
-					<p className="font-inter text-lg mb-6">Phone Number</p>
+					<div className="flex gap-1">
+						<p className="font-inter text-lg mb-6">Phone Number</p>
+						<Star className="text-yellow-600 mt-2" size={10} fill="yellow" />
+					</div>
 					<input
 						type="number"
 						className="w-full h-[3.25rem] bg-[#292929] border border-[#333333] rounded-md p-4"
@@ -51,9 +65,12 @@ export default function Form() {
 				</div>
 				{/* whatcha looking for, eh? */}
 				<div className="mb-8">
-					<p className="font-inter text-lg mb-6">
-						What Service You Are Looking For?
-					</p>
+					<div className="flex gap-1">
+						<p className="font-inter text-lg mb-6">
+							What Service You Are Looking For?
+						</p>
+						<Star className="text-yellow-600 mt-2" size={10} fill="yellow" />
+					</div>
 					<textarea
 						rows={6}
 						className="w-full bg-[#292929] border border-[#333333] rounded-md p-4"
